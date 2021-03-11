@@ -5,16 +5,71 @@
 # Configure the English version of the site.
 [en]
   languageCode = "en-us"
-  # contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
 
 # Uncomment the lines below to configure your website in a second language.
-#[zh]
-#  languageCode = "zh-Hans"
-#  contentDir = "content/zh"
-#  title = "Chinese website title..."
+[es]
+  languageCode = "es-mx"
+  contentDir = "content/es"
+  title = "ftapia.dev"
+  [[es.menu.main]]
+    name = "Inicio"
+    url = "#inicio"
+    weight = 10
+
+  [[es.menu.main]]
+    name = "Habilidades"
+    url = "#habilidades"
+    weight = 20
+
+  [[es.menu.main]]
+    name = "Estancias"
+    url = "#estancias"
+    weight = 30
+
+  [[es.menu.main]]
+    name = "Proyectos"
+    url = "#proyectos"
+    weight = 40
+
+  [[es.menu.main]]
+    name = "Articulos"
+    url = "#publicaciones"
+    weight = 50
+
+  [[es.menu.main]]
+    name = "Pláticas"
+    url = "#platicas"
+    weight = 60
+
+  [[es.menu.main]]
+    name = "Divulgación"
+    url = "#divulgacion"
+    weight = 70
+
+  [[es.menu.main]]
+    name = "Docencia"
+    url = "#docencia"
+    weight = 80
+
+  [[es.menu.main]]
+    name = "Galería"
+    url = "#gallery"
+    weight = 90
+
+  [[es.menu.main]]
+    name = "Contacto"
+    url = "#contacto"
+    weight = 100
 #  [zh.params]
 #    description = "Site description in Chinese..."
 #  [[zh.menu.main]]
 #    name = "Wo"
 #    url = "#about"
 #    weight = 1
+
+# Uncomment the lines below to configure your website in a second language.
+#[fr]
+#  languageCode = "fr-fr"
+#  contentDir = "content/fr"
+#  title = "French website title..."

@@ -4,6 +4,55 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Documentation"
-  url = "docs/"
+  #name = "Geoestadística"
+  #url = "geoestadistica/"
+  #weight = 10
+
+  name = "Home"
+  url = "#about"
   weight = 10
+
+[[main]]
+  name = "Skills"
+  url = "#skills"
+  weight = 20
+
+[[main]]
+  name = "Internships"
+  url = "#internships"
+  weight = 30
+
+[[main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 40
+
+[[main]]
+  name = "Articles"
+  url = "#publicaciones"
+  weight = 50
+
+[[main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 60
+
+[[main]]
+  name = "Outreach"
+  url = "#outreach"
+  weight = 70
+
+[[main]]
+  name = "Teaching"
+  url = "#teaching"
+  weight = 80
+
+[[main]]
+  name = "Gallery"
+  url = "#gallery"
+  weight = 90
+
+[[main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 100
