@@ -28,7 +28,7 @@ item:
     #   Activate the button by specifying a URL and button label below.
     #   Deactivate by commenting out parameters, prefixing lines with `#`.
     cta_label: Notas de clase
-    cta_url: 'https://new.ftapia.dev/es/geoestadistica/'
+    cta_url: 'https://ftapia.dev/es/geoestadistica/'
     cta_icon_pack: fas
     cta_icon: book-open
   - title: Docker
@@ -44,7 +44,7 @@ item:
     #   Activate the button by specifying a URL and button label below.
     #   Deactivate by commenting out parameters, prefixing lines with `#`.
     cta_label: Documentación
-    cta_url: 'https://new.ftapia.dev/es/docker'
+    cta_url: 'https://ftapia.dev/es/docker'
     cta_icon_pack: fab
     cta_icon: docker
   - title: Clúster Raspberry Pi
@@ -60,7 +60,7 @@ item:
     #   Activate the button by specifying a URL and button label below.
     #   Deactivate by commenting out parameters, prefixing lines with `#`.
     cta_label: Documentación
-    cta_url: 'https://new.ftapia.dev/es/raspberry'
+    cta_url: 'https://ftapia.dev/es/raspberry'
     cta_icon_pack: fab
     cta_icon: raspberry-pi
   #- title: Left
