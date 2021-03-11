@@ -30,7 +30,7 @@ item:
   organization: Profesor de Asignatura
   organization_url: "/geoestadistica"
   title: Geoestadística
-  url: "/geoestadistica"
+  url: "https://new.ftapia.dev/es/geoestadistica"
 - certificate_url: ""
   date_end: ""
   date_start: "2017-10-01"
