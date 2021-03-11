@@ -42,12 +42,12 @@
   enable = true
 
 [[buttons]]
-  id = "weibo"
-  url = "https://service.weibo.com/share/share.php?url={url}&title={title}"
-  title = "Weibo"
+  id = "telegram"
+  url = "https://t.me/share/url?url={url}&text={title}"
+  title = "Telegram"
   icon_pack = "fab"
-  icon = "weibo"
-  enable = false
+  icon = "telegram-plane"
+  enable = true
 
 [[buttons]]
   id = "reddit"
