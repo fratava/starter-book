@@ -62,7 +62,7 @@ social:
   link: https://orcid.org/0000-0001-9132-7196
 - icon: linkedin
   icon_pack: fab
-  link: www.linkedin.com/in/francisco-tapia-vazquez
+  link: https://www.linkedin.com/in/francisco-tapia-vazquez
 - icon: github
   icon_pack: fab
   link: https://www.github.com/fratava

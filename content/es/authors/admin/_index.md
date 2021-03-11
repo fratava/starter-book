@@ -11,7 +11,7 @@ role: Estudiante de Doctorado
 # Organizations/Affiliations to show in About widget
 organizations:
 - name: Universidad Nacional Autónoma de México
-  url: https://www.irya.unam.mx/web/en/
+  url: https://www.irya.unam.mx/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Mis temas de investigación se centran en radioastronomía, atmósferas estelates y cómputo de alto desempeño.
@@ -44,7 +44,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '/#contact'
+  link: '/#contacto'
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/ftapia_va
@@ -62,7 +62,7 @@ social:
   link: https://orcid.org/0000-0001-9132-7196
 - icon: linkedin
   icon_pack: fab
-  link: www.linkedin.com/in/francisco-tapia-vazquez
+  link: https://www.linkedin.com/in/francisco-tapia-vazquez
 - icon: github
   icon_pack: fab
   link: https://www.github.com/fratava
