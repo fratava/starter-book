@@ -8,7 +8,7 @@ icon_pack: fas
 
 # Page metadata.
 title: Actividades
-date: "2021-03-01T00:00:00Z"
+date: "2021-03-12T00:00:00Z"
 type: book  # Do not modify.
 ---
 
@@ -36,3 +36,8 @@ NO realizar la actividad, implica no obtener el puntaje correspondiente en su ca
 Pueden consultar el suguiente video:
 {{< youtube S2MzzWMeqVQ >}}
 {{% /callout %}}
+
+## Clase 3
+
+- ¿Correlación implica causalidad? Justifique su respuesta.
+- Diseña un experimento para tratar de encontrar una correlación entre el dos fenómenos o situaciones sociales.

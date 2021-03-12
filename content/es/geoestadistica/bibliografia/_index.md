@@ -14,8 +14,8 @@ type: book  # Do not modify.
 
 ## Geoestadística
 
-https://drive.google.com/drive/folders/1r-_PVcB5HrwHO-dEU_P2SssSSCXZgC82?usp=sharing
+<iframe src="https://drive.google.com/embeddedfolderview?id=1r-_PVcB5HrwHO-dEU_P2SssSSCXZgC82#grid" style="width:100%; height:600px; border:0;"></iframe>
 
 ## Estadística
 
-https://drive.google.com/drive/folders/11fcxG3ubw4T7Qf6XvM5Xj7FAoksudDDM?usp=sharing
+<iframe src="https://drive.google.com/embeddedfolderview?id=11fcxG3ubw4T7Qf6XvM5Xj7FAoksudDDM#grid" style="width:100%; height:600px; border:0;"></iframe>
