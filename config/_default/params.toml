@@ -176,14 +176,14 @@ plugins_js  = []
 ## Comments
 ############################
 [comments]
-  # Comment provider:
+  #Comment provider:
   #   "": Disabled
-  #   "disqus": Disqus (https://disqus.com)
+  #   "disqus": Disqus
   #   "commento": Commento (https://commento.io)
   provider = ""
 
   # Which page types are commentable?
-  commentable = {book = true}
+  commentable = {page = true, post = true, book = true, project = true, publication = true, talk = true}
 
   # Configuration of Disqus.
   [comments.disqus]
