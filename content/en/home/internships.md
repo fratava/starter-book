@@ -25,7 +25,7 @@ experience:
   - title: Onsala Space Observatory
     company: Chalmers University of Technology
     company_url: ''
-    location: Gotemburgo, Suecia
+    location: Gothenburg, Sweden
     date_start: '2018-08-01'
     date_end: '2018-11-01'
     description: ''
@@ -33,7 +33,7 @@ experience:
   - title: Centro de Rádio Astronomía e Astrofísica Mackenzie
     company: Universidade Presbiteriana Mackenzie
     company_url: ''
-    location: São Paulo, Brasil
+    location: São Paulo, Brazil
     date_start: '2019-06-01'
     date_end: '2019-07-01'
     description: ''

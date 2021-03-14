@@ -2,6 +2,7 @@
 title: GICC
 summary: Grupo Interdisciplinario de Cómputo Científico.
 tags:
+- Computing
 - HPC
 - UNAM
 - Cómputo

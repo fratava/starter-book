@@ -7,25 +7,25 @@ feature:
   - icon: cloud
     icon_pack: fas
     name: Cloud Computing
-    description: Trabajo con los principales servicios, AWS, GCP, etc. Certificación en proceso
+    description: AWS and GCP. AWS certification in process.
   - icon: docker
     icon_pack: fab
     name: Containers
-    description: Experiencia en el desarrollo de contenedores y su orquestación mediante Kubernetes.
+    description: Docker and Kubernetes.
   - icon: linux
     icon_pack: fab
     name: Linux
-    description: Nivel avanzado de manejo de distribuciones linux. Certificación sysadmin en proceso.
+    description: Advance linux user. Sysadmin certification in process.
   - icon: network-wired
     icon_pack: fas
     name: HPC
-    description: Soluciones para cómputo de alto rendimiento.
+    description: High Performance Computing solutions.
   - icon: code
     icon_pack: fas
     name: Code
-    description: Manejo los principales lenguajes de programación (C, Python, Java, Julia, GO).
+    description: I code with the main programming lenguages (C, Python, Java, Julia, GO).
   - icon: server
     icon_pack: fas
     name: Hosting
-    description: Experiencia en el hospedaje de servicios como GitLab y Overleaf. Visita [gitlab.ftapia.dev](https://gitlab.ftapia.dev/) y obten una cuenta gratuita.
+    description: Experience in self-hosting services such as GitLab and Overleaf. Visit [gitlab.ftapia.dev](https://gitlab.ftapia.dev/).
 ---

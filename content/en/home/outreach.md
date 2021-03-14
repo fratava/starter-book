@@ -27,56 +27,56 @@ item:
   date_end: ""
   date_start: "2017-01-01"
   description: ""
-  organization: Expositor
-  organization_url: https://twitter.com/AoTBudapest/status/1217154631933079554
+  organization: Speaker
+  organization_url: ""
   title: Astronomy on Tap Budapest
   url: "https://twitter.com/AoTBudapest/status/1217154631933079554"
 - certificate_url: ""
   date_end: ""
   date_start: "2020-10-01"
   description: ""
-  organization: Expositor
-  organization_url: https://www.youtube.com/watch?v=6Io05xoWiO8
+  organization: Speaker
+  organization_url: ""
   title: Astronomy on Tap Groningen
   url: "https://www.youtube.com/watch?v=6Io05xoWiO8"
 - certificate_url: ""
   date_end: ""
   date_start: "2020-08-01"
   description: ""
-  organization: Expositor
-  organization_url: https://www.facebook.com/462269614112668/videos/218112246194874
-  title: Noticias Astronómicas - IRyA
+  organization: Speaker
+  organization_url: ""
+  title: Astronomy News - IRyA
   url: "https://www.facebook.com/462269614112668/videos/218112246194874"
 - certificate_url: ""
   date_end: ""
   date_start: "2020-01-11"
   description: ""
-  organization: Expositor
-  organization_url: https://www.facebook.com/462269614112668/videos/581161079421005
-  title: Noticias Astronómicas - IRyA
+  organization: Speaker
+  organization_url: ""
+  title: Astronomy News - IRyA
   url: "https://www.facebook.com/462269614112668/videos/581161079421005"
 - certificate_url: ""
   date_end: ""
   date_start: "2020-11-11"
   description: ""
-  organization: Expositor
-  organization_url: https://www.facebook.com/iryaunam/videos/857480485059304
-  title: Conversatorio - IRyA
+  organization: Speaker
+  organization_url: ""
+  title: Panel Discussion - IRyA
   url: "https://www.facebook.com/iryaunam/videos/857480485059304"
 - certificate_url: ""
   date_end: ""
   date_start: "2020-11-11"
   description: ""
-  organization: Expositor
-  organization_url: https://www.facebook.com/iryaunam/videos/806964073487060
-  title: Observación Solar - IRyA
+  organization: Speaker
+  organization_url: ""
+  title: Solar Obseervation - IRyA
   url: "https://www.facebook.com/iryaunam/videos/806964073487060"
 - certificate_url: ""
   date_end: ""
   date_start: "2020-08-11"
   description: ""
-  organization: Expositor
-  organization_url: https://www.bc.edu/content/dam/bc1/offices/ISR/SCOSTEP/Multimedia/newsletterarchive/SCOSTEP_PRESTO_Newsletter_Vol23_high_reso.pdf
+  organization: Speaker
+  organization_url: ""
   title: Scoostep NEWSLETTER
   url: "https://www.facebook.com/iryaunam/videos/806964073487060"
 ---
