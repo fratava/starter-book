@@ -42,7 +42,9 @@ master
 
 pulsamos ctrl+s y ctrl+x. 
 
-{{< alert type="info" >}}  Si añadimos más nodos de cómputo a nuestro clúster o queremos hacer una segmentación, debemos modificar nuestro `machinefile` para agregar o remover nodos. {{< /alert >}} 
+{{% callout info %}}
+Si añadimos más nodos de cómputo a nuestro clúster o queremos hacer una segmentación, debemos modificar nuestro `machinefile` para agregar o remover nodos.
+{{% /callout %}}
 
 Compilamos el código 
 
@@ -85,7 +87,8 @@ Llamada al proceso 11 de 16 en nodo2
 
 Recordemos que las llamadas son aleatorias.
 
-{{< alert type="info" >}} En algunas ocasiones, podrías no tener esta salida. En este caso deberás revisar que tu cable de red está bien conectado, tu raspberry está prendida o tu volumen está montado. Para verificar esto último podemos teclear
+{{% callout info %}}
+En algunas ocasiones, podrías no tener esta salida. En este caso deberás revisar que tu cable de red está bien conectado, tu raspberry está prendida o tu volumen está montado. Para verificar esto último podemos teclear
 ```bash
 cd /beta
 ls
@@ -94,7 +97,8 @@ Si el folder está vacío debemos teclear
 ```bash
 sudo mount master:/beta /beta
 ```
-y volvemos a ejecutar el código. {{< /alert >}}
+y volvemos a ejecutar el código. 
+{{% /callout %}}
 
 
 ### Calculando Pi en paralelo
@@ -247,4 +251,6 @@ n=16
 
 Como podemos darnos cuenta, el tiempo de ejecución, baja a medida que aumentamos el número de procesadores.
 
-{{< alert type="success" >}} Ahora que tenemos nuestro clúster funcionando, desarrollaremos códigos parelelos. Pero como lo hemos mencionado en la [introducción](/introduccion/#en-que-se-utiliza-el-computo-de-alto-rendimiento), podemos utilizar nuestro clúster para diversas tareas. {{< /alert >}}
+{{% callout success %}}
+Ahora que tenemos nuestro clúster funcionando, desarrollaremos códigos parelelos. Pero como lo hemos mencionado en la [introducción](/introduccion/#en-que-se-utiliza-el-computo-de-alto-rendimiento), podemos utilizar nuestro clúster para diversas tareas. 
+{{% /callout %}}

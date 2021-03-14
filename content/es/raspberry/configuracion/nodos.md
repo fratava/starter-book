@@ -50,9 +50,9 @@ ssh nodox
 
 y ponemos la contraseña del nodo. 
 
-{{< alert type="info" >}}
+{{% callout info %}}
 Es bueno utilizar la misma contraseña para todos los nodos.
-{{< /alert >}}
+{{% /callout %}}
 
 ## Generar el ID key
 
@@ -183,7 +183,9 @@ sudo mount master:/beta /beta
 
 hemos creado un directorio llamado `\beta` que ahora le pertenece al usuario y al grupo `alpha`. Después, le indicamos que monte el directorio `/beta` del `master` en `/beta`. Para probar que todo ha sido ejecutado de manera correcta, vamos a cambiar al usuario `alpha` con `su - alpha`. Para ver los directorio que se encuentran en la carpeta raíz hacemos `la -la /` y debe aparecer `/beta`, nos cambiamos a ese directorio con `cd /beta` y creamos un archivo `echo "Hola mundo" -> hola.txt`. Regresamos al usuario `pi`con `exit` y ahora nos conectamos de vuelta al nodo maestro `ssh master`. Una vez en el nodo maestro podemos ver si el archivo se ha guardado en el directorio compartido con `ls -la /beta`. Ahí debe aparecer el archivo `hola.txt`y si hacemos `cat /beta/hola.txt` nos debe aparecer la frase `Hola mundo`.
 
-{{< alert type="success" >}} Hemos configuirado nuestro clúster de manera correcta. En la siguiente sección, vamos a hacer algunas pruebas.{{< /alert >}}
+{{% callout success %}}
+Hemos configuirado nuestro clúster de manera correcta. En la siguiente sección, vamos a hacer algunas pruebas.
+{{% /callout %}}
 
 <!--- <iframe src="https://drive.google.com/file/d/107aUt0Pp2Ud-JUl-VkmFnw0Lq4iv0ALH/preview" width="640" height="480" aling="center"></iframe>  --->
 

@@ -2,8 +2,8 @@
 title: Kinich Pakal
 summary: Main sequence stellar atmospheres at millimetric, submillimetric and infrared wavelengths.
 tags:
-- Estelar
-- Radioastronomía
+- Stellar
+- Radioastronomy
 date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

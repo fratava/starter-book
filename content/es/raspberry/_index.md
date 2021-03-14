@@ -9,7 +9,9 @@ date: "2020-12-31T00:00:00Z"
 type: book  # Do not modify.
 ---
 
-{{< alert type="primary" >}}El objetivo de este proyecto, es poder desarrollar un prototipo funcional de un cluster de computación con ordenadores de placa única u ordenadores de placa simple (SBC) de bajo coste mejor conocidos como Raspberry Pi. Detallaremos los pasos necesarios para este proyecto. {{< /alert >}}
+{{% callout primary %}}
+El objetivo de este proyecto, es poder desarrollar un prototipo funcional de un cluster de computación con ordenadores de placa única u ordenadores de placa simple (SBC) de bajo coste mejor conocidos como Raspberry Pi. Detallaremos los pasos necesarios para este proyecto. 
+{{% /callout %}}
 
 ## Responsables
 - [MsC. Francisco Tapia Vázquez](https://ftapia.dev)
@@ -140,7 +142,9 @@ Después, conectaremos los cables ethernet a cada uno de los Raspberry. Es recom
 {{< figure src="https://backup.ftapia.dev/cluster_armado.jpg" width="600" align="center" >}}
 
 
-{{< alert type="success" >}} Hemos terminado de ensamblar nuestro clúster. Ahora, vamos a configurar a nuestro maestro y los nodos de computación. {{< /alert >}}
+{{% callout success %}}
+Hemos terminado de ensamblar nuestro clúster. Ahora, vamos a configurar a nuestro maestro y los nodos de computación. 
+{{% /callout %}}
 
 
 [^1]: https://www.amd.com/en/campaigns/high-performance-computing

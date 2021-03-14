@@ -68,7 +68,9 @@ la contraseña es raspberry. Una vez que nos permite logearnos, veremos algo com
  pi@raspberrypi:~ $ 
 ```
 
-{{< alert type="info" >}}Para obtener la ip de tu Raspberry, la conectamos al switch y después al router. Entramos a la página de gestión de nuestro router, generalmente la dirección del router es 192.168.0.1 la contraseña en la mayoría de los casos, se encuentra en el router. Una vez que nos logeamos, buscamos los dispotivos activos en nuestra red. Nuestro nodo maestro aparecerá como raspberry.{{< /alert >}}
+{{% callout info %}}
+Para obtener la ip de tu Raspberry, la conectamos al switch y después al router. Entramos a la página de gestión de nuestro router, generalmente la dirección del router es 192.168.0.1 la contraseña en la mayoría de los casos, se encuentra en el router. Una vez que nos logeamos, buscamos los dispotivos activos en nuestra red. Nuestro nodo maestro aparecerá como raspberry.
+{{% /callout %}}
 
 y vamos a seguir el siguiente tutotrial. 
 
@@ -125,9 +127,13 @@ arm_freq=2000
 
 El primer ajuste, "over_voltage=6", incrementa el voltaje de funcionamiento en aproximadamente 0.15V. Esto es necesario ya que la mayoría de Raspberry Pi 4 no arrancarán a 2.0 GHz sin este extra. Más tarde, si se quiere, se puede cambiar el valor 4 por un 2, lo que supondría un incremento de voltaje de 0.05V para reducir el calor generado, pero no hay garantías de que funcione correctamente.
 
-{{< alert type="danger" >}} Es altamente recomendable no poner más de 6 al valor de over_voltage, ya que podría ser peligroso para la integridad del procesador. {{< /alert >}}
+{{% callout warning %}}
+Es altamente recomendable no poner más de 6 al valor de over_voltage, ya que podría ser peligroso para la integridad del procesador.
+{{% /callout %}}
 
-{{< alert type="warning" >}} Si la pantalla se queda en blanco o el dispositivo comienza un ciclo infinito de reinicios, tendríamos que meter la tarjeta SD en otro equipo y volver a editar el fichero fichero config.txt y esta vez edita el parámetro arm_freq, reduciendo su valor de 50 en 50 MHz. Si tienes que hacer esto, significa que tu procesador no es candidato a hacer overclock. En este caso sería mejor establecer una frecuencia de reloj de referencia para todos los nodos, por ejemplo 1800 (1.8 GHz). {{< /alert >}}
+{{% callout warning %}}
+Si la pantalla se queda en blanco o el dispositivo comienza un ciclo infinito de reinicios, tendríamos que meter la tarjeta SD en otro equipo y volver a editar el fichero fichero config.txt y esta vez edita el parámetro arm_freq, reduciendo su valor de 50 en 50 MHz. Si tienes que hacer esto, significa que tu procesador no es candidato a hacer overclock. En este caso sería mejor establecer una frecuencia de reloj de referencia para todos los nodos, por ejemplo 1800 (1.8 GHz).
+{{% /callout %}}
 
 El segundo ajuste, "arm_freq=2000", establece la frecuencia de funcionamiento de los cuatro cores ARM a 2.0 GHz. Te recomendamos no elevar más este valor, ya que este es el máximo establecido por el firmware (que, por cierto, hasta hace poco era 1.75 GHz).
 
@@ -159,9 +165,13 @@ Y listo, hemos configurado nuestro dispositivo para obtener velocidades más alt
 
 Para cada uno de los nodos, cambiamos el [hostname](#cambiando-el-hostname-y-contrasena) por nodox y cambiamos la frecuencia del procesador como lo vimos en la sección [overclock](#cpu-overclock).
 
-{{< alert type="info" >}} Es recomendable ir conectando y configurando un raspberry a la vez para no tener conflicto con las direcciones ip. {{< /alert >}}
+{{% callout info %}}
+Es recomendable ir conectando y configurando un raspberry a la vez para no tener conflicto con las direcciones ip.
+{{% /callout %}}
 
-{{< alert type="info" >}} La contraseña debe ser la misma para cada nodo que conectemos. Esto es para facilitar su manejo. {{< /alert >}}
+{{% callout info %}}
+La contraseña debe ser la misma para cada nodo que conectemos. Esto es para facilitar su manejo.
+{{% /callout %}}
 
 ### Instalando los paquetes
 
@@ -217,4 +227,6 @@ fab cmd:"apt-get install -y htop"
 fab cmd:"apt-get install -y git"
 ```
 
-{{< alert type="success" >}} Hemos terminado la segunda parte de nuestro proceso. En esta parte, hemos configurado el master y los nodos con la paquetería necesaria. Ahora, nuestro objetivo será que se comuniquen entre ellos y que trabajen coordinadamente.  {{< /alert >}}
+{{% callout success %}}
+Hemos terminado la segunda parte de nuestro proceso. En esta parte, hemos configurado el master y los nodos con la paquetería necesaria. Ahora, nuestro objetivo será que se comuniquen entre ellos y que trabajen coordinadamente. 
+{{% /callout %}}
