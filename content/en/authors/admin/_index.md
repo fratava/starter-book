@@ -87,7 +87,7 @@ email: ""
 highlight_name: true
 ---
 
-I am currently doing my Ph.D. at the Institute of Radioastronomy and Astrophysics (IRyA) at the National Autonomous University of México (UNAM in Spanish). My main interests are the stellar atmospheres in main sequence stars and DevOps.
+I am currently doing my Ph.D. at the Institute of Radioastronomy and Astrophysics (IRyA) at the National Autonomous University of México (UNAM in Spanish). My research interests are focused on the stellar atmospheres in main-sequence stars, high-performance computing, and DevOps.
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/curriculum_vitae_francisco_tapia_en.pdf" "newtab" >}}resumé{{< /staticref >}}.
