@@ -41,3 +41,9 @@ Pueden consultar el suguiente video:
 
 - ¿Correlación implica causalidad? Justifique su respuesta.
 - Diseña un experimento para tratar de encontrar una correlación entre el dos fenómenos o situaciones sociales.
+
+## Clase 4
+
+- Buscar ¿Qué es un tree map? 
+- Investigar que es un diagrama de caja. También lo puedes encontrar en inglés como boxplot.
+- ¿Cuál es la diferencia entre varianza y desviación estándar?

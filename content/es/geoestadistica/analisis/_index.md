@@ -19,3 +19,11 @@ type: book  # Do not modify.
 {{% callout info %}}
 [Actividad para la clase](https://ftapia.dev//es/geoestadistica/actividades/#clase-3)
 {{% /callout %}}
+
+## Clase 2
+
+{{< youtube oHGeridPyuY >}}
+
+{{% callout info %}}
+[Actividad para la clase](https://ftapia.dev//es/geoestadistica/actividades/#clase-4)
+{{% /callout %}}
