@@ -2,7 +2,7 @@
 # Title, summary, and page position.
 linktitle: Actividades
 summary: Learn how to use Academic's docs layout for publishing online courses, software documentation, and tutorials.
-weight: 4
+weight: 7
 icon: book-open
 icon_pack: fas
 
@@ -47,3 +47,11 @@ Pueden consultar el suguiente video:
 - Buscar ¿Qué es un tree map? 
 - Investigar que es un diagrama de caja. También lo puedes encontrar en inglés como boxplot.
 - ¿Cuál es la diferencia entre varianza y desviación estándar?
+
+## Haciendo un Análisis Geoestadístico en ArcGIS
+
+### Video 1
+{{< youtube EUcGDgPVcTA >}}
+
+### Video 2
+{{< youtube 1Pgme8BOkdo >}}
