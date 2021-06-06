@@ -1,17 +1,6 @@
 ---
 title: "Modeling Altair’s Atmosphere"
 
-event: Wowchemy Conference
-event_url: https://example.org
-
-location: Wowchemy HQ
-address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
-  country: United States
-
 authors:
 - admin
 - White, J
@@ -35,7 +24,7 @@ publishDate: "2021-05-07T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-#publication_types: ["1"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication:  American Astronomical Society Meeting 238
@@ -84,4 +73,15 @@ projects:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 #slides: example
+
+event: Wowchemy Conference
+event_url: https://example.org
+
+location: Wowchemy HQ
+address:
+  street: 450 Serra Mall
+  city: Stanford
+  region: CA
+  postcode: '94305'
+  country: United States
 ---
