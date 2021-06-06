@@ -38,7 +38,7 @@ url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: https://keynotes.ftapia.dev/aas237
 url_source: ''
 url_video: ''
 
