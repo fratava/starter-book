@@ -12,7 +12,7 @@ location: Virtual Meeting
 #  postcode: '94305'
 #  country: United States
 
-summary: Presentation No.116.01 in the session “Stellar Atmospheres and Winds”.
+summary: Presentation No.208.08 in the session “Stars I”.
 abstract: "Stellar emission at infrared to centimeter wavelengths remains largely unconstrained since only a few stars other than the Sun have been observed at these wavelengths. This lack of observations means that radio stellar atmosphere models cannot be informed by data. In this work, we present a new methodology to fit the observed and synthetic spectrum of Altair through semiempirical models. We adapt both KINICH-PAKAL and PHOENIX models to reproduce Altair's radio spectra. KINICH-PAKAL is a new framework that allows adapting a solar chromospheric model to solar-like stars iteratively. KINICH-PAKAL uses the Levenberg-Marquardt algorithm as a Nonlinear method, PakalMPI as the semiempirical model, and the observations at infrared to centimeter wavelengths. Our results show that both PHOENIX and KINICH-PAKAL model reproduces the photosphere and lower chromosphere. However, the KINICH-PAKAL features allow to better model the part of the spectrum where the upper chromosphere and the corona have the major contribution. These results are part of an on-going observational campaign called The MESAS Project which seeks to Measure the Emission of Stellar Atmosphere at Submillimeter to millimeter wavelengths."
 
 # Talk start and end times.
