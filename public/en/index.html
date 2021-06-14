@@ -1,0 +1,4263 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.0.0-beta.3 for Hugo" />
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Francisco Tapia Vázquez" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Personal page" />
+
+  
+    <link rel="alternate" hreflang="es" href="https://ftapia.dev/es/" />
+  
+  <link rel="alternate" hreflang="en-us" href="https://ftapia.dev/en/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#248aaa" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.50ec9bf1afbee2efdf956d9d0aeb211a.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163502824-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-163502824-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+    <link rel="alternate" href="/en/index.xml" type="application/rss+xml" title="ftapia.dev" />
+  
+
+  
+    <link rel="manifest" href="/en/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://ftapia.dev/en/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ftapia_va" />
+    <meta property="twitter:creator" content="@ftapia_va" />
+  
+  <meta property="og:site_name" content="ftapia.dev" />
+  <meta property="og:url" content="https://ftapia.dev/en/" />
+  <meta property="og:title" content="ftapia.dev" />
+  <meta property="og:description" content="Personal page" /><meta property="og:image" content="https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2021-06-07T09:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://ftapia.dev/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://ftapia.dev/"
+}
+</script>
+
+
+  
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Project",
+  "@id": "https://ftapia.dev/",
+  "name": "GICC",
+  "logo": "https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png",
+  "image": "https://ftapia.dev/media/icon.png",
+  
+  
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Antigua Carretera a Pátzcuaro 8701, Colonia Ex-Hda. San José de la Huerta",
+    "addressLocality": "Morelia",
+    "addressRegion": "Michoacán, México",
+    "postalCode": "58089",
+    "addressCountry": "MX"
+  },
+  
+  
+  "url": "https://ftapia.dev/"
+}
+</script>
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>ftapia.dev</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c6403c0d403f95373aa0f3e7d04c7f57.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en/">ftapia.dev</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en/">ftapia.dev</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about" data-target="#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#skills" data-target="#skills"><span>Skills</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#internships" data-target="#internships"><span>Internships</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects" data-target="#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#articles" data-target="#articles"><span>Articles</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#talks" data-target="#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#outreach" data-target="#outreach"><span>Outreach</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#teaching" data-target="#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#gallery" data-target="#gallery"><span>Gallery</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact" data-target="#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://twitter.com/ftapia_va" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown"
+           aria-haspopup="true" aria-label="Languages">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>English</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://ftapia.dev/es/" data-target="/es/">
+            <span>Español</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="about" class="home-section wg-about  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      
+      <img class="avatar avatar-circle" src="/en/author/francisco-tapia-vazquez/avatar_hu949662de3d9361cae5dae87b3524e21f_39156_270x270_fill_q75_lanczos_center.jpg" alt="Francisco Tapia Vázquez">
+      
+
+      <div class="portrait-title">
+        <h2>Francisco Tapia Vázquez</h2>
+        <h3>PhD Student</h3>
+
+        
+        <h3>
+          <a href="https://www.irya.unam.mx/web/en/" target="_blank" rel="noopener">
+          <span>Universidad Nacional Autónoma de México</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/en/#contact"  aria-label="envelope">
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://twitter.com/ftapia_va" target="_blank" rel="noopener" aria-label="twitter">
+            <i class="fab fa-twitter big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.facebook.com/Franciscotapiav" target="_blank" rel="noopener" aria-label="facebook">
+            <i class="fab fa-facebook big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.instagram.com/fratava/" target="_blank" rel="noopener" aria-label="instagram">
+            <i class="fab fa-instagram big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Tapia-V%C3%A1zquez%2C%20F.%22&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0" target="_blank" rel="noopener" aria-label="graduation-cap">
+            <i class="fas fa-graduation-cap big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://orcid.org/0000-0001-9132-7196" target="_blank" rel="noopener" aria-label="orcid">
+            <i class="fab fa-orcid big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.linkedin.com/in/francisco-tapia-vazquez" target="_blank" rel="noopener" aria-label="linkedin">
+            <i class="fab fa-linkedin big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.github.com/fratava" target="_blank" rel="noopener" aria-label="github">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://hub.docker.com/u/ftapia" target="_blank" rel="noopener" aria-label="docker">
+            <i class="fab fa-docker big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+    <h1>About me</h1>
+
+    <div class="article-style">
+      <p>I am currently doing my Ph.D. at the Institute of Radioastronomy and Astrophysics (IRyA) at the National Autonomous University of México (UNAM in Spanish). My research interests are focused on the stellar atmospheres in main-sequence stars, high-performance computing, and DevOps.</p>
+<p>
+  <i class="fas fa-download  pr-1 fa-fw"></i> Download my <a href="/media/curriculum_vitae_francisco_tapia_en.pdf" target="_blank">resumé</a>.</p>
+
+    </div>
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <div class="section-subheading">Interests</div>
+        <ul class="ul-interests">
+          
+          <li>Stellar Atmospheres</li>
+          
+          <li>Main Sequence Stars</li>
+          
+          <li>Chromospheres</li>
+          
+          <li>Radioastronomy</li>
+          
+          <li>High Performance Computing</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <div class="section-subheading">Education</div>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">PhD in Astrophysics, Currently</p>
+              <p class="institution">Universidad Nacional Autónoma de México</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">MsC in Earth Sciences, 2019</p>
+              <p class="institution">Universidad Nacional Autónoma de México</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">BSc in Phyiscs, 2017</p>
+              <p class="institution">Universidad Michoacana de San Nicolás de Hidalgo</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="skills" class="home-section wg-featurette  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+
+      
+
+
+<div class="row featurette">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Skills</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-cloud"></i></div>
+    
+    <div class="section-subheading">Cloud Computing</div>
+    <p>AWS and GCP. AWS certification in process.</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fab fa-docker"></i></div>
+    
+    <div class="section-subheading">Containers</div>
+    <p>Docker and Kubernetes.</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fab fa-linux"></i></div>
+    
+    <div class="section-subheading">Linux</div>
+    <p>Advance linux user. Sysadmin certification in process.</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-network-wired"></i></div>
+    
+    <div class="section-subheading">HPC</div>
+    <p>High Performance Computing solutions.</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-code"></i></div>
+    
+    <div class="section-subheading">Code</div>
+    <p>I code with the main programming lenguages (C, Python, Java, Julia, GO).</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-server"></i></div>
+    
+    <div class="section-subheading">Hosting</div>
+    <p>Experience in self-hosting services such as GitLab and Overleaf. Visit <a href="https://gitlab.ftapia.dev/">gitlab.ftapia.dev</a>.</p>
+  </div>
+  
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="internships" class="home-section wg-experience  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Internships</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+  
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col ">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">Centro de Rádio Astronomía e Astrofísica Mackenzie</div>
+          <div class="section-subheading card-title exp-company text-muted my-0">Universidade Presbiteriana Mackenzie</div>
+          <div class="text-muted exp-meta">
+            Jun 2019 –
+            
+              Jul 2019
+            
+            
+              <span class="middot-divider"></span>
+              <span>São Paulo, Brazil</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col ">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">Onsala Space Observatory</div>
+          <div class="section-subheading card-title exp-company text-muted my-0">Chalmers University of Technology</div>
+          <div class="text-muted exp-meta">
+            Aug 2018 –
+            
+              Nov 2018
+            
+            
+              <span class="middot-divider"></span>
+              <span>Gothenburg, Sweden</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="projects" class="home-section wg-portfolio  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Projects</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+
+    
+
+    
+    
+    
+    
+      
+    
+
+    <span class="d-none default-project-filter">*</span>
+
+    
+    
+    <div class="project-toolbar">
+      <div class="project-filters">
+        <div class="btn-toolbar">
+          <div class="btn-group flex-wrap">
+            
+              
+              
+              
+                
+              
+              <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-Radioastronomy" class="btn btn-primary btn-lg">Radioastronomy</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-Computing" class="btn btn-primary btn-lg">Computing</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+
+  <div class="isotope projects-container row js-layout-row ">
+
+    
+    
+      
+    
+
+    
+
+      
+      
+      
+        
+        
+      
+
+      
+        
+
+
+<div class="col-12 isotope-item js-id-Computing js-id-HPC js-id-UNAM js-id-Cómputo">
+  
+
+
+
+
+
+
+  
+  
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="http://www.gicc.unam.mx/" target="_blank" rel="noopener">GICC</a>
+    </div>
+
+    
+    <a href="http://www.gicc.unam.mx/" target="_blank" rel="noopener" class="summary-link">
+      <div class="article-style">
+        Grupo Interdisciplinario de Cómputo Científico.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="http://www.gicc.unam.mx/" target="_blank" rel="noopener">
+      <img src="/en/project/external-project/featured_hu27f7dc34c9db8fd2b063f3fba6be9864_158210_150x0_resize_q75_lanczos.jpg" alt="GICC" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+</div>
+
+      
+
+    
+
+      
+      
+      
+
+      
+        
+
+
+<div class="col-12 isotope-item js-id-Stellar js-id-Radioastronomy">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/project/kinich-pakal/" >Kinich Pakal</a>
+    </div>
+
+    
+    <a href="/en/project/kinich-pakal/"  class="summary-link">
+      <div class="article-style">
+        Main sequence stellar atmospheres at millimetric, submillimetric and infrared wavelengths.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ui.adsabs.harvard.edu/abs/2020ApJS..246....5T/abstract" target="_blank" rel="noopener">
+    <i class="fas fa-graduation-cap mr-1"></i>
+    ADS
+  </a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/project/kinich-pakal/" >
+      <img src="/en/project/kinich-pakal/featured_hu8c24f9d1e69988abbd9910e633e02efb_148881_150x0_resize_q75_lanczos.jpg" alt="Kinich Pakal" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+</div>
+
+      
+
+    
+
+      
+      
+      
+
+      
+        
+
+
+<div class="col-12 isotope-item js-id-Radioastronomy js-id-Submillimetric js-id-Millimetric js-id-Stellar-atmospheres">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/project/mesas/" >MESAS</a>
+    </div>
+
+    
+    <a href="/en/project/mesas/"  class="summary-link">
+      <div class="article-style">
+        Measuring the Emission of Stellar Atmospheres at Submillimeter/millimeter wavelengths.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/Jacob_White26" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>
+    Follow Jacob on Twitter
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ui.adsabs.harvard.edu/abs/2020ApJ...894...76W/abstract" target="_blank" rel="noopener">
+    <i class="fas fa-graduation-cap mr-1"></i>
+    ADS
+  </a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/project/mesas/" >
+      <img src="/en/project/mesas/featured_hu2901b3a16780f468f49fbd7d0ad60467_323237_150x0_resize_q75_lanczos.jpg" alt="MESAS" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+</div>
+
+      
+
+    
+  </div>
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="articles" class="home-section wg-pages  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Recent Publications</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/publication/white-2021/" >The First Radio Spectrum of a Rapidly Rotating A-type Star</a>
+    </div>
+
+    
+    <a href="/en/publication/white-2021/"  class="summary-link">
+      <div class="article-style">
+        We present the first radio spectrum of an A-type star.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/en/author/white-jacob-aaron/">White, Jacob Aaron</a></span>, <span class="author-highlighted">
+      <a href="/en/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/en/author/hughes-a.-g/">Hughes, A. G</a></span>, <span >
+      <a href="/en/author/moor-a/">Moór, A</a></span>, <span >
+      <a href="/en/author/matthews-b/">Matthews, B</a></span>, <span >
+      <a href="/en/author/wilner-d/">Wilner, D</a></span>, <span >
+      <a href="/en/author/aufdenberg-j/">Aufdenberg, J</a></span>, <span >
+      <a href="/en/author/feher-o/">Fehér, O</a></span>, <span >
+      <a href="/en/author/hughes-a.-m/">Hughes, A. M</a></span>, <span >
+      <a href="/en/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/en/author/mcnaughton-a/">McNaughton, A</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2104.09332.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/en/publication/white-2021/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/kinich-pakal/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/mesas/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.3847/2041-8213/abf6da" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/publication/white-2021/" >
+      <img src="/en/publication/white-2021/featured_hu7c5e209d51a1fcaf062dfd4033f0e622_1463154_150x0_resize_q75_lanczos.jpg" alt="The First Radio Spectrum of a Rapidly Rotating A-type Star" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/publication/white-2020/" >The MESAS Project: ALMA Observations of the F-type Stars γ Lep, γ Vir A, and γ Vir B</a>
+    </div>
+
+    
+    <a href="/en/publication/white-2020/"  class="summary-link">
+      <div class="article-style">
+        We present Atacama Large Millimeter/submillimeter Array observations of the three nearby, main-sequence, debris-poor, F-type stars γ Lep, γ Vir A, and γ Vir B at 0.87 and 1.29 mm.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/en/author/white-jacob-aaron/">White, Jacob Aaron</a></span>, <span class="author-highlighted">
+      <a href="/en/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/en/author/hughes-a.-g/">Hughes, A. G</a></span>, <span >
+      <a href="/en/author/moor-a/">Moór, A</a></span>, <span >
+      <a href="/en/author/matthews-b/">Matthews, B</a></span>, <span >
+      <a href="/en/author/wilner-d/">Wilner, D</a></span>, <span >
+      <a href="/en/author/aufdenberg-j/">Aufdenberg, J</a></span>, <span >
+      <a href="/en/author/hughes-a.-m/">Hughes, A. M</a></span>, <span >
+      <a href="/en/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/en/author/boley-a.-c/">Boley, A. C</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2003.12284.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/en/publication/white-2020/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/kinich-pakal/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/mesas/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.3847/1538-4357/ab8467" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/publication/white-2020/" >
+      <img src="/en/publication/white-2020/featured_huf46f86d7be5efcb77f49a20a86aa4e9f_237848_150x0_resize_q75_lanczos.jpg" alt="The MESAS Project: ALMA Observations of the F-type Stars γ Lep, γ Vir A, and γ Vir B" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/publication/ftapia-2020/" >Nonlinear Convergence of Solar-like Stars Chromospheres Using Millimeter, Submillimeter, and Infrared Observations</a>
+    </div>
+
+    
+    <a href="/en/publication/ftapia-2020/"  class="summary-link">
+      <div class="article-style">
+        In this work, we present a new methodology to fit the observed and synthetic spectrum of main-sequence stars through semiempirical models.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      <a href="/en/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/en/author/de-la-luz-v/">De la Luz, V</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://iopscience.iop.org/article/10.3847/1538-4365/ab5f0a/pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/en/publication/ftapia-2020/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/kinich-pakal/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1051/0004-6361/201629135" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/publication/ftapia-2020/" >
+      <img src="/en/publication/ftapia-2020/featured_hu187b6b9f489b73f0b5da540750cc5d3a_887970_150x0_resize_q75_lanczos.jpg" alt="Nonlinear Convergence of Solar-like Stars Chromospheres Using Millimeter, Submillimeter, and Infrared Observations" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/publication/white-2019/" >The MESAS Project: Long-wavelength Follow-up Observations of Sirius A</a>
+    </div>
+
+    
+    <a href="/en/publication/white-2019/"  class="summary-link">
+      <div class="article-style">
+        Here we present Atacama Large Millimeter/submillimeter Array, Green Bank Telescope, and Very Large Array observations of Sirius A, the closest main-sequence A-type star, that span from 1.4 to 9.0 mm.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/en/author/white-jacob-aaron/">White, Jacob Aaron</a></span>, <span >
+      <a href="/en/author/aufdenberg-j/">Aufdenberg, J</a></span>, <span >
+      <a href="/en/author/boley-a.-c/">Boley, A. C</a></span>, <span >
+      <a href="/en/author/devlin-m/">Devlin, M</a></span>, <span >
+      <a href="/en/author/dicker-s/">Dicker, S</a></span>, <span >
+      <a href="/en/author/hauschildt-p/">Hauschildt, P</a></span>, <span >
+      <a href="/en/author/hughes-a.-g/">Hughes, A. G</a></span>, <span >
+      <a href="/en/author/hughes-a.-m/">Hughes, A. M</a></span>, <span >
+      <a href="/en/author/mason-b/">Mason, B</a></span>, <span >
+      <a href="/en/author/matthews-b/">Matthews, B</a></span>, <span >
+      <a href="/en/author/moor-a/">Moór, A</a></span>, <span >
+      <a href="/en/author/mroczkowski-t/">Mroczkowski, T</a></span>, <span >
+      <a href="/en/author/romero-c/">Romero, C</a></span>, <span >
+      <a href="/en/author/sievers-j/">Sievers, J</a></span>, <span >
+      <a href="/en/author/stanchfield-s/">Stanchfield, S</a></span>, <span class="author-highlighted">
+      <a href="/en/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/en/author/wilner-d/">Wilner, D</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://iopscience.iop.org/article/10.3847/1538-4357/ab0e7f/pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/en/publication/white-2019/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/mesas/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.3847/1538-4357/ab0e7f" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/publication/white-2019/" >
+      <img src="/en/publication/white-2019/featured_hu1f03bb54161d7ed1c9763634e96b398c_292648_150x0_resize_q75_lanczos.jpg" alt="The MESAS Project: Long-wavelength Follow-up Observations of Sirius A" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/publication/liseau-2016/" >ALMA&#39;s view of the nearest neighbors to the Sun. The submm/mm SEDs of the α Centauri binary and a new source</a>
+    </div>
+
+    
+    <a href="/en/publication/liseau-2016/"  class="summary-link">
+      <div class="article-style">
+        The precise mechanisms that provide the nonradiative energy for heating the chromosphere and corona of the Sun and other stars are at the focus of intense contemporary research.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/en/author/liseau-r/">Liseau, R</a></span>, <span >
+      <a href="/en/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/en/author/ogorman-e/">O&#39;Gorman, E</a></span>, <span >
+      <a href="/en/author/bertone-e/">Bertone, E</a></span>, <span >
+      <a href="/en/author/chavez-m/">Chavez, M</a></span>, <span class="author-highlighted">
+      <a href="/en/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/en/publication/liseau-2016/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/kinich-pakal/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1051/0004-6361/201629135" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/publication/liseau-2016/" >
+      <img src="/en/publication/liseau-2016/featured_hu924208c8eb0bf0f39e007d74cee80f73_94922_150x0_resize_q75_lanczos.jpg" alt="ALMA&#39;s view of the nearest neighbors to the Sun. The submm/mm SEDs of the α Centauri binary and a new source" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+
+  
+  
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="talks" class="home-section wg-pages  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Talks</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/talk/modeling-altairs-atmosphere/" >Modeling Altair’s Atmosphere</a>
+    </div>
+
+    
+    <a href="/en/talk/modeling-altairs-atmosphere/"  class="summary-link">
+      <div class="article-style">
+        Presentation No.208.08 in the session “Stars I”.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Jun 7, 2021 9:00 AM &mdash; Jun 9, 2021 6:00 PM
+        </span>
+        
+        <span class="middot-divider"></span>
+        <span>Virtual Meeting</span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      <a href="/en/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/en/author/white-j/">White, J</a></span>, <span >
+      <a href="/en/author/hughes-a.g/">Hughes, A.G</a></span>, <span >
+      <a href="/en/author/moor-a/">Moór, A</a></span>, <span >
+      <a href="/en/author/matthews-b/">Matthews, B</a></span>, <span >
+      <a href="/en/author/wilner-d/">Wilner, D</a></span>, <span >
+      <a href="/en/author/aufdenberg-j/">Aufdenberg, J</a></span>, <span >
+      <a href="/en/author/feher-o/">Fehér, O</a></span>, <span >
+      <a href="/en/author/hughes-a.m/">Hughes, A.M</a></span>, <span >
+      <a href="/en/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/en/author/mcnaughton-a/">McNaughton, A</a></span>, <span >
+      <a href="/en/author/zapata-l/">Zapata, L</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/kinich-pakal/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/mesas/">
+    Project
+  </a>
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://keynotes.ftapia.dev/aas238" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/Jacob_White26" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>
+    Jacob on Twitter
+  </a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/talk/modeling-altairs-atmosphere/" >
+      <img src="/en/talk/modeling-altairs-atmosphere/featured_hu582d3ef75abce8fa87fb47ca042f635a_247921_150x0_resize_q75_lanczos.jpg" alt="Modeling Altair’s Atmosphere" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/talk/mesas-meets-kinich-pakal-measure-and-modeling-main-sequence-stellar-atmospheres/" >MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres</a>
+    </div>
+
+    
+    <a href="/en/talk/mesas-meets-kinich-pakal-measure-and-modeling-main-sequence-stellar-atmospheres/"  class="summary-link">
+      <div class="article-style">
+        Presentation No.116.01 in the session “Stellar Atmospheres and Winds”.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Jan 10, 2021 9:00 AM &mdash; Jan 15, 2021 6:00 PM
+        </span>
+        
+        <span class="middot-divider"></span>
+        <span>Virtual Meeting</span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      <a href="/en/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/en/author/white-j/">White, J</a></span>, <span >
+      <a href="/en/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/en/author/zapata-l/">Zapata, L</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://baas.aas.org/pub/2021n1i116p01/release/1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/en/talk/mesas-meets-kinich-pakal-measure-and-modeling-main-sequence-stellar-atmospheres/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/kinich-pakal/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/en/project/mesas/">
+    Project
+  </a>
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://keynotes.ftapia.dev/aas237" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/Jacob_White26" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>
+    Jacob on Twitter
+  </a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/en/talk/mesas-meets-kinich-pakal-measure-and-modeling-main-sequence-stellar-atmospheres/" >
+      <img src="/en/talk/mesas-meets-kinich-pakal-measure-and-modeling-main-sequence-stellar-atmospheres/featured_hu2901b3a16780f468f49fbd7d0ad60467_323237_150x0_resize_q75_lanczos.jpg" alt="MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+
+  
+  
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="outreach" class="home-section wg-accomplishments  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Outreach</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="https://www.facebook.com/iryaunam/videos/857480485059304" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Panel Discussion - IRyA</div></a><div class="card-subtitle my-0 article-metadata">Speaker<span class="middot-divider"></span>
+
+          Nov 2020
+          
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="https://www.facebook.com/iryaunam/videos/806964073487060" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Solar Obseervation - IRyA</div></a><div class="card-subtitle my-0 article-metadata">Speaker<span class="middot-divider"></span>
+
+          Nov 2020
+          
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="https://www.youtube.com/watch?v=6Io05xoWiO8" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Astronomy on Tap Groningen</div></a><div class="card-subtitle my-0 article-metadata">Speaker<span class="middot-divider"></span>
+
+          Oct 2020
+          
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="https://www.facebook.com/iryaunam/videos/806964073487060" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Scoostep NEWSLETTER</div></a><div class="card-subtitle my-0 article-metadata">Speaker<span class="middot-divider"></span>
+
+          Aug 2020
+          
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="https://www.facebook.com/462269614112668/videos/218112246194874" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Astronomy News - IRyA</div></a><div class="card-subtitle my-0 article-metadata">Speaker<span class="middot-divider"></span>
+
+          Aug 2020
+          
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="https://www.facebook.com/462269614112668/videos/581161079421005" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Astronomy News - IRyA</div></a><div class="card-subtitle my-0 article-metadata">Speaker<span class="middot-divider"></span>
+
+          Jan 2020
+          
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="https://twitter.com/AoTBudapest/status/1217154631933079554" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Astronomy on Tap Budapest</div></a><div class="card-subtitle my-0 article-metadata">Speaker<span class="middot-divider"></span>
+
+          Jan 2017
+          
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="teaching" class="home-section wg-accomplishments  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Teaching</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+  
+    <div class="card experience course">
+      <div class="card-body"><div class="section-subheading card-title exp-title text-muted my-0">High Performance Computing</div><div class="card-subtitle my-0 article-metadata">Assistant Professor<span class="middot-divider"></span>
+
+          Aug 2021
+          
+        </div>
+
+        
+          <div class="card-text">ENES-Morelia</div>
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="/es/geoestadistica" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Geostatistics</div></a><div class="card-subtitle my-0 article-metadata"><a href="/es/geoestadistica" target="_blank" rel="noopener">Associate Professor</a><span class="middot-divider"></span>
+
+          Jan 2020
+          
+          – Jan 2021
+          
+        </div>
+
+        
+          <div class="card-text">ENES-Morelia</div>
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><div class="section-subheading card-title exp-title text-muted my-0">Mathematical Methods for Geoscientists</div><div class="card-subtitle my-0 article-metadata">Assistant Professor<span class="middot-divider"></span>
+
+          Jan 2018
+          
+        </div>
+
+        
+          <div class="card-text">ENES-Morelia</div>
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><div class="section-subheading card-title exp-title text-muted my-0">Dinamical Systems</div><div class="card-subtitle my-0 article-metadata">Assistant Professor<span class="middot-divider"></span>
+
+          Oct 2017
+          
+        </div>
+
+        
+          <div class="card-text">ENES-Morelia</div>
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="http://tasp.fcfm.uanl.mx/index.php/es/registro-es/taller-de-clima-espacial" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">High Performance Computing for Space Weather</div></a><div class="card-subtitle my-0 article-metadata"><a href="http://tasp.fcfm.uanl.mx/index.php/es/registro-es/taller-de-clima-espacial" target="_blank" rel="noopener">Speaker</a><span class="middot-divider"></span>
+
+          Mar 2017
+          
+        </div>
+
+        
+          <div class="card-text">3er. Taller de Astrofísica Planetaria y X Congreso Nacional de Astrobiología, UANL-Monterrey.</div>
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
+      <div class="card-body"><a href="https://www.ugm.org.mx/raugm2016/#cursos_menu" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">High Performance Computing for Space Weather</div></a><div class="card-subtitle my-0 article-metadata"><a href="https://www.ugm.org.mx/raugm2016/#cursos_menu" target="_blank" rel="noopener">Speaker</a><span class="middot-divider"></span>
+
+          Oct 2016
+          
+        </div>
+
+        
+          <div class="card-text">Reunión Anual de la Unión Geofísica Mexicana, Puerto Vallarta, Jalisco.</div>
+        
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="slider" class="home-section wg-slider   carousel slide"  data-ride="carousel" data-interval="false">
+   <div class="home-section-bg " ></div>
+    
+
+    
+
+      
+
+
+
+
+<ol class="carousel-indicators">
+  
+  <li data-target="#slider" data-slide-to="0" class="active"></li>
+  
+  <li data-target="#slider" data-slide-to="1" ></li>
+  
+  <li data-target="#slider" data-slide-to="2" ></li>
+  
+</ol>
+
+
+<div class="carousel-inner">
+  
+  <div class="wg-hero dark carousel-item active" style="height: 300px;
+    
+    
+    
+    background-image:
+    
+    url('https://ftapia.dev/media/unam.jpg');
+    
+    ;">
+    <div class="container" style="text-align: center;">
+        <h1 class="hero-title">
+          Geostatistics
+        </h1>
+
+        
+        <p class="hero-lead" style="margin: 0 auto 0 auto;">
+          Spanish only
+        </p>
+        
+
+        
+        
+        
+        
+          
+        
+        <p>
+          <a href="https://ftapia.dev/es/geoestadistica" class="btn btn-light btn-lg"><i class="fas fa-book-open" style="padding-right: 10px;"></i>Notes</a>
+        </p>
+        
+      </div>
+  </div>
+  
+  <div class="wg-hero dark carousel-item" style="height: 300px;
+    
+    
+    
+    background-image:
+    
+    url('https://ftapia.dev/media/docker.jpg');
+    
+    ;">
+    <div class="container" style="text-align: center;">
+        <h1 class="hero-title">
+          Docker
+        </h1>
+
+        
+        <p class="hero-lead" style="margin: 0 auto 0 auto;">
+          Spanish only
+        </p>
+        
+
+        
+        
+        
+        
+          
+        
+        <p>
+          <a href="https://ftapia.dev/es/docker" class="btn btn-light btn-lg"><i class="fab fa-docker" style="padding-right: 10px;"></i>Docs</a>
+        </p>
+        
+      </div>
+  </div>
+  
+  <div class="wg-hero dark carousel-item" style="height: 300px;
+    
+    
+    
+    background-image:
+    
+    url('https://ftapia.dev/media/rbpi.jpg');
+    
+    ;">
+    <div class="container" style="text-align: center;">
+        <h1 class="hero-title">
+          Raspberry Pi Cluster
+        </h1>
+
+        
+        <p class="hero-lead" style="margin: 0 auto 0 auto;">
+          Spanish only
+        </p>
+        
+
+        
+        
+        
+        
+          
+        
+        <p>
+          <a href="https://ftapia.dev/es/raspberry" class="btn btn-light btn-lg"><i class="fab fa-raspberry-pi" style="padding-right: 10px;"></i>Docs</a>
+        </p>
+        
+      </div>
+  </div>
+  
+</div>
+
+
+<a class="carousel-control-prev" href="#slider" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#slider" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+  <span class="sr-only">Next</span>
+</a>
+
+
+    
+
+    
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="gallery" class="home-section wg-blank  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Gallery</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12 col-lg-8">
+    
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="gallery">
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <a data-fancybox="gallery-gallery" href="/en/home/gallery/gallery/IMG_20191215_152421.jpeg" >
+      <img src="/en/home/gallery/gallery/IMG_20191215_152421_hub8252716fcc77167c0ce3c59657d18c9_276189_0x190_resize_q75_lanczos.jpeg" loading="lazy" alt="IMG_20191215_152421.jpeg" width="253" height="190">
+    </a>
+  
+    
+    
+    
+    
+    
+    <a data-fancybox="gallery-gallery" href="/en/home/gallery/gallery/budapest.jpg" >
+      <img src="/en/home/gallery/gallery/budapest_hu3a077652c335aeeb19a421a11a14b0a4_861848_0x190_resize_q75_lanczos.jpg" loading="lazy" alt="budapest.jpg" width="253" height="190">
+    </a>
+  
+    
+    
+    
+    
+    
+    <a data-fancybox="gallery-gallery" href="/en/home/gallery/gallery/lmt.jpg" >
+      <img src="/en/home/gallery/gallery/lmt_hu96ffe080be340177158ac3466877fdc2_395768_0x190_resize_q75_lanczos.jpg" loading="lazy" alt="lmt.jpg" width="253" height="190">
+    </a>
+  
+    
+    
+    
+    
+    
+    <a data-fancybox="gallery-gallery" href="/en/home/gallery/gallery/onsala.jpg" >
+      <img src="/en/home/gallery/gallery/onsala_huc35efec158bc6d2cf62e5d33df5c1c18_379825_0x190_resize_q75_lanczos.jpg" loading="lazy" alt="onsala.jpg" width="253" height="190">
+    </a>
+  
+
+  
+</div>
+
+  </div>
+
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="contact" class="home-section wg-contact  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Contact</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+    
+    
+      
+    
+
+    <div class="mb-3">
+      <form name="contact" method="POST" netlify netlify-honeypot="welcome-bot" data-netlify-recaptcha="true">
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputName">Name</label>
+          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
+        </div>
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputEmail">Email</label>
+          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inputMessage">Message</label>
+          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
+        </div>
+        
+          <div class="d-none">
+            <label>Do not fill this field unless you are a bot: <input name="welcome-bot"></label>
+          </div>
+          
+            <div class="form-group" data-netlify-recaptcha="true"></div>
+          
+        
+        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
+      </form>
+    </div>
+  
+
+  <ul class="fa-ul">
+
+    
+    <li>
+      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+      <span id="person-email"><a href="mailto:f.tapia@irya.unam.mx">f.tapia@irya.unam.mx</a></span>
+    </li>
+    
+
+    
+
+    
+    
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address">Antigua Carretera a Pátzcuaro 8701, Colonia Ex-Hda. San José de la Huerta, Morelia, Michoacán, México 58089</span>
+      </li>
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+  </ul>
+
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+    <p class="powered-by">
+      © ftapia 2021
+    </p>
+  
+  </footer>
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    <script src="/js/_vendor/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.2c15508c697b34651aa9b817223785e0.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

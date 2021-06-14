@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>White, Jacob Aaron | ftapia.dev</title>
+    <link>https://ftapia.dev/en/author/white-jacob-aaron/</link>
+      <atom:link href="https://ftapia.dev/en/author/white-jacob-aaron/index.xml" rel="self" type="application/rss+xml" />
+    <description>White, Jacob Aaron</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© ftapia 2021</copyright><lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>White, Jacob Aaron</title>
+      <link>https://ftapia.dev/en/author/white-jacob-aaron/</link>
+    </image>
+    
+    <item>
+      <title>The First Radio Spectrum of a Rapidly Rotating A-type Star</title>
+      <link>https://ftapia.dev/en/publication/white-2021/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/en/publication/white-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The MESAS Project: ALMA Observations of the F-type Stars γ Lep, γ Vir A, and γ Vir B</title>
+      <link>https://ftapia.dev/en/publication/white-2020/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/en/publication/white-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The MESAS Project: Long-wavelength Follow-up Observations of Sirius A</title>
+      <link>https://ftapia.dev/en/publication/white-2019/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/en/publication/white-2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

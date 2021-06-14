@@ -1,0 +1,2254 @@
+<!DOCTYPE html><html lang="es-mx" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.0.0-beta.3 for Hugo" />
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Francisco Tapia Vázquez" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Atmósferas estelares en estrellas de tipo solar a longitudes de onda milimétricas y submilimétricas." />
+
+  
+    <link rel="alternate" hreflang="en" href="https://ftapia.dev/en/project/kinich-pakal/" />
+  
+  <link rel="alternate" hreflang="es-mx" href="https://ftapia.dev/es/project/kinich-pakal/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#248aaa" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.50ec9bf1afbee2efdf956d9d0aeb211a.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163502824-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-163502824-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/es/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://ftapia.dev/es/project/kinich-pakal/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@ftapia_va" />
+    <meta property="twitter:creator" content="@ftapia_va" />
+  
+  <meta property="og:site_name" content="ftapia.dev" />
+  <meta property="og:url" content="https://ftapia.dev/es/project/kinich-pakal/" />
+  <meta property="og:title" content="Kinich Pakal | ftapia.dev" />
+  <meta property="og:description" content="Atmósferas estelares en estrellas de tipo solar a longitudes de onda milimétricas y submilimétricas." /><meta property="og:image" content="https://ftapia.dev/es/project/kinich-pakal/featured.jpg" />
+    <meta property="twitter:image" content="https://ftapia.dev/es/project/kinich-pakal/featured.jpg" /><meta property="og:locale" content="es-mx" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2016-04-27T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-03-11T03:25:13-06:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ftapia.dev/es/project/kinich-pakal/"
+  },
+  "headline": "Kinich Pakal",
+  
+  "image": [
+    "https://ftapia.dev/es/project/kinich-pakal/featured.jpg"
+  ],
+  
+  "datePublished": "2016-04-27T00:00:00Z",
+  "dateModified": "2021-03-11T03:25:13-06:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Francisco Tapia Vázquez"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "GICC",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Atmósferas estelares en estrellas de tipo solar a longitudes de onda milimétricas y submilimétricas."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Kinich Pakal | ftapia.dev</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="7fac3a44e9eef6ede66667602e35eb05" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c6403c0d403f95373aa0f3e7d04c7f57.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Cerrar"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Buscar...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/es/">ftapia.dev</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/es/">ftapia.dev</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#inicio"><span>Inicio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#habilidades"><span>Habilidades</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#estancias"><span>Estancias</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#proyectos"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#publicaciones"><span>Articulos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#platicas"><span>Pláticas</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#divulgacion"><span>Divulgación</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#docencia"><span>Docencia</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#gallery"><span>Galería</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#contacto"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://twitter.com/ftapia_va" data-toggle="tooltip" data-placement="bottom" title="Sígueme en Twitter" target="_blank" rel="noopener" aria-label="Sígueme en Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Mostrar preferencias">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown"
+           aria-haspopup="true" aria-label="Idiomas">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>Español</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://ftapia.dev/en/project/kinich-pakal/">
+            <span>English</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>Kinich Pakal</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Última actualización el
+      
+    
+    Mar 11, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://ui.adsabs.harvard.edu/abs/2020ApJS..246....5T/abstract" target="_blank" rel="noopener">
+    <i class="fas fa-graduation-cap mr-1"></i>
+    ADS
+  </a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 809px;">
+  <div style="position: relative">
+    <img src="/es/project/kinich-pakal/featured_hu8c24f9d1e69988abbd9910e633e02efb_148881_720x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">F. Tapia-Vázquez &amp; De la Luz, 2020</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>La atmósfera de las estrellas de tipo solar está compuesta por la fotosfera, la cromosfera, la zona de transición y la corona. La cromosfera es la capa donde la temperatura va de 4000 K a 8000 K y se estudia en longitudes de onda ultravioleta, visible, infrarroja, milimétrica y (sub) milimétrica (Wedemeyer et al. 2016) <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+Los primeros modelos cromosféricos se obtuvieron gracias a las observaciones ultravioleta (Vernazza et al. 1981; Avrett &amp; Loeser 2008) <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Sin embargo, observaciones recientes realizadas con el Telescopio Solar Submilimétrico (SST) y el Atacama Large Millimeter / Submillimeter Array (ALMA) han demostrado que la cromosfera tiene temperaturas más bajas de lo esperado por los modelos ultravioleta (Linsky 2017). <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>Hemos desarrollado el código KINICH-PAKAL (Tapia-Vázquez, &amp; De la Luz 2020) <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> que utiliza el algoritmo Levenberg-Marquard como método de ajuste no lineal, PAKAL-MPI como modelo cromosférico de la atmósfera solar y observaciones en longitudes de onda que van desde el infrarrojo al milímetro para generar un modelo más preciso de las cromosferas de las estrellas de tipo solar.
+KINICH-PAKAL nos ha permitido estudiar en detalle cómo cambian las condiciones físicas de la atmósfera en función de su temperatura efectiva.
+El desarrollo de estos modelos es necesario para estudios de discos de escombros (White et al. 2018) <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, estudiar las condiciones bajo las cuales se forman las erupciones (MacGregor et al. 2018) <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> y los posibles mecanismos físicos de variaciones de flujo en el estrellas (Liseau 2019) <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
+<h3 id="referencias">Referencias</h3>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Wedemeyer, S., Bastian, T., Brajša, R., et al. 2016, SSRv, 200, 1. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Vernazza, J. E., Avrett, E. H., &amp; Loeser, R. 1981, ApJS,45, 635. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Avrett, E. H., &amp; Loeser, R. 2008, ApJS, 175, 229. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Linsky, J. L. 2017, ARA&amp;A, 55, 159. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Tapia-Vázquez, F., &amp; De la Luz, V. 2020, ApJS, 246, 5. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>White, J.A., Aufdenberg, J., Boley, A.C., 2018, ApJ,859(2), p.102. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>MacGregor, M. A., Weinberger, A. J., Wilner, D. J., Kowalski, A. F., &amp; Cranmer, S. R. 2018, ApJ, 855, L2. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Liseau, R. 2019, arXiv:1904.03043. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/es/tag/estelar/">Estelar</a>
+  
+  <a class="badge badge-light" href="/es/tag/radioastronomia/">Radioastronomía</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://ftapia.dev/es/project/kinich-pakal/&amp;text=Kinich%20Pakal" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://ftapia.dev/es/project/kinich-pakal/&amp;t=Kinich%20Pakal" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Kinich%20Pakal&amp;body=https://ftapia.dev/es/project/kinich-pakal/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Kinich%20Pakal%20https://ftapia.dev/es/project/kinich-pakal/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://t.me/share/url?url=https://ftapia.dev/es/project/kinich-pakal/&amp;text=Kinich%20Pakal" target="_blank" rel="noopener" class="share-btn-telegram">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/es/author/francisco-tapia-vazquez/"><img class="avatar mr-3 avatar-circle" src="/es/author/francisco-tapia-vazquez/avatar_hu949662de3d9361cae5dae87b3524e21f_39156_270x270_fill_q75_lanczos_center.jpg" alt="Francisco Tapia Vázquez"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/es/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></h5>
+      <h6 class="card-subtitle">Estudiante de Doctorado</h6>
+      <p class="card-text">Mis temas de investigación se centran en radioastronomía, atmósferas estelates y cómputo de alto desempeño.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/es/#contacto" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ftapia_va" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/Franciscotapiav" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.instagram.com/fratava/" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Tapia-V%C3%A1zquez%2C%20F.%22&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-9132-7196" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/francisco-tapia-vazquez" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.github.com/fratava" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://hub.docker.com/u/ftapia" target="_blank" rel="noopener">
+        <i class="fab fa-docker"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Siguiente</div>
+    <a href="/es/project/external-project/" rel="next">GICC</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/es/project/mesas/" rel="prev">MESAS</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+        <h2>Publicaciones</h2>
+        
+          
+            
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/white-2021/" >The First Radio Spectrum of a Rapidly Rotating A-type Star</a>
+    </div>
+
+    
+    <a href="/es/publication/white-2021/"  class="summary-link">
+      <div class="article-style">
+        Presentamos el primer espectro en radio de una estrella de tipo espectral A.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/es/author/white-jacob-aaron/">White, Jacob Aaron</a></span>, <span class="author-highlighted">
+      <a href="/es/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/es/author/hughes-a.-g/">Hughes, A. G</a></span>, <span >
+      <a href="/es/author/moor-a/">Moór, A</a></span>, <span >
+      <a href="/es/author/matthews-b/">Matthews, B</a></span>, <span >
+      <a href="/es/author/wilner-d/">Wilner, D</a></span>, <span >
+      <a href="/es/author/aufdenberg-j/">Aufdenberg, J</a></span>, <span >
+      <a href="/es/author/feher-o/">Fehér, O</a></span>, <span >
+      <a href="/es/author/hughes-a.-m/">Hughes, A. M</a></span>, <span >
+      <a href="/es/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/es/author/mcnaughton-a/">McNaughton, A</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2104.09332.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/white-2021/cite.bib">
+  Citar
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/es/project/kinich-pakal/">
+    Proyecto
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/es/project/mesas/">
+    Proyecto
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.3847/2041-8213/abf6da" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/white-2021/" >
+      <img src="/es/publication/white-2021/featured_hu7c5e209d51a1fcaf062dfd4033f0e622_1463154_150x0_resize_q75_lanczos.jpg" alt="The First Radio Spectrum of a Rapidly Rotating A-type Star" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+          
+        
+          
+            
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/aas237/" >MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres</a>
+    </div>
+
+    
+    <a href="/es/publication/aas237/"  class="summary-link">
+      <div class="article-style">
+        Presentation No.116.01 in the session “Stellar Atmospheres and Winds”.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      <a href="/es/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/es/author/white-j/">White, J</a></span>, <span >
+      <a href="/es/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/es/author/zapata-l/">Zapata, L</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://baas.aas.org/pub/2021n1i116p01/release/1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/aas237/cite.bib">
+  Citar
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/es/project/kinich-pakal/">
+    Proyecto
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/es/project/mesas/">
+    Proyecto
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/aas237/" >
+      <img src="/es/publication/aas237/featured_hu2901b3a16780f468f49fbd7d0ad60467_323237_150x0_resize_q75_lanczos.jpg" alt="MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+          
+        
+          
+            
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/white-2020/" >The MESAS Project: ALMA Observations of the F-type Stars γ Lep, γ Vir A, and γ Vir B</a>
+    </div>
+
+    
+    <a href="/es/publication/white-2020/"  class="summary-link">
+      <div class="article-style">
+        We present Atacama Large Millimeter/submillimeter Array observations of the three nearby, main-sequence, debris-poor, F-type stars γ Lep, γ Vir A, and γ Vir B at 0.87 and 1.29 mm.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/es/author/white-jacob-aaron/">White, Jacob Aaron</a></span>, <span class="author-highlighted">
+      <a href="/es/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/es/author/hughes-a.-g/">Hughes, A. G</a></span>, <span >
+      <a href="/es/author/moor-a/">Moór, A</a></span>, <span >
+      <a href="/es/author/matthews-b/">Matthews, B</a></span>, <span >
+      <a href="/es/author/wilner-d/">Wilner, D</a></span>, <span >
+      <a href="/es/author/aufdenberg-j/">Aufdenberg, J</a></span>, <span >
+      <a href="/es/author/hughes-a.-m/">Hughes, A. M</a></span>, <span >
+      <a href="/es/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/es/author/boley-a.-c/">Boley, A. C</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2003.12284.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/white-2020/cite.bib">
+  Citar
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/es/project/kinich-pakal/">
+    Proyecto
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/es/project/mesas/">
+    Proyecto
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.3847/1538-4357/ab8467" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/white-2020/" >
+      <img src="/es/publication/white-2020/featured_huf46f86d7be5efcb77f49a20a86aa4e9f_237848_150x0_resize_q75_lanczos.jpg" alt="The MESAS Project: ALMA Observations of the F-type Stars γ Lep, γ Vir A, and γ Vir B" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+          
+        
+          
+            
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/ftapia-2020/" >Nonlinear Convergence of Solar-like Stars Chromospheres Using Millimeter, Submillimeter, and Infrared Observations</a>
+    </div>
+
+    
+    <a href="/es/publication/ftapia-2020/"  class="summary-link">
+      <div class="article-style">
+        In this work, we present a new methodology to fit the observed and synthetic spectrum of main-sequence stars through semiempirical models.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      <a href="/es/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>, <span >
+      <a href="/es/author/de-la-luz-v/">De la Luz, V</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://iopscience.iop.org/article/10.3847/1538-4365/ab5f0a/pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/ftapia-2020/cite.bib">
+  Citar
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/es/project/kinich-pakal/">
+    Proyecto
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1051/0004-6361/201629135" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/ftapia-2020/" >
+      <img src="/es/publication/ftapia-2020/featured_hu187b6b9f489b73f0b5da540750cc5d3a_887970_150x0_resize_q75_lanczos.jpg" alt="Nonlinear Convergence of Solar-like Stars Chromospheres Using Millimeter, Submillimeter, and Infrared Observations" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+          
+        
+          
+            
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/liseau-2016/" >ALMA&#39;s view of the nearest neighbors to the Sun. The submm/mm SEDs of the α Centauri binary and a new source</a>
+    </div>
+
+    
+    <a href="/es/publication/liseau-2016/"  class="summary-link">
+      <div class="article-style">
+        The precise mechanisms that provide the nonradiative energy for heating the chromosphere and corona of the Sun and other stars are at the focus of intense contemporary research.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      <a href="/es/author/liseau-r/">Liseau, R</a></span>, <span >
+      <a href="/es/author/de-la-luz-v/">De la Luz, V</a></span>, <span >
+      <a href="/es/author/ogorman-e/">O&#39;Gorman, E</a></span>, <span >
+      <a href="/es/author/bertone-e/">Bertone, E</a></span>, <span >
+      <a href="/es/author/chavez-m/">Chavez, M</a></span>, <span class="author-highlighted">
+      <a href="/es/author/francisco-tapia-vazquez/">Francisco Tapia Vázquez</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/liseau-2016/cite.bib">
+  Citar
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/es/project/kinich-pakal/">
+    Proyecto
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1051/0004-6361/201629135" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/liseau-2016/" >
+      <img src="/es/publication/liseau-2016/featured_hu924208c8eb0bf0f39e007d74cee80f73_94922_150x0_resize_q75_lanczos.jpg" alt="ALMA&#39;s view of the nearest neighbors to the Sun. The submm/mm SEDs of the α Centauri binary and a new source" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+          
+        
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+    <p class="powered-by">
+      © ftapia 2021
+    </p>
+  
+  </footer>
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    <script src="/js/_vendor/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/es/js/wowchemy.min.0c769fe2b068245323b9d6a1f594bda7.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>O&#39;Gorman, E | ftapia.dev</title>
+    <link>https://ftapia.dev/es/author/ogorman-e/</link>
+      <atom:link href="https://ftapia.dev/es/author/ogorman-e/index.xml" rel="self" type="application/rss+xml" />
+    <description>O&#39;Gorman, E</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-mx</language><copyright>© ftapia 2021</copyright><lastBuildDate>Fri, 07 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>O&#39;Gorman, E</title>
+      <link>https://ftapia.dev/es/author/ogorman-e/</link>
+    </image>
+    
+    <item>
+      <title>ALMA&#39;s view of the nearest neighbors to the Sun. The submm/mm SEDs of the α Centauri binary and a new source</title>
+      <link>https://ftapia.dev/es/publication/liseau-2016/</link>
+      <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/publication/liseau-2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

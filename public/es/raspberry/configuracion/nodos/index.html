@@ -1,0 +1,1405 @@
+<!DOCTYPE html><html lang="es-mx" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.0.0-beta.3 for Hugo" />
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Francisco Tapia Vázquez" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Creando un usuario común Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.
+Agregar un nuevo usuario Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro." />
+
+  
+  <link rel="alternate" hreflang="es-mx" href="https://ftapia.dev/es/raspberry/configuracion/nodos/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#248aaa" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.50ec9bf1afbee2efdf956d9d0aeb211a.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163502824-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-163502824-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/es/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://ftapia.dev/es/raspberry/configuracion/nodos/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ftapia_va" />
+    <meta property="twitter:creator" content="@ftapia_va" />
+  
+  <meta property="og:site_name" content="ftapia.dev" />
+  <meta property="og:url" content="https://ftapia.dev/es/raspberry/configuracion/nodos/" />
+  <meta property="og:title" content="Configuranción de los nodos | ftapia.dev" />
+  <meta property="og:description" content="Creando un usuario común Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.
+Agregar un nuevo usuario Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro." /><meta property="og:image" content="https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="es-mx" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-12-31T03:00:00&#43;01:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-03-13T20:46:57-06:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Configuranción de los nodos | ftapia.dev</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c1946f2058fc4736aab908fce1cbab16" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c6403c0d403f95373aa0f3e7d04c7f57.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Cerrar"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Buscar...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/es/">ftapia.dev</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/es/">ftapia.dev</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#inicio"><span>Inicio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#habilidades"><span>Habilidades</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#estancias"><span>Estancias</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#proyectos"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#publicaciones"><span>Articulos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#platicas"><span>Pláticas</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#divulgacion"><span>Divulgación</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#docencia"><span>Docencia</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#gallery"><span>Galería</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#contacto"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://twitter.com/ftapia_va" data-toggle="tooltip" data-placement="bottom" title="Sígueme en Twitter" target="_blank" rel="noopener" aria-label="Sígueme en Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Mostrar preferencias">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Configuración
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Buscar...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/es/raspberry/">Raspberry Pi 4 Clúster</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/es/raspberry/configuracion/"><i class="fas fa-server pr-1"></i>Configuración</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/es/raspberry/configuracion/inicial/">Configuración inicial</a></li>
+
+
+
+  <li class="active"><a href="/es/raspberry/configuracion/nodos/">Configuranción de los nodos</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  <li class=""><a href="/es/raspberry/test/">Test</a></li>
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">En esta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#agregar-un-nuevo-usuario">Agregar un nuevo usuario</a></li>
+    <li><a href="#generar-el-id-key">Generar el ID key</a></li>
+    <li><a href="#copiar-la-clave-a-los-demás-nodos">Copiar la clave a los demás nodos</a></li>
+    <li><a href="#creando-una-carpeta-compartida">Creando una carpeta compartida</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/es/">
+      
+        Inicio
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/es/raspberry/">
+      
+        Raspberry Pi 4 Clúster
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/es/raspberry/configuracion/">
+      
+        Configuración
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Configuranción de los nodos
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>Configuranción de los nodos</h1>
+
+          <div class="article-style">
+            <h1 id="creando-un-usuario-común">Creando un usuario común</h1>
+<p>Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.</p>
+<h2 id="agregar-un-nuevo-usuario">Agregar un nuevo usuario</h2>
+<p>Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro.</p>
+<pre><code class="language-bash">cd /home
+sudo useradd -m -u 1960 alpha
+ls -la /home
+</code></pre>
+<p>El parámetro <code>-m</code> especifica el directorio <code>/home</code>, <code>-u</code> es el argumento para un nueevo usuario, 1960 es el ID del usuario y <code>alpha</code> es el nombre del nuevo usuario. Podemos modificar el nombre por otro. Al teclear ls -la /home aparecerá el nuevo usuario creado junto con <code>pi</code> y <code>root</code>.
+El próximo paso, es crear un contraseña para este usuario. Teclamos entonces</p>
+<pre><code class="language-bash">sudo passwd alpha
+</code></pre>
+<p>e introduciomos la contraseña.
+Para verfificar que sea ha creado correctamente el usuario y que todo está en orden, vamos a iniciar sesión con el nuevo usuario coon el siguiente comando</p>
+<pre><code class="language-bash">su - alpha
+</code></pre>
+<p>introducimos la contraseña y estamos dentro del usuario.  Si tecleamos</p>
+<pre><code class="language-bash">exit
+</code></pre>
+<p>regresamos al usuario <code>pi</code>. Ahora nos conectaremos mediante <em>ssh</em> al nodox y repetimos los pasos anteriores. Podemos acceder mediante</p>
+<pre><code class="language-bash">ssh nodox
+</code></pre>
+<p>y ponemos la contraseña del nodo.</p>
+<div class="alert alert-info">
+  <div>
+    Es bueno utilizar la misma contraseña para todos los nodos.
+  </div>
+</div>
+<h2 id="generar-el-id-key">Generar el ID key</h2>
+<p>Ahora que ya configuramos el usuario en común, el nodox va a correr todos los programas MPI. Vamos a generar un llave especial que permitirá conectarnos mediante <em>ssh</em> sin contraseña de un nodo a otro, o del nodo maestro a un nodo las veces que lo necesitemos. Para hacer esto nos situamos en el nodo maestro y después, nos conectamos al usuario <em>alpha</em> mediante</p>
+<pre><code class="language-bash">su - alpha
+</code></pre>
+<p>y una vez adentro, teclamos los siguiente</p>
+<pre><code class="language-bash">ssh-keygen -t rsa
+</code></pre>
+<p>en donde <code>-t</code> es el argumento y <code>rsa</code> es el tipo de encriptación. Para generar la clave necesitamos ingresar</p>
+<ul>
+<li>El nombre del archivo donde vamos a guardar la clave</li>
+<li>Ingresar la <em>passphrase</em> (escogeremos la frase de nuestra elección)</li>
+<li>Reingresamos la <em>passphrase</em></li>
+</ul>
+<p>y tendremos que ver una imagen como la siguiente</p>
+<pre><code class="language-bash">+--[ RSA 2048]----+
+|       o=.       |
+|    o  o++E      |
+|   + . Ooo.      |
+|    + O B..      |
+|     = *S.       |
+|      o          |
+|                 |
+|                 |
+|                 |
++-----------------+
+</code></pre>
+<h2 id="copiar-la-clave-a-los-demás-nodos">Copiar la clave a los demás nodos</h2>
+<p>Ya que generamos la clave, la vamos a transferir al nodox con el siguiente comando</p>
+<pre><code class="language-bash">ssh-copy-id alpha@nodox; alpha
+</code></pre>
+<p>y teclamos el <em>passphrase</em>. Para verificar que se tranfirió bien la clave, nos conectaremos al nodo de la siguiente manera</p>
+<pre><code class="language-bash">ssh nodox
+</code></pre>
+<p>e introducimos el <em>passphrase</em> nuevamente e ingresaremos al nodox. Ahora regresamos al nodo maestro mediante <code>exit</code> y listamos los archivos en el usuario alpha utilizando <code>ls -la</code>. Indentificamos la carpeta <code>.ssh</code> y vemos lo que está adentro con <code>ls -la .ssh</code>. Ahí vamos a ver estos tres archivos</p>
+<ul>
+<li>id_rsa</li>
+<li>id_rsa.pub</li>
+<li>known_hosts</li>
+</ul>
+<p>Si nos intentamos conectar nuevamente al nodox, nos va a solicitar la <em>passphrase</em>. Esto no es lo que estamos buscando, por lo que aún debemos realizar algunos cambios en nuestro nodo maestro. Regresamos al nodo maestro mediante <code>exit</code> o cerrando la ventana de la terminal y conectandonos al modo maestro. Nos percatamos que nos encontramos en el usurio <code>alpha</code>, si no es así ingresamos mediante <code>su - alpha</code>. Vamos a editar el archivo llamado <code>.bashrc</code> dentro de nuestro directorio de inicio. Abrimos el archivo con nuestro editor favorito, puede ser emacs, vim, nano o pico. Nano viene instalado por defecto, entonces lo utilizaremos en esta guía. Entonces teclamos</p>
+<pre><code class="language-bash">nano .bash
+</code></pre>
+<p>nos vamos hasta el final del archivo y agregamos el siguiente texto</p>
+<pre><code class="language-bash">#Logic for keychain
+/usr/bin/keychain $HOME/.ssh/id_rsa
+source $HOME/.keychain/$HOSTNAME-sh
+</code></pre>
+<p>y tecleamos <code>ctrl + o</code> para guardar y <code>ctrl + x</code> para salir. Entonces recompilamos el archivo <code>.bashrc</code> mediante</p>
+<pre><code class="language-bash">source .bashrc
+</code></pre>
+<p>volvemos a ingresar el <em>passphrase</em>. Ahora nos volvemos a conectar al nodox con</p>
+<pre><code class="language-bash">ssh nodox
+</code></pre>
+<p>y ¡listo!, nos hemos conectado al nodox. Vamos a repetir este proceso para cada nodo del clúster.</p>
+<h2 id="creando-una-carpeta-compartida">Creando una carpeta compartida</h2>
+<p>Para que los datos puedan ser accesibles para todos los nodos, es necesario crear un repositorio. Vamos a montarlo en el nodo maestro de la siguiente manera. Primero, vamos a crear la carpeta que va a ser compartida.</p>
+<pre><code class="language-bash">sudo mkdir /beta
+</code></pre>
+<p>en este caso la montanmos en el directorio raíz <code>/</code> y la llamaremos beta. Le cederemos la propiedad al usuario <code>alpha</code>, ya que es el usuario común. Entonces tecleamos</p>
+<pre><code class="language-bash">sudo chown alpha:alpha /beta/
+</code></pre>
+<p>el directorio <code>/beta</code> ahora puede ser accedido por el usuario y grupo <code>alpha</code>. El siguiente paso es modificar el servicio <code>rpcbind</code> para poder exportar el directorio a los demás nodos. tecleamos</p>
+<pre><code class="language-bash">sudo rpcbind start
+sudo update-rc.d rpcbind enable
+</code></pre>
+<p>la segunda línea es para especificar que el servicio se ejecute cada vez que se inicia el sistema. Tenemos ahora que especificar que directorio en el nodo maestro va a estar disponible para ser montado por los demás nodos. Para ellos vamos a modificar el archivo <code>exports</code> abriendolo con <code>sudo emacs /etc/exports</code> ya añadiendo al final del archivo la siguiente línea</p>
+<pre><code class="language-bash">#beta
+/beta 192.168.0.0/24(rw,sync)
+</code></pre>
+<p>Salvamos con <code>ctrl+x+ctrl+s</code> y salimos con <code>ctrl+x+ctrl+c</code>.</p>
+<p>En este caso <code>/beta</code>es la carpeta en el nodo maestro que vamos a exportar. <code>192.168.0.0/24</code> significa que las direcciones IP pueden en un rango entre <code>192.168.0.0</code> y <code>192.168.0.255</code> pueden montar el directorio <code>/beta</code>. <code>rw</code> significa que se puede leer y escribir en ella. Para que tenga efecto el cambio que realizamos, necesitamos reiniciar el servicio <code>nfs-kernel-server</code>con <code>sudo service nfs-kernel-server restart</code>. Se puede automatizar este proceso cada vez que inicie el sistema. Para ello necesitamos mofdificar el archivo <code>sudo emacs /etc/rc.local</code> y poner en la penúltima línea, antes de <code>exit 0</code> lo sigueinte</p>
+<pre><code class="language-bash">sudo service nfs-kernel-server restart
+</code></pre>
+<p>guardamos y cerramos el archivo. Vamos a hacer un test. Nos conectamos al nodox con <code>ssh nodox</code> y una vez dentro, teclamos los siguiente</p>
+<pre><code class="language-bash">sudo mkdir /beta
+sudo chown alpha:alpha /beta
+sudo mount master:/beta /beta
+</code></pre>
+<p>hemos creado un directorio llamado <code>\beta</code> que ahora le pertenece al usuario y al grupo <code>alpha</code>. Después, le indicamos que monte el directorio <code>/beta</code> del <code>master</code> en <code>/beta</code>. Para probar que todo ha sido ejecutado de manera correcta, vamos a cambiar al usuario <code>alpha</code> con <code>su - alpha</code>. Para ver los directorio que se encuentran en la carpeta raíz hacemos <code>la -la /</code> y debe aparecer <code>/beta</code>, nos cambiamos a ese directorio con <code>cd /beta</code> y creamos un archivo <code>echo &quot;Hola mundo&quot; -&gt; hola.txt</code>. Regresamos al usuario <code>pi</code>con <code>exit</code> y ahora nos conectamos de vuelta al nodo maestro <code>ssh master</code>. Una vez en el nodo maestro podemos ver si el archivo se ha guardado en el directorio compartido con <code>ls -la /beta</code>. Ahí debe aparecer el archivo <code>hola.txt</code>y si hacemos <code>cat /beta/hola.txt</code> nos debe aparecer la frase <code>Hola mundo</code>.</p>
+<div class="alert alert-success">
+  <div>
+    Hemos configuirado nuestro clúster de manera correcta. En la siguiente sección, vamos a hacer algunas pruebas.
+  </div>
+</div>
+<!--- <iframe src="https://drive.google.com/file/d/107aUt0Pp2Ud-JUl-VkmFnw0Lq4iv0ALH/preview" width="640" height="480" aling="center"></iframe>  --->
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/es/raspberry/configuracion/inicial/" rel="next">Configuración inicial</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Última actualización el Mar 13, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+    <p class="powered-by">
+      © ftapia 2021
+    </p>
+  
+  </footer>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    <script src="/js/_vendor/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/es/js/wowchemy.min.0c769fe2b068245323b9d6a1f594bda7.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

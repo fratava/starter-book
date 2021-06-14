@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuración | ftapia.dev</title>
+    <link>https://ftapia.dev/es/raspberry/configuracion/</link>
+      <atom:link href="https://ftapia.dev/es/raspberry/configuracion/index.xml" rel="self" type="application/rss+xml" />
+    <description>Configuración</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-mx</language><copyright>© ftapia 2021</copyright>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Configuración</title>
+      <link>https://ftapia.dev/es/raspberry/configuracion/</link>
+    </image>
+    
+    <item>
+      <title>Configuración inicial</title>
+      <link>https://ftapia.dev/es/raspberry/configuracion/inicial/</link>
+      <pubDate>Thu, 31 Dec 2020 03:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/raspberry/configuracion/inicial/</guid>
+      <description>&lt;h1 id=&#34;configuración-inicial&#34;&gt;Configuración inicial&lt;/h1&gt;
+&lt;p&gt;Para la priumer parte, necesitamos instalar el sistema operatico en los nodos y en el nodo maestro. Pra ello ingresaremos a &lt;a href=&#34;https://www.raspberrypi.org/software/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.raspberrypi.org/software/&lt;/a&gt; y descargamos Raspberry Pi Imager para nuestro OS y así, poder copiar el sistema operativo en la tarjeta micro SD. Hay que seguir los pasos que se especifican en el siguiente video.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/J024soVgEeM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la volvemos a conectar. Debemos seguir las siguientes instrucciones.&lt;/p&gt;
+&lt;p&gt;Linux (Ubuntu)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Abrimos una terminal ++ctrl+alt+t++ y tecleamos lo siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /mnt/boot
+touch ssh
+exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después de eso, desmontamos la memoria SD de la computadora.&lt;/p&gt;
+&lt;p&gt;MacOS&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Abrimos una terminal y tecleamos lo siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /Volumes/boot/
+touch ssh
+exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después de eso, desmontamos la memoria SD de la computadora.&lt;/p&gt;
+&lt;h2 id=&#34;configurando-el-nodo-maestro&#34;&gt;Configurando el nodo maestro&lt;/h2&gt;
+&lt;p&gt;Una vez que completamos el paso anterior, colacamos la memoria SD en el el slot de la placa, conectamos el eliminador de corriente y el cable ethernet tanto en la placa como en el switch.
+Esperamos un par de minutos mientras se inicia el sistema operativo y abrimos la terminal de nuestro sistema operativo y tecleamos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh pi@192.168.0.xx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;la contraseña es raspberry. Una vez que nos permite logearnos, veremos algo como esto&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt; The programs included with the Debian GNU/Linux system are free software;
+ the exact distribution terms for each program are described in the
+ individual files in /usr/share/doc/*/copyright.
+
+ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+ permitted by applicable law.
+ Last login: Tue Dec 22 23:34:38 2020 from 192.168.0.xx
+
+ Wi-Fi is currently blocked by rfkill.
+ Use raspi-config to set the country before use.
+
+ pi@raspberrypi:~ $ 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Para obtener la ip de tu Raspberry, la conectamos al switch y después al router. Entramos a la página de gestión de nuestro router, generalmente la dirección del router es 192.168.0.1 la contraseña en la mayoría de los casos, se encuentra en el router. Una vez que nos logeamos, buscamos los dispotivos activos en nuestra red. Nuestro nodo maestro aparecerá como raspberry.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;y vamos a seguir el siguiente tutotrial.&lt;/p&gt;
+&lt;h3 id=&#34;cambiando-el-hostname-y-contraseña&#34;&gt;Cambiando el hostname y contraseña&lt;/h3&gt;
+&lt;p&gt;El nombre del hostname será &amp;ldquo;master&amp;rdquo;, pero podemos usar este tutorial para todos los nodos.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0mPOSlQ3gxo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;instalando-los-paquetes-necesarios&#34;&gt;Instalando los paquetes necesarios&lt;/h3&gt;
+&lt;p&gt;Cuando reiniciamos la Raspberry Pi 4, vamos a actualizar los paquetes e instalar otro. Primero vamos actualizarlos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después vamos a instalar los paquetes necesarios para la mayoría de pruebas que vamos a realizar.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install build-essential
+sudo apt-get install manpages-dev
+sudo apt-get install gfortran
+sudo apt-get install nfs-common
+sudo apt-get install nfs-kernel-server
+sudo apt-get install emacs
+sudo apt-get install openmpi-bin
+sudo apt-get install libopenmpi-dev
+sudo apt-get install openmpi-doc
+sudo apt-get install keychain
+sudo apt-get install nmap
+sudo apt-get install htop
+sudo apt-get install git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;cpu-overclock&#34;&gt;CPU (overclock)&lt;/h3&gt;
+&lt;p&gt;La CPU del Raspeberry Pi 4 está basada en un arquitectura ARM. Cuenta con un procesador quad-core Cortex-A72 de 64 bits. Por defecto, tiene una frecuencia de reloj de 1.5GHz para proteger al procesador de las altas temperaturas. En nuestro caso, buscamos obtener la mejor relación entre la frecuencia del reloj, voltaje y temperatura. Es necesario aclarar que no en todos los procesadores se puede elevar la frecuencia de reloj más allá de los 2.0 GHz. Esto se debe principalmente a que cuando se fabrican los procesadores, el silicio puede tener algunas imperfecciones, las cuales afectan directamente la velocidad del reloj. Tras un serie de pruebas, hemos observado que todos los Raspberry Pi 4 pueden alcanzar 2.0 GHz sin aumento drástico de temperatura (utilizando disipadores), y sólo algunos pudieron alcanzar los 2.14 GHz sin fallas por parte del sistema operativo. Por lo tanto, podemos hacer un overclock al procesador y llevarlo de manera segura hasta los 2.0 GHz.&lt;/p&gt;
+&lt;p&gt;Para poder realizar overclock, encendemos nuestro dispositivo y editamos el archivo config.txt. Es necesario contar con privilegios de super usuario para esto. Entonces tecleamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo nano /boot/config.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ahora, dentro del editor de texto tendremos que buscar la sección marcada como [pi4], bajo la cual están los ajustes específicos para este modelo de Raspberry Pi. Esto es muy bueno porque significa que si utilizáis la misma tarjeta SD con el sistema operativo en otra Raspberry Pi de generación anterior, no se aplicarán los parámetros de overclock.&lt;/p&gt;
+&lt;p&gt;Hay que ir al final del bloque de ajustes bajo [pi4] y añadir las siguientes líneas:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;over_voltage=6
+arm_freq=2000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El primer ajuste, &amp;ldquo;over_voltage=6&amp;rdquo;, incrementa el voltaje de funcionamiento en aproximadamente 0.15V. Esto es necesario ya que la mayoría de Raspberry Pi 4 no arrancarán a 2.0 GHz sin este extra. Más tarde, si se quiere, se puede cambiar el valor 4 por un 2, lo que supondría un incremento de voltaje de 0.05V para reducir el calor generado, pero no hay garantías de que funcione correctamente.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Es altamente recomendable no poner más de 6 al valor de over_voltage, ya que podría ser peligroso para la integridad del procesador.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Si la pantalla se queda en blanco o el dispositivo comienza un ciclo infinito de reinicios, tendríamos que meter la tarjeta SD en otro equipo y volver a editar el fichero fichero config.txt y esta vez edita el parámetro arm_freq, reduciendo su valor de 50 en 50 MHz. Si tienes que hacer esto, significa que tu procesador no es candidato a hacer overclock. En este caso sería mejor establecer una frecuencia de reloj de referencia para todos los nodos, por ejemplo 1800 (1.8 GHz).
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;El segundo ajuste, &amp;ldquo;arm_freq=2000&amp;rdquo;, establece la frecuencia de funcionamiento de los cuatro cores ARM a 2.0 GHz. Te recomendamos no elevar más este valor, ya que este es el máximo establecido por el firmware (que, por cierto, hasta hace poco era 1.75 GHz).&lt;/p&gt;
+&lt;p&gt;Una vez que añadimos estas líneas pulsamos ++ctrl+o++ y ponemos ++enter++, después tecleamos ++ctrl+x++.&lt;/p&gt;
+&lt;p&gt;El siguiente paso, muy importante antes de reiniciar, es actualizar a la última versión del firmware, la que nos asegura que será compatible con la velocidad de 2.0 GHz. Para ello, hay que introducir el siguiente comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo rpi-update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto cargará el actualizador de Raspberry Pi, que se encargará de manera automática de actualizar el firmware a la última versión. Cuando termine, reiniciamos el sistema con el comando&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo reboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cuando vuelva a iniciar, podemos hacer un seguimiento de la frecuancia del reloj con el comando&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;watch -n 1 vcgencmd measure_clock arm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y listo, hemos configurado nuestro dispositivo para obtener velocidades más altas de procesamiento.&lt;/p&gt;
+&lt;h2 id=&#34;configurando-los-demás-nodos&#34;&gt;Configurando los demás nodos&lt;/h2&gt;
+&lt;h3 id=&#34;configuración-inicial-1&#34;&gt;Configuración inicial&lt;/h3&gt;
+&lt;p&gt;Para cada uno de los nodos, cambiamos el &lt;a href=&#34;#cambiando-el-hostname-y-contrasena&#34;&gt;hostname&lt;/a&gt; por nodox y cambiamos la frecuencia del procesador como lo vimos en la sección &lt;a href=&#34;#cpu-overclock&#34;&gt;overclock&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Es recomendable ir conectando y configurando un raspberry a la vez para no tener conflicto con las direcciones ip.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    La contraseña debe ser la misma para cada nodo que conectemos. Esto es para facilitar su manejo.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;instalando-los-paquetes&#34;&gt;Instalando los paquetes&lt;/h3&gt;
+&lt;p&gt;Para instalar los paquetes necesarios, podemos iniciar sesión en cada nodo de la siguiente manera:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh pi@192.168.0.xx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;e instalarlos como lo vimos &lt;a href=&#34;#instalando-los-paquetes-necesarios&#34;&gt;anteriormente&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Otra manera de instalarlos es utilizar el paquete fabric en python. Para ello, lo instalamos en el nodo maestro de la siguiente manera&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt install fabric
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Una vez instalado, creamos un archivo llamado fabfile.py y escribimos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from fabric.api import *
+
+env.hosts = [
+    &#39;pi@192.168.0.27&#39;,
+    &#39;pi@192.168.0.28&#39;,
+    &#39;pi@192.168.0.29&#39;,
+]
+
+env.password = &#39;tupassword&#39;
+
+@parallel
+def cmd(command):
+    sudo(command)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;En el comando &lt;code&gt;env.hosts&lt;/code&gt; ponemos la dirección de cada uno de los nodos. Para este ejemplo, estamos utilizando un maestro y tres nodos de computación. Los nodos los hemos configurado para que sigan una secuencia de direcciones ip, pero puede ser cualquier orden de ip&amp;rsquo;s.&lt;/p&gt;
+&lt;p&gt;La forma en que instalamos los paquetes es la siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;fab cmd:&amp;quot;apt-get install -y update&amp;quot;
+fab cmd:&amp;quot;apt-get install -y build-essential&amp;quot;
+fab cmd:&amp;quot;apt-get install -y manpages-dev&amp;quot;
+fab cmd:&amp;quot;apt-get install -y gfortran&amp;quot;
+fab cmd:&amp;quot;apt-get install -y nfs-common&amp;quot;
+fab cmd:&amp;quot;apt-get install -y nfs-kernel-server&amp;quot;
+fab cmd:&amp;quot;apt-get install -y emacs&amp;quot;
+fab cmd:&amp;quot;apt-get install -y openmpi-bin&amp;quot;
+fab cmd:&amp;quot;apt-get install -y libopenmpi-dev&amp;quot;
+fab cmd:&amp;quot;apt-get install -y openmpi-doc&amp;quot;
+fab cmd:&amp;quot;apt-get install -y keychain&amp;quot;
+fab cmd:&amp;quot;apt-get install -y nmap&amp;quot;
+fab cmd:&amp;quot;apt-get install -y htop&amp;quot;
+fab cmd:&amp;quot;apt-get install -y git&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-success&#34;&gt;
+  &lt;div&gt;
+    Hemos terminado la segunda parte de nuestro proceso. En esta parte, hemos configurado el master y los nodos con la paquetería necesaria. Ahora, nuestro objetivo será que se comuniquen entre ellos y que trabajen coordinadamente.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configuranción de los nodos</title>
+      <link>https://ftapia.dev/es/raspberry/configuracion/nodos/</link>
+      <pubDate>Thu, 31 Dec 2020 03:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/raspberry/configuracion/nodos/</guid>
+      <description>&lt;h1 id=&#34;creando-un-usuario-común&#34;&gt;Creando un usuario común&lt;/h1&gt;
+&lt;p&gt;Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.&lt;/p&gt;
+&lt;h2 id=&#34;agregar-un-nuevo-usuario&#34;&gt;Agregar un nuevo usuario&lt;/h2&gt;
+&lt;p&gt;Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /home
+sudo useradd -m -u 1960 alpha
+ls -la /home
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El parámetro &lt;code&gt;-m&lt;/code&gt; especifica el directorio &lt;code&gt;/home&lt;/code&gt;, &lt;code&gt;-u&lt;/code&gt; es el argumento para un nueevo usuario, 1960 es el ID del usuario y &lt;code&gt;alpha&lt;/code&gt; es el nombre del nuevo usuario. Podemos modificar el nombre por otro. Al teclear ls -la /home aparecerá el nuevo usuario creado junto con &lt;code&gt;pi&lt;/code&gt; y &lt;code&gt;root&lt;/code&gt;.
+El próximo paso, es crear un contraseña para este usuario. Teclamos entonces&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo passwd alpha
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;e introduciomos la contraseña.
+Para verfificar que sea ha creado correctamente el usuario y que todo está en orden, vamos a iniciar sesión con el nuevo usuario coon el siguiente comando&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su - alpha
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;introducimos la contraseña y estamos dentro del usuario.  Si tecleamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;regresamos al usuario &lt;code&gt;pi&lt;/code&gt;. Ahora nos conectaremos mediante &lt;em&gt;ssh&lt;/em&gt; al nodox y repetimos los pasos anteriores. Podemos acceder mediante&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh nodox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y ponemos la contraseña del nodo.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Es bueno utilizar la misma contraseña para todos los nodos.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;generar-el-id-key&#34;&gt;Generar el ID key&lt;/h2&gt;
+&lt;p&gt;Ahora que ya configuramos el usuario en común, el nodox va a correr todos los programas MPI. Vamos a generar un llave especial que permitirá conectarnos mediante &lt;em&gt;ssh&lt;/em&gt; sin contraseña de un nodo a otro, o del nodo maestro a un nodo las veces que lo necesitemos. Para hacer esto nos situamos en el nodo maestro y después, nos conectamos al usuario &lt;em&gt;alpha&lt;/em&gt; mediante&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su - alpha
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y una vez adentro, teclamos los siguiente&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-keygen -t rsa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;en donde &lt;code&gt;-t&lt;/code&gt; es el argumento y &lt;code&gt;rsa&lt;/code&gt; es el tipo de encriptación. Para generar la clave necesitamos ingresar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;El nombre del archivo donde vamos a guardar la clave&lt;/li&gt;
+&lt;li&gt;Ingresar la &lt;em&gt;passphrase&lt;/em&gt; (escogeremos la frase de nuestra elección)&lt;/li&gt;
+&lt;li&gt;Reingresamos la &lt;em&gt;passphrase&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;y tendremos que ver una imagen como la siguiente&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;+--[ RSA 2048]----+
+|       o=.       |
+|    o  o++E      |
+|   + . Ooo.      |
+|    + O B..      |
+|     = *S.       |
+|      o          |
+|                 |
+|                 |
+|                 |
++-----------------+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;copiar-la-clave-a-los-demás-nodos&#34;&gt;Copiar la clave a los demás nodos&lt;/h2&gt;
+&lt;p&gt;Ya que generamos la clave, la vamos a transferir al nodox con el siguiente comando&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-copy-id alpha@nodox; alpha
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y teclamos el &lt;em&gt;passphrase&lt;/em&gt;. Para verificar que se tranfirió bien la clave, nos conectaremos al nodo de la siguiente manera&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh nodox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;e introducimos el &lt;em&gt;passphrase&lt;/em&gt; nuevamente e ingresaremos al nodox. Ahora regresamos al nodo maestro mediante &lt;code&gt;exit&lt;/code&gt; y listamos los archivos en el usuario alpha utilizando &lt;code&gt;ls -la&lt;/code&gt;. Indentificamos la carpeta &lt;code&gt;.ssh&lt;/code&gt; y vemos lo que está adentro con &lt;code&gt;ls -la .ssh&lt;/code&gt;. Ahí vamos a ver estos tres archivos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;id_rsa&lt;/li&gt;
+&lt;li&gt;id_rsa.pub&lt;/li&gt;
+&lt;li&gt;known_hosts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si nos intentamos conectar nuevamente al nodox, nos va a solicitar la &lt;em&gt;passphrase&lt;/em&gt;. Esto no es lo que estamos buscando, por lo que aún debemos realizar algunos cambios en nuestro nodo maestro. Regresamos al nodo maestro mediante &lt;code&gt;exit&lt;/code&gt; o cerrando la ventana de la terminal y conectandonos al modo maestro. Nos percatamos que nos encontramos en el usurio &lt;code&gt;alpha&lt;/code&gt;, si no es así ingresamos mediante &lt;code&gt;su - alpha&lt;/code&gt;. Vamos a editar el archivo llamado &lt;code&gt;.bashrc&lt;/code&gt; dentro de nuestro directorio de inicio. Abrimos el archivo con nuestro editor favorito, puede ser emacs, vim, nano o pico. Nano viene instalado por defecto, entonces lo utilizaremos en esta guía. Entonces teclamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nano .bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;nos vamos hasta el final del archivo y agregamos el siguiente texto&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#Logic for keychain
+/usr/bin/keychain $HOME/.ssh/id_rsa
+source $HOME/.keychain/$HOSTNAME-sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y tecleamos &lt;code&gt;ctrl + o&lt;/code&gt; para guardar y &lt;code&gt;ctrl + x&lt;/code&gt; para salir. Entonces recompilamos el archivo &lt;code&gt;.bashrc&lt;/code&gt; mediante&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;source .bashrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;volvemos a ingresar el &lt;em&gt;passphrase&lt;/em&gt;. Ahora nos volvemos a conectar al nodox con&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh nodox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y ¡listo!, nos hemos conectado al nodox. Vamos a repetir este proceso para cada nodo del clúster.&lt;/p&gt;
+&lt;h2 id=&#34;creando-una-carpeta-compartida&#34;&gt;Creando una carpeta compartida&lt;/h2&gt;
+&lt;p&gt;Para que los datos puedan ser accesibles para todos los nodos, es necesario crear un repositorio. Vamos a montarlo en el nodo maestro de la siguiente manera. Primero, vamos a crear la carpeta que va a ser compartida.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo mkdir /beta
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;en este caso la montanmos en el directorio raíz &lt;code&gt;/&lt;/code&gt; y la llamaremos beta. Le cederemos la propiedad al usuario &lt;code&gt;alpha&lt;/code&gt;, ya que es el usuario común. Entonces tecleamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo chown alpha:alpha /beta/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;el directorio &lt;code&gt;/beta&lt;/code&gt; ahora puede ser accedido por el usuario y grupo &lt;code&gt;alpha&lt;/code&gt;. El siguiente paso es modificar el servicio &lt;code&gt;rpcbind&lt;/code&gt; para poder exportar el directorio a los demás nodos. tecleamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo rpcbind start
+sudo update-rc.d rpcbind enable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;la segunda línea es para especificar que el servicio se ejecute cada vez que se inicia el sistema. Tenemos ahora que especificar que directorio en el nodo maestro va a estar disponible para ser montado por los demás nodos. Para ellos vamos a modificar el archivo &lt;code&gt;exports&lt;/code&gt; abriendolo con &lt;code&gt;sudo emacs /etc/exports&lt;/code&gt; ya añadiendo al final del archivo la siguiente línea&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#beta
+/beta 192.168.0.0/24(rw,sync)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Salvamos con &lt;code&gt;ctrl+x+ctrl+s&lt;/code&gt; y salimos con &lt;code&gt;ctrl+x+ctrl+c&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En este caso &lt;code&gt;/beta&lt;/code&gt;es la carpeta en el nodo maestro que vamos a exportar. &lt;code&gt;192.168.0.0/24&lt;/code&gt; significa que las direcciones IP pueden en un rango entre &lt;code&gt;192.168.0.0&lt;/code&gt; y &lt;code&gt;192.168.0.255&lt;/code&gt; pueden montar el directorio &lt;code&gt;/beta&lt;/code&gt;. &lt;code&gt;rw&lt;/code&gt; significa que se puede leer y escribir en ella. Para que tenga efecto el cambio que realizamos, necesitamos reiniciar el servicio &lt;code&gt;nfs-kernel-server&lt;/code&gt;con &lt;code&gt;sudo service nfs-kernel-server restart&lt;/code&gt;. Se puede automatizar este proceso cada vez que inicie el sistema. Para ello necesitamos mofdificar el archivo &lt;code&gt;sudo emacs /etc/rc.local&lt;/code&gt; y poner en la penúltima línea, antes de &lt;code&gt;exit 0&lt;/code&gt; lo sigueinte&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo service nfs-kernel-server restart
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;guardamos y cerramos el archivo. Vamos a hacer un test. Nos conectamos al nodox con &lt;code&gt;ssh nodox&lt;/code&gt; y una vez dentro, teclamos los siguiente&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo mkdir /beta
+sudo chown alpha:alpha /beta
+sudo mount master:/beta /beta
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;hemos creado un directorio llamado &lt;code&gt;\beta&lt;/code&gt; que ahora le pertenece al usuario y al grupo &lt;code&gt;alpha&lt;/code&gt;. Después, le indicamos que monte el directorio &lt;code&gt;/beta&lt;/code&gt; del &lt;code&gt;master&lt;/code&gt; en &lt;code&gt;/beta&lt;/code&gt;. Para probar que todo ha sido ejecutado de manera correcta, vamos a cambiar al usuario &lt;code&gt;alpha&lt;/code&gt; con &lt;code&gt;su - alpha&lt;/code&gt;. Para ver los directorio que se encuentran en la carpeta raíz hacemos &lt;code&gt;la -la /&lt;/code&gt; y debe aparecer &lt;code&gt;/beta&lt;/code&gt;, nos cambiamos a ese directorio con &lt;code&gt;cd /beta&lt;/code&gt; y creamos un archivo &lt;code&gt;echo &amp;quot;Hola mundo&amp;quot; -&amp;gt; hola.txt&lt;/code&gt;. Regresamos al usuario &lt;code&gt;pi&lt;/code&gt;con &lt;code&gt;exit&lt;/code&gt; y ahora nos conectamos de vuelta al nodo maestro &lt;code&gt;ssh master&lt;/code&gt;. Una vez en el nodo maestro podemos ver si el archivo se ha guardado en el directorio compartido con &lt;code&gt;ls -la /beta&lt;/code&gt;. Ahí debe aparecer el archivo &lt;code&gt;hola.txt&lt;/code&gt;y si hacemos &lt;code&gt;cat /beta/hola.txt&lt;/code&gt; nos debe aparecer la frase &lt;code&gt;Hola mundo&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-success&#34;&gt;
+  &lt;div&gt;
+    Hemos configuirado nuestro clúster de manera correcta. En la siguiente sección, vamos a hacer algunas pruebas.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--- &lt;iframe src=&#34;https://drive.google.com/file/d/107aUt0Pp2Ud-JUl-VkmFnw0Lq4iv0ALH/preview&#34; width=&#34;640&#34; height=&#34;480&#34; aling=&#34;center&#34;&gt;&lt;/iframe&gt;  ---&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

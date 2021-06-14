@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ftapia.dev</title>
+    <link>https://ftapia.dev/es/</link>
+      <atom:link href="https://ftapia.dev/es/index.xml" rel="self" type="application/rss+xml" />
+    <description>ftapia.dev</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-mx</language><copyright>© ftapia 2021</copyright><lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>ftapia.dev</title>
+      <link>https://ftapia.dev/es/</link>
+    </image>
+    
+    <item>
+      <title>Evaluación inicial</title>
+      <link>https://ftapia.dev/es/geoestadistica/evaluacion-inicial/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/geoestadistica/evaluacion-inicial/</guid>
+      <description>&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://drive.google.com/file/d/1gHBQAbpW9ysxYT7qrWiCdXDVjBwAOgcN/preview&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;respuestas-al-ejercicio&#34;&gt;Respuestas al ejercicio&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ejercicio: Dentro de una bolsa se encuentran 20 monedas, 8 de ellas son de $5, el resto son de distintas denominaciones.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;pregunta-1&#34;&gt;Pregunta 1&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Calcula la probabilidad de sacar una moneda de $5 de la bolsa&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ P($5)=\frac{8}{20}=\frac{2}{5}=0.4 $$&lt;/p&gt;
+&lt;h3 id=&#34;pregunta-2&#34;&gt;Pregunta 2&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Calcula la probabilidad de conseguir al menos una moneda de $5 al sacar dos monedas de la bolsa.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;forma-1&#34;&gt;Forma 1&lt;/h4&gt;
+&lt;p&gt;P(al menos una moneda $5)=P($5 y otra denominación)+P(otra denominación y $5)+P($5 y $5)&lt;/p&gt;
+&lt;p&gt;$$ P(x\geq1)=\frac{8}{20}.\frac{12}{19}+\frac{12}{20}.\frac{8}{19}+\frac{8}{20}.\frac{7}{19}=\frac{24}{95}+\frac{24}{95}+\frac{14}{95}=\frac{62}{95}=0.65 $$&lt;/p&gt;
+&lt;h4 id=&#34;forma-2&#34;&gt;Forma 2&lt;/h4&gt;
+&lt;p&gt;P(al menos una moneda 5) = 1 - P(no salga ninguna moneda de $5)&lt;/p&gt;
+&lt;p&gt;$$ P(x\geq1)=1-P(x=0)=1-\frac{12}{20}.\frac{11}{19}=1-\frac{33}{95}=\frac{62}{95}=0.65 $$&lt;/p&gt;
+&lt;h3 id=&#34;pregunta-3&#34;&gt;Pregunta 3&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Calcula la probabilidad de conseguir al menos una moneda de $5 al sacar tres monedas de la bolsa.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ P(x\geq1)=1-P(x=0)=1-\frac{12}{20}.\frac{11}{19}.\frac{10}{18}=1-\frac{11}{57}=\frac{46}{57}=0.8 $$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en Windows</title>
+      <link>https://ftapia.dev/es/docker/instalacion/windows/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/docker/instalacion/windows/</guid>
+      <description>&lt;p&gt;Ahora que sabemos lo que es docker, vamos a instalarlo en nuestra computadora. Antes de instalarlo, es recomendable actualizar nuestro Windows a la versión más actual.&lt;/p&gt;
+&lt;p&gt;Opcionalmente, podemos instalar algunos programas que nos ayudarán a tner una mejor experiencia de uso. Si ya tienes instalados estos programas, puedes dirigirte a la sección &amp;ndash;.&lt;/p&gt;
+&lt;h2 id=&#34;instalación-de-software-esencial&#34;&gt;Instalación de software esencial&lt;/h2&gt;
+&lt;h3 id=&#34;la-terminal-de-windows&#34;&gt;La terminal de Windows&lt;/h3&gt;
+&lt;p&gt;Para poder interactuar con docker, es necesario tener instalado una terminal. Podemos utilizar la terminal que por defecto tiene Windows, pero es altamente recomendable instalar la nueva versión. Para obtenerla, sólo tenemos que ir a la Microsoft Store y buscar &amp;ldquo;Windows terminal&amp;rdquo;. Y descargamos la primer aplicación. A continuación, te muestro como hacerlo desde Windows 10.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MFwPGXUnD60&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
+&lt;p&gt;Para trabajar con proyectos open source, es bastante recomendable trabajar con un control de versiones. Git es un software diseñado por Linus Torvalds para este fin. Puede que te preguntes, ¿qué es un control de versiones? Bueno, podemos definirlo como una gestión de los diversos cambios que se realizan sobre los elementos de algún producto o configuración. Una versión, revisión o edición de un producto, es el estado en el que se encuentra el mismo en un momento dado de su desarrollo o modificación. Aunque un sistema de control de versiones puede realizarse de forma manual, es mejor disponer de herramientas que faciliten esta gestión dando lugar a los llamados sistemas de control de versiones o VCS (del inglés Version Control System). Estos sistemas facilitan la administración de las distintas versiones de cada producto desarrollado, así como las posibles especializaciones realizadas (por ejemplo, para algún cliente específico). Sii te interesa conocer más a detalle como funciona el control de versiones, puedes visitar este &lt;a href=&#34;https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;En el siguiente videos te muestro cómo puedes descargar git en Windows 10.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jyTEZOVTP4Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Para comprobar que está activo git, puedes seguir los pasos del siguiente video.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zJeUsW3m5k0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;xming&#34;&gt;Xming&lt;/h3&gt;
+&lt;p&gt;Para poder desplegar aplicaciones gráficas desde un contenerdor docker, es necesario contar con un servidor gráfico. Pero, ¿qué es un servidor gráfico? Un servidor gráfico o servidor de ventanas es un programa cuya tarea principal es coordinar la entrada y la salida de sus clientes hacia y desde el resto del sistema operativo, el hardware, y otros. El servidor gráfico se comunica con sus clientes con el protocolo de servidor gráfico. Un protocolo de comunicaciones que puede ser transparente a la red o simplemente con capacidad para usar la red&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Actualmente existe varios servidores gráficos, pero son dos los más populares, X11 (X.Org) y Wayland. En el siguiente video, te explico como instalar X11 en Windows 10.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/c0AaSZkC4Z4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;activar-hyper-v&#34;&gt;Activar Hyper-V&lt;/h3&gt;
+&lt;p&gt;Para poder asignar recursos computacionales, es necesario hacer una virtualización. Windows ofrece una herramienta llamada Hyper-V. Para poder ejecutar docker correctamente, es necesario instalarla. En el siguiente video te muestro como hacerlo.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Tex926ZukcY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;instalar-wsl2&#34;&gt;Instalar WSL2&lt;/h3&gt;
+&lt;p&gt;Otra herramienta indipensable para poder ejecutar docker es Windows Subsystem for Linux (WSL). WSL, permiite ejecutar un amboiente GNU/Linux directamente en Windows, sin necesidad de instlar una máquina virtual tradicional como VM o un hacer un dual boot. En este video te muestro como instalar WSL2. Si quieres saber más, puedes ir a este &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/about&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/24_RgbhYcvs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;instalando-docker&#34;&gt;Instalando Docker&lt;/h2&gt;
+&lt;p&gt;Finalmente, procederemos a instlar docker. A continuación te explico los pasos a seguir.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wOqxqhwPDFU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;verificando-la-instalación-de-docker&#34;&gt;Verificando la instalación de docker&lt;/h3&gt;
+&lt;p&gt;Vamos a verificar que la instalación de docker está bien. Para ello vamos a ejecutar la imagen de bienvenida a docker como se muestra en el video.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LGt3ABDEel8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Artículo de Wikipedia &lt;a href=&#34;https://es.wikipedia.org/wiki/Servidor_gr%C3%A1fico&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configuración inicial</title>
+      <link>https://ftapia.dev/es/raspberry/configuracion/inicial/</link>
+      <pubDate>Thu, 31 Dec 2020 03:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/raspberry/configuracion/inicial/</guid>
+      <description>&lt;h1 id=&#34;configuración-inicial&#34;&gt;Configuración inicial&lt;/h1&gt;
+&lt;p&gt;Para la priumer parte, necesitamos instalar el sistema operatico en los nodos y en el nodo maestro. Pra ello ingresaremos a &lt;a href=&#34;https://www.raspberrypi.org/software/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.raspberrypi.org/software/&lt;/a&gt; y descargamos Raspberry Pi Imager para nuestro OS y así, poder copiar el sistema operativo en la tarjeta micro SD. Hay que seguir los pasos que se especifican en el siguiente video.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/J024soVgEeM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la volvemos a conectar. Debemos seguir las siguientes instrucciones.&lt;/p&gt;
+&lt;p&gt;Linux (Ubuntu)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Abrimos una terminal ++ctrl+alt+t++ y tecleamos lo siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /mnt/boot
+touch ssh
+exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después de eso, desmontamos la memoria SD de la computadora.&lt;/p&gt;
+&lt;p&gt;MacOS&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Abrimos una terminal y tecleamos lo siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /Volumes/boot/
+touch ssh
+exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después de eso, desmontamos la memoria SD de la computadora.&lt;/p&gt;
+&lt;h2 id=&#34;configurando-el-nodo-maestro&#34;&gt;Configurando el nodo maestro&lt;/h2&gt;
+&lt;p&gt;Una vez que completamos el paso anterior, colacamos la memoria SD en el el slot de la placa, conectamos el eliminador de corriente y el cable ethernet tanto en la placa como en el switch.
+Esperamos un par de minutos mientras se inicia el sistema operativo y abrimos la terminal de nuestro sistema operativo y tecleamos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh pi@192.168.0.xx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;la contraseña es raspberry. Una vez que nos permite logearnos, veremos algo como esto&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt; The programs included with the Debian GNU/Linux system are free software;
+ the exact distribution terms for each program are described in the
+ individual files in /usr/share/doc/*/copyright.
+
+ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+ permitted by applicable law.
+ Last login: Tue Dec 22 23:34:38 2020 from 192.168.0.xx
+
+ Wi-Fi is currently blocked by rfkill.
+ Use raspi-config to set the country before use.
+
+ pi@raspberrypi:~ $ 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Para obtener la ip de tu Raspberry, la conectamos al switch y después al router. Entramos a la página de gestión de nuestro router, generalmente la dirección del router es 192.168.0.1 la contraseña en la mayoría de los casos, se encuentra en el router. Una vez que nos logeamos, buscamos los dispotivos activos en nuestra red. Nuestro nodo maestro aparecerá como raspberry.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;y vamos a seguir el siguiente tutotrial.&lt;/p&gt;
+&lt;h3 id=&#34;cambiando-el-hostname-y-contraseña&#34;&gt;Cambiando el hostname y contraseña&lt;/h3&gt;
+&lt;p&gt;El nombre del hostname será &amp;ldquo;master&amp;rdquo;, pero podemos usar este tutorial para todos los nodos.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0mPOSlQ3gxo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;instalando-los-paquetes-necesarios&#34;&gt;Instalando los paquetes necesarios&lt;/h3&gt;
+&lt;p&gt;Cuando reiniciamos la Raspberry Pi 4, vamos a actualizar los paquetes e instalar otro. Primero vamos actualizarlos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después vamos a instalar los paquetes necesarios para la mayoría de pruebas que vamos a realizar.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install build-essential
+sudo apt-get install manpages-dev
+sudo apt-get install gfortran
+sudo apt-get install nfs-common
+sudo apt-get install nfs-kernel-server
+sudo apt-get install emacs
+sudo apt-get install openmpi-bin
+sudo apt-get install libopenmpi-dev
+sudo apt-get install openmpi-doc
+sudo apt-get install keychain
+sudo apt-get install nmap
+sudo apt-get install htop
+sudo apt-get install git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;cpu-overclock&#34;&gt;CPU (overclock)&lt;/h3&gt;
+&lt;p&gt;La CPU del Raspeberry Pi 4 está basada en un arquitectura ARM. Cuenta con un procesador quad-core Cortex-A72 de 64 bits. Por defecto, tiene una frecuencia de reloj de 1.5GHz para proteger al procesador de las altas temperaturas. En nuestro caso, buscamos obtener la mejor relación entre la frecuencia del reloj, voltaje y temperatura. Es necesario aclarar que no en todos los procesadores se puede elevar la frecuencia de reloj más allá de los 2.0 GHz. Esto se debe principalmente a que cuando se fabrican los procesadores, el silicio puede tener algunas imperfecciones, las cuales afectan directamente la velocidad del reloj. Tras un serie de pruebas, hemos observado que todos los Raspberry Pi 4 pueden alcanzar 2.0 GHz sin aumento drástico de temperatura (utilizando disipadores), y sólo algunos pudieron alcanzar los 2.14 GHz sin fallas por parte del sistema operativo. Por lo tanto, podemos hacer un overclock al procesador y llevarlo de manera segura hasta los 2.0 GHz.&lt;/p&gt;
+&lt;p&gt;Para poder realizar overclock, encendemos nuestro dispositivo y editamos el archivo config.txt. Es necesario contar con privilegios de super usuario para esto. Entonces tecleamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo nano /boot/config.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ahora, dentro del editor de texto tendremos que buscar la sección marcada como [pi4], bajo la cual están los ajustes específicos para este modelo de Raspberry Pi. Esto es muy bueno porque significa que si utilizáis la misma tarjeta SD con el sistema operativo en otra Raspberry Pi de generación anterior, no se aplicarán los parámetros de overclock.&lt;/p&gt;
+&lt;p&gt;Hay que ir al final del bloque de ajustes bajo [pi4] y añadir las siguientes líneas:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;over_voltage=6
+arm_freq=2000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El primer ajuste, &amp;ldquo;over_voltage=6&amp;rdquo;, incrementa el voltaje de funcionamiento en aproximadamente 0.15V. Esto es necesario ya que la mayoría de Raspberry Pi 4 no arrancarán a 2.0 GHz sin este extra. Más tarde, si se quiere, se puede cambiar el valor 4 por un 2, lo que supondría un incremento de voltaje de 0.05V para reducir el calor generado, pero no hay garantías de que funcione correctamente.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Es altamente recomendable no poner más de 6 al valor de over_voltage, ya que podría ser peligroso para la integridad del procesador.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Si la pantalla se queda en blanco o el dispositivo comienza un ciclo infinito de reinicios, tendríamos que meter la tarjeta SD en otro equipo y volver a editar el fichero fichero config.txt y esta vez edita el parámetro arm_freq, reduciendo su valor de 50 en 50 MHz. Si tienes que hacer esto, significa que tu procesador no es candidato a hacer overclock. En este caso sería mejor establecer una frecuencia de reloj de referencia para todos los nodos, por ejemplo 1800 (1.8 GHz).
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;El segundo ajuste, &amp;ldquo;arm_freq=2000&amp;rdquo;, establece la frecuencia de funcionamiento de los cuatro cores ARM a 2.0 GHz. Te recomendamos no elevar más este valor, ya que este es el máximo establecido por el firmware (que, por cierto, hasta hace poco era 1.75 GHz).&lt;/p&gt;
+&lt;p&gt;Una vez que añadimos estas líneas pulsamos ++ctrl+o++ y ponemos ++enter++, después tecleamos ++ctrl+x++.&lt;/p&gt;
+&lt;p&gt;El siguiente paso, muy importante antes de reiniciar, es actualizar a la última versión del firmware, la que nos asegura que será compatible con la velocidad de 2.0 GHz. Para ello, hay que introducir el siguiente comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo rpi-update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto cargará el actualizador de Raspberry Pi, que se encargará de manera automática de actualizar el firmware a la última versión. Cuando termine, reiniciamos el sistema con el comando&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo reboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cuando vuelva a iniciar, podemos hacer un seguimiento de la frecuancia del reloj con el comando&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;watch -n 1 vcgencmd measure_clock arm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y listo, hemos configurado nuestro dispositivo para obtener velocidades más altas de procesamiento.&lt;/p&gt;
+&lt;h2 id=&#34;configurando-los-demás-nodos&#34;&gt;Configurando los demás nodos&lt;/h2&gt;
+&lt;h3 id=&#34;configuración-inicial-1&#34;&gt;Configuración inicial&lt;/h3&gt;
+&lt;p&gt;Para cada uno de los nodos, cambiamos el &lt;a href=&#34;#cambiando-el-hostname-y-contrasena&#34;&gt;hostname&lt;/a&gt; por nodox y cambiamos la frecuencia del procesador como lo vimos en la sección &lt;a href=&#34;#cpu-overclock&#34;&gt;overclock&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Es recomendable ir conectando y configurando un raspberry a la vez para no tener conflicto con las direcciones ip.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    La contraseña debe ser la misma para cada nodo que conectemos. Esto es para facilitar su manejo.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;instalando-los-paquetes&#34;&gt;Instalando los paquetes&lt;/h3&gt;
+&lt;p&gt;Para instalar los paquetes necesarios, podemos iniciar sesión en cada nodo de la siguiente manera:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh pi@192.168.0.xx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;e instalarlos como lo vimos &lt;a href=&#34;#instalando-los-paquetes-necesarios&#34;&gt;anteriormente&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Otra manera de instalarlos es utilizar el paquete fabric en python. Para ello, lo instalamos en el nodo maestro de la siguiente manera&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt install fabric
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Una vez instalado, creamos un archivo llamado fabfile.py y escribimos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from fabric.api import *
+
+env.hosts = [
+    &#39;pi@192.168.0.27&#39;,
+    &#39;pi@192.168.0.28&#39;,
+    &#39;pi@192.168.0.29&#39;,
+]
+
+env.password = &#39;tupassword&#39;
+
+@parallel
+def cmd(command):
+    sudo(command)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;En el comando &lt;code&gt;env.hosts&lt;/code&gt; ponemos la dirección de cada uno de los nodos. Para este ejemplo, estamos utilizando un maestro y tres nodos de computación. Los nodos los hemos configurado para que sigan una secuencia de direcciones ip, pero puede ser cualquier orden de ip&amp;rsquo;s.&lt;/p&gt;
+&lt;p&gt;La forma en que instalamos los paquetes es la siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;fab cmd:&amp;quot;apt-get install -y update&amp;quot;
+fab cmd:&amp;quot;apt-get install -y build-essential&amp;quot;
+fab cmd:&amp;quot;apt-get install -y manpages-dev&amp;quot;
+fab cmd:&amp;quot;apt-get install -y gfortran&amp;quot;
+fab cmd:&amp;quot;apt-get install -y nfs-common&amp;quot;
+fab cmd:&amp;quot;apt-get install -y nfs-kernel-server&amp;quot;
+fab cmd:&amp;quot;apt-get install -y emacs&amp;quot;
+fab cmd:&amp;quot;apt-get install -y openmpi-bin&amp;quot;
+fab cmd:&amp;quot;apt-get install -y libopenmpi-dev&amp;quot;
+fab cmd:&amp;quot;apt-get install -y openmpi-doc&amp;quot;
+fab cmd:&amp;quot;apt-get install -y keychain&amp;quot;
+fab cmd:&amp;quot;apt-get install -y nmap&amp;quot;
+fab cmd:&amp;quot;apt-get install -y htop&amp;quot;
+fab cmd:&amp;quot;apt-get install -y git&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-success&#34;&gt;
+  &lt;div&gt;
+    Hemos terminado la segunda parte de nuestro proceso. En esta parte, hemos configurado el master y los nodos con la paquetería necesaria. Ahora, nuestro objetivo será que se comuniquen entre ellos y que trabajen coordinadamente.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en MacOS</title>
+      <link>https://ftapia.dev/es/docker/instalacion/macos/</link>
+      <pubDate>Thu, 31 Dec 2020 01:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/docker/instalacion/macos/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mBqRedDMwHY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Configuranción de los nodos</title>
+      <link>https://ftapia.dev/es/raspberry/configuracion/nodos/</link>
+      <pubDate>Thu, 31 Dec 2020 03:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/raspberry/configuracion/nodos/</guid>
+      <description>&lt;h1 id=&#34;creando-un-usuario-común&#34;&gt;Creando un usuario común&lt;/h1&gt;
+&lt;p&gt;Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.&lt;/p&gt;
+&lt;h2 id=&#34;agregar-un-nuevo-usuario&#34;&gt;Agregar un nuevo usuario&lt;/h2&gt;
+&lt;p&gt;Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /home
+sudo useradd -m -u 1960 alpha
+ls -la /home
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El parámetro &lt;code&gt;-m&lt;/code&gt; especifica el directorio &lt;code&gt;/home&lt;/code&gt;, &lt;code&gt;-u&lt;/code&gt; es el argumento para un nueevo usuario, 1960 es el ID del usuario y &lt;code&gt;alpha&lt;/code&gt; es el nombre del nuevo usuario. Podemos modificar el nombre por otro. Al teclear ls -la /home aparecerá el nuevo usuario creado junto con &lt;code&gt;pi&lt;/code&gt; y &lt;code&gt;root&lt;/code&gt;.
+El próximo paso, es crear un contraseña para este usuario. Teclamos entonces&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo passwd alpha
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;e introduciomos la contraseña.
+Para verfificar que sea ha creado correctamente el usuario y que todo está en orden, vamos a iniciar sesión con el nuevo usuario coon el siguiente comando&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su - alpha
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;introducimos la contraseña y estamos dentro del usuario.  Si tecleamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;regresamos al usuario &lt;code&gt;pi&lt;/code&gt;. Ahora nos conectaremos mediante &lt;em&gt;ssh&lt;/em&gt; al nodox y repetimos los pasos anteriores. Podemos acceder mediante&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh nodox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y ponemos la contraseña del nodo.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Es bueno utilizar la misma contraseña para todos los nodos.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;generar-el-id-key&#34;&gt;Generar el ID key&lt;/h2&gt;
+&lt;p&gt;Ahora que ya configuramos el usuario en común, el nodox va a correr todos los programas MPI. Vamos a generar un llave especial que permitirá conectarnos mediante &lt;em&gt;ssh&lt;/em&gt; sin contraseña de un nodo a otro, o del nodo maestro a un nodo las veces que lo necesitemos. Para hacer esto nos situamos en el nodo maestro y después, nos conectamos al usuario &lt;em&gt;alpha&lt;/em&gt; mediante&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su - alpha
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y una vez adentro, teclamos los siguiente&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-keygen -t rsa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;en donde &lt;code&gt;-t&lt;/code&gt; es el argumento y &lt;code&gt;rsa&lt;/code&gt; es el tipo de encriptación. Para generar la clave necesitamos ingresar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;El nombre del archivo donde vamos a guardar la clave&lt;/li&gt;
+&lt;li&gt;Ingresar la &lt;em&gt;passphrase&lt;/em&gt; (escogeremos la frase de nuestra elección)&lt;/li&gt;
+&lt;li&gt;Reingresamos la &lt;em&gt;passphrase&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;y tendremos que ver una imagen como la siguiente&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;+--[ RSA 2048]----+
+|       o=.       |
+|    o  o++E      |
+|   + . Ooo.      |
+|    + O B..      |
+|     = *S.       |
+|      o          |
+|                 |
+|                 |
+|                 |
++-----------------+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;copiar-la-clave-a-los-demás-nodos&#34;&gt;Copiar la clave a los demás nodos&lt;/h2&gt;
+&lt;p&gt;Ya que generamos la clave, la vamos a transferir al nodox con el siguiente comando&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-copy-id alpha@nodox; alpha
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y teclamos el &lt;em&gt;passphrase&lt;/em&gt;. Para verificar que se tranfirió bien la clave, nos conectaremos al nodo de la siguiente manera&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh nodox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;e introducimos el &lt;em&gt;passphrase&lt;/em&gt; nuevamente e ingresaremos al nodox. Ahora regresamos al nodo maestro mediante &lt;code&gt;exit&lt;/code&gt; y listamos los archivos en el usuario alpha utilizando &lt;code&gt;ls -la&lt;/code&gt;. Indentificamos la carpeta &lt;code&gt;.ssh&lt;/code&gt; y vemos lo que está adentro con &lt;code&gt;ls -la .ssh&lt;/code&gt;. Ahí vamos a ver estos tres archivos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;id_rsa&lt;/li&gt;
+&lt;li&gt;id_rsa.pub&lt;/li&gt;
+&lt;li&gt;known_hosts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si nos intentamos conectar nuevamente al nodox, nos va a solicitar la &lt;em&gt;passphrase&lt;/em&gt;. Esto no es lo que estamos buscando, por lo que aún debemos realizar algunos cambios en nuestro nodo maestro. Regresamos al nodo maestro mediante &lt;code&gt;exit&lt;/code&gt; o cerrando la ventana de la terminal y conectandonos al modo maestro. Nos percatamos que nos encontramos en el usurio &lt;code&gt;alpha&lt;/code&gt;, si no es así ingresamos mediante &lt;code&gt;su - alpha&lt;/code&gt;. Vamos a editar el archivo llamado &lt;code&gt;.bashrc&lt;/code&gt; dentro de nuestro directorio de inicio. Abrimos el archivo con nuestro editor favorito, puede ser emacs, vim, nano o pico. Nano viene instalado por defecto, entonces lo utilizaremos en esta guía. Entonces teclamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nano .bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;nos vamos hasta el final del archivo y agregamos el siguiente texto&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#Logic for keychain
+/usr/bin/keychain $HOME/.ssh/id_rsa
+source $HOME/.keychain/$HOSTNAME-sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y tecleamos &lt;code&gt;ctrl + o&lt;/code&gt; para guardar y &lt;code&gt;ctrl + x&lt;/code&gt; para salir. Entonces recompilamos el archivo &lt;code&gt;.bashrc&lt;/code&gt; mediante&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;source .bashrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;volvemos a ingresar el &lt;em&gt;passphrase&lt;/em&gt;. Ahora nos volvemos a conectar al nodox con&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh nodox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y ¡listo!, nos hemos conectado al nodox. Vamos a repetir este proceso para cada nodo del clúster.&lt;/p&gt;
+&lt;h2 id=&#34;creando-una-carpeta-compartida&#34;&gt;Creando una carpeta compartida&lt;/h2&gt;
+&lt;p&gt;Para que los datos puedan ser accesibles para todos los nodos, es necesario crear un repositorio. Vamos a montarlo en el nodo maestro de la siguiente manera. Primero, vamos a crear la carpeta que va a ser compartida.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo mkdir /beta
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;en este caso la montanmos en el directorio raíz &lt;code&gt;/&lt;/code&gt; y la llamaremos beta. Le cederemos la propiedad al usuario &lt;code&gt;alpha&lt;/code&gt;, ya que es el usuario común. Entonces tecleamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo chown alpha:alpha /beta/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;el directorio &lt;code&gt;/beta&lt;/code&gt; ahora puede ser accedido por el usuario y grupo &lt;code&gt;alpha&lt;/code&gt;. El siguiente paso es modificar el servicio &lt;code&gt;rpcbind&lt;/code&gt; para poder exportar el directorio a los demás nodos. tecleamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo rpcbind start
+sudo update-rc.d rpcbind enable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;la segunda línea es para especificar que el servicio se ejecute cada vez que se inicia el sistema. Tenemos ahora que especificar que directorio en el nodo maestro va a estar disponible para ser montado por los demás nodos. Para ellos vamos a modificar el archivo &lt;code&gt;exports&lt;/code&gt; abriendolo con &lt;code&gt;sudo emacs /etc/exports&lt;/code&gt; ya añadiendo al final del archivo la siguiente línea&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#beta
+/beta 192.168.0.0/24(rw,sync)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Salvamos con &lt;code&gt;ctrl+x+ctrl+s&lt;/code&gt; y salimos con &lt;code&gt;ctrl+x+ctrl+c&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En este caso &lt;code&gt;/beta&lt;/code&gt;es la carpeta en el nodo maestro que vamos a exportar. &lt;code&gt;192.168.0.0/24&lt;/code&gt; significa que las direcciones IP pueden en un rango entre &lt;code&gt;192.168.0.0&lt;/code&gt; y &lt;code&gt;192.168.0.255&lt;/code&gt; pueden montar el directorio &lt;code&gt;/beta&lt;/code&gt;. &lt;code&gt;rw&lt;/code&gt; significa que se puede leer y escribir en ella. Para que tenga efecto el cambio que realizamos, necesitamos reiniciar el servicio &lt;code&gt;nfs-kernel-server&lt;/code&gt;con &lt;code&gt;sudo service nfs-kernel-server restart&lt;/code&gt;. Se puede automatizar este proceso cada vez que inicie el sistema. Para ello necesitamos mofdificar el archivo &lt;code&gt;sudo emacs /etc/rc.local&lt;/code&gt; y poner en la penúltima línea, antes de &lt;code&gt;exit 0&lt;/code&gt; lo sigueinte&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo service nfs-kernel-server restart
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;guardamos y cerramos el archivo. Vamos a hacer un test. Nos conectamos al nodox con &lt;code&gt;ssh nodox&lt;/code&gt; y una vez dentro, teclamos los siguiente&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo mkdir /beta
+sudo chown alpha:alpha /beta
+sudo mount master:/beta /beta
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;hemos creado un directorio llamado &lt;code&gt;\beta&lt;/code&gt; que ahora le pertenece al usuario y al grupo &lt;code&gt;alpha&lt;/code&gt;. Después, le indicamos que monte el directorio &lt;code&gt;/beta&lt;/code&gt; del &lt;code&gt;master&lt;/code&gt; en &lt;code&gt;/beta&lt;/code&gt;. Para probar que todo ha sido ejecutado de manera correcta, vamos a cambiar al usuario &lt;code&gt;alpha&lt;/code&gt; con &lt;code&gt;su - alpha&lt;/code&gt;. Para ver los directorio que se encuentran en la carpeta raíz hacemos &lt;code&gt;la -la /&lt;/code&gt; y debe aparecer &lt;code&gt;/beta&lt;/code&gt;, nos cambiamos a ese directorio con &lt;code&gt;cd /beta&lt;/code&gt; y creamos un archivo &lt;code&gt;echo &amp;quot;Hola mundo&amp;quot; -&amp;gt; hola.txt&lt;/code&gt;. Regresamos al usuario &lt;code&gt;pi&lt;/code&gt;con &lt;code&gt;exit&lt;/code&gt; y ahora nos conectamos de vuelta al nodo maestro &lt;code&gt;ssh master&lt;/code&gt;. Una vez en el nodo maestro podemos ver si el archivo se ha guardado en el directorio compartido con &lt;code&gt;ls -la /beta&lt;/code&gt;. Ahí debe aparecer el archivo &lt;code&gt;hola.txt&lt;/code&gt;y si hacemos &lt;code&gt;cat /beta/hola.txt&lt;/code&gt; nos debe aparecer la frase &lt;code&gt;Hola mundo&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-success&#34;&gt;
+  &lt;div&gt;
+    Hemos configuirado nuestro clúster de manera correcta. En la siguiente sección, vamos a hacer algunas pruebas.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--- &lt;iframe src=&#34;https://drive.google.com/file/d/107aUt0Pp2Ud-JUl-VkmFnw0Lq4iv0ALH/preview&#34; width=&#34;640&#34; height=&#34;480&#34; aling=&#34;center&#34;&gt;&lt;/iframe&gt;  ---&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en Linux</title>
+      <link>https://ftapia.dev/es/docker/instalacion/linux/</link>
+      <pubDate>Thu, 31 Dec 2020 03:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/docker/instalacion/linux/</guid>
+      <description>&lt;p&gt;En el caso de linux, las cosas son más simples para trabajar con docker. En primer lugar, la mayoría de las distribuciones modernas (Ubuntu, CentOS, Fedora, etc.) incluyen por defecto un servidor gráfico, ya sea X.org o Wayland, por lo que para trabajar con docker y con proyectos open source, sólo es necesario verificar que contemos con git para el control de versiones e instalar docker.&lt;/p&gt;
+&lt;p&gt;En el siguiente video, te muestro como verificar e instalar git y docker.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zC4VvJOeZSw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://ftapia.dev/es/raspberry/test/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/raspberry/test/</guid>
+      <description>&lt;h1 id=&#34;probando-nuestro-clúster&#34;&gt;Probando nuestro clúster&lt;/h1&gt;
+&lt;h2 id=&#34;aplicaciones-en-paralelo&#34;&gt;Aplicaciones en paralelo&lt;/h2&gt;
+&lt;h3 id=&#34;llamada-de-procesos&#34;&gt;Llamada de procesos&lt;/h3&gt;
+&lt;p&gt;Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su - alpha
+cd /beta/
+git clone https://gitlab.com/fratava/cluster-pi.git
+cd cluster-pi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para la primera prueba, vamos a comprobar que hay intercomunicación entre los nodos del clúster. Para evitar estar listando los núcleos que vamos a utilizar, crearemos una archivo en dónde le vamos a indicar a MPI los nodos con los cuales va a estalecer la comunicación dinámicamente. Es muy recomendable contar con este archivo, ya que de otra manera hay que indicarle explícitamente los núcleos de los nodos que vamos a utilizar.&lt;/p&gt;
+&lt;p&gt;Creamos el archivo llamado &lt;code&gt;#!bash machinefile&lt;/code&gt; de la siguiente manera&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;emacs machinefile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y escribimos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nodo1
+nodo2
+nodo3
+master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;pulsamos ctrl+s y ctrl+x.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Si añadimos más nodos de cómputo a nuestro clúster o queremos hacer una segmentación, debemos modificar nuestro &lt;code&gt;machinefile&lt;/code&gt; para agregar o remover nodos.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Compilamos el código&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpicc call-procs.c -o call-procs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y los ejecutamos&lt;/p&gt;
+&lt;p&gt;Con machinefile&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -machinefile machinefile -n 16 ./call-procs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sin machinefile&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -H master,master,master,master,nodo1,nodo1,nodo1,nodo1,nodo2,nodo2,nodo2,nodo2,nodo3,nodo3,nodo3,nodo3 ./call-procs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si todo marcha bien debemos tener una salida como esta&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Llamada al proceso 3 de 16 en master 
+Llamada al proceso 2 de 16 en master 
+Llamada al proceso 0 de 16 en master 
+Llamada al proceso 1 de 16 en master 
+Llamada al proceso 15 de 16 en nodo3 
+Llamada al proceso 12 de 16 en nodo3 
+Llamada al proceso 5 de 16 en nodo1 
+Llamada al proceso 6 de 16 en nodo1 
+Llamada al proceso 14 de 16 en nodo3 
+Llamada al proceso 8 de 16 en nodo2 
+Llamada al proceso 13 de 16 en nodo3 
+Llamada al proceso 7 de 16 en nodo1 
+Llamada al proceso 9 de 16 en nodo2 
+Llamada al proceso 4 de 16 en nodo1 
+Llamada al proceso 10 de 16 en nodo2 
+Llamada al proceso 11 de 16 en nodo2 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Recordemos que las llamadas son aleatorias.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;En algunas ocasiones, podrías no tener esta salida. En este caso deberás revisar que tu cable de red está bien conectado, tu raspberry está prendida o tu volumen está montado. Para verificar esto último podemos teclear&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /beta
+ls
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si el folder está vacío debemos teclear&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo mount master:/beta /beta
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y volvemos a ejecutar el código.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;calculando-pi-en-paralelo&#34;&gt;Calculando Pi en paralelo&lt;/h3&gt;
+&lt;p&gt;Ahora calcularemos Pi de forma paralela. Para esto, haremos una integración numérica. La idea detrás de este algoritmo la podemos encontrar en esta &lt;a href=&#34;http://cercs-ed.gatech.edu/node/14&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;página&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Procedemos entonces a ejecutar el código. Primero lo compilamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpicc pi_mpi.c -o pi_mpi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y lo ejecutamos&lt;/p&gt;
+&lt;p&gt;Con machinefile&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -machinefile machinefile -n 16 ./pi_mpi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sin machinefile&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -H master,master,master,master,nodo1,nodo1,nodo1,nodo1,nodo2,nodo2,nodo2,nodo2,nodo3,nodo3,nodo3,nodo3 ./pi_mpi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;En este caso no solicitará el número de rectángulos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;#######################################################
+Master node name: master 
+
+Enter the number of intervals:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El valor queda al criterio del usuario. A continuación, te mostramos a modo de ilustración, los resultados que se obtienen para 300000 rectángulos cuando se calcula Pi con diferentes números de procesadores, los cuales los designaremos con &amp;ldquo;n=??&amp;rdquo; y &lt;code&gt;#!bash time&lt;/code&gt; antes de la ejecución para medir el tiempo.&lt;/p&gt;
+&lt;p&gt;n=1&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 1 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 1 
+
+    Pi Calculado = 3.141592653590713268840772798285
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000920152842809329741
+
+    real	8m54.547s
+    user	8m47.000s
+    sys	0m0.160s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;n=2&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 2 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 2 
+
+    Pi Calculado = 3.141592653590711492483933398034
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000918376485969929490
+
+    real	4m36.129s
+    user	8m58.883s
+    sys	0m0.211s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;n=4&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 4 ./pi_mpi
+
+    #######################################################
+    Master node name: nodo3 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 4 
+
+    Pi Calculado = 3.141592653590712824751562948222
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000919708753599479678
+
+    real	2m19.781s
+    user	9m10.213s
+    sys	0m0.228s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;n=8&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 8 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 8 
+
+    Pi Calculado = 3.141592653590715045197612198535
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000921929199648729991
+
+    real	1m26.563s
+    user	4m44.188s
+    sys	0m12.459s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;n=16&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 16 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 16 
+
+    Pi Calculado = 3.141592653590720818357340249349
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000927702359376780805
+
+    real	0m59.547s
+    user	2m41.094s
+    sys	0m30.697s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Como podemos darnos cuenta, el tiempo de ejecución, baja a medida que aumentamos el número de procesadores.&lt;/p&gt;
+&lt;div class=&#34;alert alert-success&#34;&gt;
+  &lt;div&gt;
+    Ahora que tenemos nuestro clúster funcionando, desarrollaremos códigos parelelos. Pero como lo hemos mencionado en la &lt;a href=&#34;https://ftapia.dev/introduccion/#en-que-se-utiliza-el-computo-de-alto-rendimiento&#34;&gt;introducción&lt;/a&gt;, podemos utilizar nuestro clúster para diversas tareas.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The First Radio Spectrum of a Rapidly Rotating A-type Star</title>
+      <link>https://ftapia.dev/es/publication/white-2021/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/publication/white-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres</title>
+      <link>https://ftapia.dev/es/publication/aas237/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/publication/aas237/</guid>
+      <description>&lt;p&gt;The dominant emission mechanisms at millimeter/submillimeter remain largely unknown for most spectral types other than Solar analogues. This is due in part to the lack of data to inform stellar atmosphere models. In this work, we present a new methodology to fit the observed and synthetic spectrum of main-sequence stars through semiempirical models&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. We use the Levenberg-Marquardt algorithm as a Nonlinear method, PakalMPI&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; as the semiempirical model and the observations that are part of an ongoing observational campaign entitled Measuring the Emission of Stellar Atmospheres at Submillimeter/ Millimeter wavelengths&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Our results show that we can use semiempirical models as an input model to reproduce and constrain the observed spectrum of main-sequence stars&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. In addition to a better understanding of stellar processes, these models are also essential for determining the stellar contribution to unresolved circumstellar disks at submillimeter/millimeter wavelengths&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Today I&amp;#39;m going to present a project that &lt;a href=&#34;https://twitter.com/Jacob_White26?ref_src=twsrc%5Etfw&#34;&gt;@Jacob_White26&lt;/a&gt;  and I have been working on at the &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt; meeting. The talk is titled &amp;quot;MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres&amp;quot; 1/n&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348624995606540288?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;This work has an observational and theoretical basis. MESAS is an ongoing observational campaign that seeks to obtain a broad spectral sub-mm/cm coverage of a range of spectral types to build a more complete catalog of stellar emission. 2/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348625944605581313?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Nowadays, the spectrum of stars in this range remains poorly constrained due to a lack of data for most spectral types. This situation is due in part to the technical limitations of these wavelengths.  3/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348627696373428229?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The development of more sensitive detectors has made it possible to observe for the first time, stars of main-sequence at sub-mm / mm wavelengths. The Stars with no known circumstellar material to provide valuable information about the physical conditions of the atmosphere. 4/n&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348628931390402563?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;This information is useful to characterize the emission and use it as a template for several studies in many areas such as: stellar atmospheres, debris disks, space weather, stellar evolution, and long term stellar variability studies. 5/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348629614877413377?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;As an example, we have the case of Sirius A an A1Vm star. Due to its proximity (2.64 pc), it was a good starting point to start studying the emission of A stars. The results can be found in White et al. (2019) &lt;a href=&#34;https://t.co/WPWzt6y31t&#34;&gt;https://t.co/WPWzt6y31t&lt;/a&gt; .  6/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt; &lt;a href=&#34;https://t.co/8PqaUaCf5s&#34;&gt;pic.twitter.com/8PqaUaCf5s&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348632119086620675?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;For the theoretical part, we have Kinich-Pakal (KP). KP is a new methodology developed by &lt;a href=&#34;https://twitter.com/victor_delaluz?ref_src=twsrc%5Etfw&#34;&gt;@victor_delaluz&lt;/a&gt; and me, to fit the observed and synthetic spectrum of solar-like stars from the centimeter to infrared wavelengths through semiempirical models. 7/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348632812019179524?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;KP uses the Levenberg-Marquardt algorithm to minimize the differences between synthetic and observed spectrum by running PakalMPI (De la Luz et al., 2010) &lt;a href=&#34;https://t.co/dIKB1QU21j&#34;&gt;https://t.co/dIKB1QU21j&lt;/a&gt; to hydrostatically equilibrate the atmosphere and to compute their synthetic spectrum. 8/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348633231311183880?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;KP is capable of finding the physical conditions such as pressure, density, and temperature in function of the altitude. As an example, we have the model of Alpha Centauri A (Tapia-Vázquez &amp;amp; De la Luz, 2020) &lt;a href=&#34;https://t.co/swRBqlKAFG&#34;&gt;https://t.co/swRBqlKAFG&lt;/a&gt; . 9/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348634566555275266?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Alpha Centauri A and B were the first stellar system resolved in the submillimeter wavelength by ALMA (Liseau et al. 2015). Thanks to these observations and the sun-like properties of alpha Centauri, we could calibrate the model. 10/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348635841032294401?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;As a result, we obtain a semi-empirical model that allows us to reproduce the observed spectrum more closely. This model shows similarities between Alpha Centauri A and our Sun, such as a low temperature, a flattening of the temperature in the high chromosphere. 11/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt; &lt;a href=&#34;https://t.co/swXi2l6434&#34;&gt;pic.twitter.com/swXi2l6434&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348639447240290316?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;But, in a broad stellar context, both MESAS and KINICH-PAKAL works as a compliment. MESAS provides an observational framework that constrains the stellar emission, and KP uses this information to model the atmosphere. 12/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348640710506008578?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Using both, we have been able to characterize the emission in stars of spectral type F from the radio to the infrared wavelengths such as Gamma Vir A/B (F0V) and Gamma Lep (F6V) (White et al. 2020) &lt;a href=&#34;https://t.co/oB5ELqvXzQ&#34;&gt;https://t.co/oB5ELqvXzQ&lt;/a&gt; . 13/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt; &lt;a href=&#34;https://t.co/vBFPhDA0pp&#34;&gt;pic.twitter.com/vBFPhDA0pp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348642544759013379?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;As future work, we are going to expand the use of this framework with the help of more observations that will come primarily from the &lt;a href=&#34;https://twitter.com/hashtag/VLA?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#VLA&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/almaobs?ref_src=twsrc%5Etfw&#34;&gt;@almaobs&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/hashtag/Noema?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Noema&lt;/a&gt;, and the &lt;a href=&#34;https://twitter.com/gtmlmt_oficial?ref_src=twsrc%5Etfw&#34;&gt;@gtmlmt_oficial&lt;/a&gt;. 14/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348643740693442560?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The complete keynote can be found at &lt;a href=&#34;https://t.co/R8sfncEuua&#34;&gt;https://t.co/R8sfncEuua&lt;/a&gt; :) Thanks to &lt;a href=&#34;https://twitter.com/Jacob_White26?ref_src=twsrc%5Etfw&#34;&gt;@Jacob_White26&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/victor_delaluz?ref_src=twsrc%5Etfw&#34;&gt;@victor_delaluz&lt;/a&gt;, and Luis Zapata for the comments and the help! 15/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348647799299186690?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Tapia-Vázquez, F., &amp;amp; De la Luz, V. 2020, ApJS, 246, 5 &lt;a href=&#34;https://doi.org/10.3847/1538-4365/ab5f0a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;De la Luz, V., Lara, A., Mendoza-Torres, J. E., et al. 2010, ApJS, 188, 437 &lt;a href=&#34;https://doi.org/10.1088/0067-0049/188/2/437&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;White, J.A., Aufdenberg, J., Boley, A.C., 2018, ApJ,859(2), p.102. &lt;a href=&#34;https://doi.org/10.3847/1538-4357/aac103&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;White, J. A., Tapia-Vázquez, F., Hughes, A. G., et al. 2020, ApJ, 894, 76 &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab8467&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;White, J. A., Aufdenberg, J., Boley, A. C., et al. 2019, ApJ, 875, 55 &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab0e7f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The MESAS Project: ALMA Observations of the F-type Stars γ Lep, γ Vir A, and γ Vir B</title>
+      <link>https://ftapia.dev/es/publication/white-2020/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/publication/white-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonlinear Convergence of Solar-like Stars Chromospheres Using Millimeter, Submillimeter, and Infrared Observations</title>
+      <link>https://ftapia.dev/es/publication/ftapia-2020/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/publication/ftapia-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The MESAS Project: Long-wavelength Follow-up Observations of Sirius A</title>
+      <link>https://ftapia.dev/es/publication/white-2019/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/publication/white-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://ftapia.dev/es/slides/aas238/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/slides/aas238/</guid>
+      <description>
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/vla_image.png&#34;
+  &gt;
+
+&lt;h1 id=&#34;modeling-altairs-atmosphere&#34;&gt;Modeling Altair’s Atmosphere&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+Three
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/media/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://ftapia.dev/es/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>https://ftapia.dev/es/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ALMA&#39;s view of the nearest neighbors to the Sun. The submm/mm SEDs of the α Centauri binary and a new source</title>
+      <link>https://ftapia.dev/es/publication/liseau-2016/</link>
+      <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/publication/liseau-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GICC</title>
+      <link>https://ftapia.dev/es/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kinich Pakal</title>
+      <link>https://ftapia.dev/es/project/kinich-pakal/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/project/kinich-pakal/</guid>
+      <description>&lt;p&gt;La atmósfera de las estrellas de tipo solar está compuesta por la fotosfera, la cromosfera, la zona de transición y la corona. La cromosfera es la capa donde la temperatura va de 4000 K a 8000 K y se estudia en longitudes de onda ultravioleta, visible, infrarroja, milimétrica y (sub) milimétrica (Wedemeyer et al. 2016) &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Los primeros modelos cromosféricos se obtuvieron gracias a las observaciones ultravioleta (Vernazza et al. 1981; Avrett &amp;amp; Loeser 2008) &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Sin embargo, observaciones recientes realizadas con el Telescopio Solar Submilimétrico (SST) y el Atacama Large Millimeter / Submillimeter Array (ALMA) han demostrado que la cromosfera tiene temperaturas más bajas de lo esperado por los modelos ultravioleta (Linsky 2017). &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Hemos desarrollado el código KINICH-PAKAL (Tapia-Vázquez, &amp;amp; De la Luz 2020) &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; que utiliza el algoritmo Levenberg-Marquard como método de ajuste no lineal, PAKAL-MPI como modelo cromosférico de la atmósfera solar y observaciones en longitudes de onda que van desde el infrarrojo al milímetro para generar un modelo más preciso de las cromosferas de las estrellas de tipo solar.
+KINICH-PAKAL nos ha permitido estudiar en detalle cómo cambian las condiciones físicas de la atmósfera en función de su temperatura efectiva.
+El desarrollo de estos modelos es necesario para estudios de discos de escombros (White et al. 2018) &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;, estudiar las condiciones bajo las cuales se forman las erupciones (MacGregor et al. 2018) &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt; y los posibles mecanismos físicos de variaciones de flujo en el estrellas (Liseau 2019) &lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;referencias&#34;&gt;Referencias&lt;/h3&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Wedemeyer, S., Bastian, T., Brajša, R., et al. 2016, SSRv, 200, 1. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Vernazza, J. E., Avrett, E. H., &amp;amp; Loeser, R. 1981, ApJS,45, 635. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Avrett, E. H., &amp;amp; Loeser, R. 2008, ApJS, 175, 229. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Linsky, J. L. 2017, ARA&amp;amp;A, 55, 159. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Tapia-Vázquez, F., &amp;amp; De la Luz, V. 2020, ApJS, 246, 5. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;White, J.A., Aufdenberg, J., Boley, A.C., 2018, ApJ,859(2), p.102. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;MacGregor, M. A., Weinberger, A. J., Wilner, D. J., Kowalski, A. F., &amp;amp; Cranmer, S. R. 2018, ApJ, 855, L2. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Liseau, R. 2019, arXiv:1904.03043. &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MESAS</title>
+      <link>https://ftapia.dev/es/project/mesas/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/project/mesas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ftapia.dev/es/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

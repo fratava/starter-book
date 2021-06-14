@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Instalación | ftapia.dev</title>
+    <link>https://ftapia.dev/es/docker/instalacion/</link>
+      <atom:link href="https://ftapia.dev/es/docker/instalacion/index.xml" rel="self" type="application/rss+xml" />
+    <description>Instalación</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-mx</language><copyright>© ftapia 2021</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Instalación</title>
+      <link>https://ftapia.dev/es/docker/instalacion/</link>
+    </image>
+    
+    <item>
+      <title>Instalando Docker en Windows</title>
+      <link>https://ftapia.dev/es/docker/instalacion/windows/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/docker/instalacion/windows/</guid>
+      <description>&lt;p&gt;Ahora que sabemos lo que es docker, vamos a instalarlo en nuestra computadora. Antes de instalarlo, es recomendable actualizar nuestro Windows a la versión más actual.&lt;/p&gt;
+&lt;p&gt;Opcionalmente, podemos instalar algunos programas que nos ayudarán a tner una mejor experiencia de uso. Si ya tienes instalados estos programas, puedes dirigirte a la sección &amp;ndash;.&lt;/p&gt;
+&lt;h2 id=&#34;instalación-de-software-esencial&#34;&gt;Instalación de software esencial&lt;/h2&gt;
+&lt;h3 id=&#34;la-terminal-de-windows&#34;&gt;La terminal de Windows&lt;/h3&gt;
+&lt;p&gt;Para poder interactuar con docker, es necesario tener instalado una terminal. Podemos utilizar la terminal que por defecto tiene Windows, pero es altamente recomendable instalar la nueva versión. Para obtenerla, sólo tenemos que ir a la Microsoft Store y buscar &amp;ldquo;Windows terminal&amp;rdquo;. Y descargamos la primer aplicación. A continuación, te muestro como hacerlo desde Windows 10.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MFwPGXUnD60&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
+&lt;p&gt;Para trabajar con proyectos open source, es bastante recomendable trabajar con un control de versiones. Git es un software diseñado por Linus Torvalds para este fin. Puede que te preguntes, ¿qué es un control de versiones? Bueno, podemos definirlo como una gestión de los diversos cambios que se realizan sobre los elementos de algún producto o configuración. Una versión, revisión o edición de un producto, es el estado en el que se encuentra el mismo en un momento dado de su desarrollo o modificación. Aunque un sistema de control de versiones puede realizarse de forma manual, es mejor disponer de herramientas que faciliten esta gestión dando lugar a los llamados sistemas de control de versiones o VCS (del inglés Version Control System). Estos sistemas facilitan la administración de las distintas versiones de cada producto desarrollado, así como las posibles especializaciones realizadas (por ejemplo, para algún cliente específico). Sii te interesa conocer más a detalle como funciona el control de versiones, puedes visitar este &lt;a href=&#34;https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;En el siguiente videos te muestro cómo puedes descargar git en Windows 10.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jyTEZOVTP4Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Para comprobar que está activo git, puedes seguir los pasos del siguiente video.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zJeUsW3m5k0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;xming&#34;&gt;Xming&lt;/h3&gt;
+&lt;p&gt;Para poder desplegar aplicaciones gráficas desde un contenerdor docker, es necesario contar con un servidor gráfico. Pero, ¿qué es un servidor gráfico? Un servidor gráfico o servidor de ventanas es un programa cuya tarea principal es coordinar la entrada y la salida de sus clientes hacia y desde el resto del sistema operativo, el hardware, y otros. El servidor gráfico se comunica con sus clientes con el protocolo de servidor gráfico. Un protocolo de comunicaciones que puede ser transparente a la red o simplemente con capacidad para usar la red&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Actualmente existe varios servidores gráficos, pero son dos los más populares, X11 (X.Org) y Wayland. En el siguiente video, te explico como instalar X11 en Windows 10.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/c0AaSZkC4Z4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;activar-hyper-v&#34;&gt;Activar Hyper-V&lt;/h3&gt;
+&lt;p&gt;Para poder asignar recursos computacionales, es necesario hacer una virtualización. Windows ofrece una herramienta llamada Hyper-V. Para poder ejecutar docker correctamente, es necesario instalarla. En el siguiente video te muestro como hacerlo.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Tex926ZukcY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;instalar-wsl2&#34;&gt;Instalar WSL2&lt;/h3&gt;
+&lt;p&gt;Otra herramienta indipensable para poder ejecutar docker es Windows Subsystem for Linux (WSL). WSL, permiite ejecutar un amboiente GNU/Linux directamente en Windows, sin necesidad de instlar una máquina virtual tradicional como VM o un hacer un dual boot. En este video te muestro como instalar WSL2. Si quieres saber más, puedes ir a este &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/about&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/24_RgbhYcvs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;instalando-docker&#34;&gt;Instalando Docker&lt;/h2&gt;
+&lt;p&gt;Finalmente, procederemos a instlar docker. A continuación te explico los pasos a seguir.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wOqxqhwPDFU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;verificando-la-instalación-de-docker&#34;&gt;Verificando la instalación de docker&lt;/h3&gt;
+&lt;p&gt;Vamos a verificar que la instalación de docker está bien. Para ello vamos a ejecutar la imagen de bienvenida a docker como se muestra en el video.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LGt3ABDEel8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Artículo de Wikipedia &lt;a href=&#34;https://es.wikipedia.org/wiki/Servidor_gr%C3%A1fico&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en MacOS</title>
+      <link>https://ftapia.dev/es/docker/instalacion/macos/</link>
+      <pubDate>Thu, 31 Dec 2020 01:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/docker/instalacion/macos/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mBqRedDMwHY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en Linux</title>
+      <link>https://ftapia.dev/es/docker/instalacion/linux/</link>
+      <pubDate>Thu, 31 Dec 2020 03:00:00 +0100</pubDate>
+      <guid>https://ftapia.dev/es/docker/instalacion/linux/</guid>
+      <description>&lt;p&gt;En el caso de linux, las cosas son más simples para trabajar con docker. En primer lugar, la mayoría de las distribuciones modernas (Ubuntu, CentOS, Fedora, etc.) incluyen por defecto un servidor gráfico, ya sea X.org o Wayland, por lo que para trabajar con docker y con proyectos open source, sólo es necesario verificar que contemos con git para el control de versiones e instalar docker.&lt;/p&gt;
+&lt;p&gt;En el siguiente video, te muestro como verificar e instalar git y docker.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zC4VvJOeZSw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

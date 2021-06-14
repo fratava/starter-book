@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Submillimetric | ftapia.dev</title>
+    <link>https://ftapia.dev/en/tag/submillimetric/</link>
+      <atom:link href="https://ftapia.dev/en/tag/submillimetric/index.xml" rel="self" type="application/rss+xml" />
+    <description>Submillimetric</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© ftapia 2021</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Submillimetric</title>
+      <link>https://ftapia.dev/en/tag/submillimetric/</link>
+    </image>
+    
+    <item>
+      <title>MESAS</title>
+      <link>https://ftapia.dev/en/project/mesas/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/en/project/mesas/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

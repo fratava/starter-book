@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clúster de computacion con Raspberry Pi 4 | ftapia.dev</title>
+    <link>https://ftapia.dev/es/raspberry/</link>
+      <atom:link href="https://ftapia.dev/es/raspberry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Clúster de computacion con Raspberry Pi 4</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-mx</language><copyright>© ftapia 2021</copyright><lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Clúster de computacion con Raspberry Pi 4</title>
+      <link>https://ftapia.dev/es/raspberry/</link>
+    </image>
+    
+    <item>
+      <title>Test</title>
+      <link>https://ftapia.dev/es/raspberry/test/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/raspberry/test/</guid>
+      <description>&lt;h1 id=&#34;probando-nuestro-clúster&#34;&gt;Probando nuestro clúster&lt;/h1&gt;
+&lt;h2 id=&#34;aplicaciones-en-paralelo&#34;&gt;Aplicaciones en paralelo&lt;/h2&gt;
+&lt;h3 id=&#34;llamada-de-procesos&#34;&gt;Llamada de procesos&lt;/h3&gt;
+&lt;p&gt;Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su - alpha
+cd /beta/
+git clone https://gitlab.com/fratava/cluster-pi.git
+cd cluster-pi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para la primera prueba, vamos a comprobar que hay intercomunicación entre los nodos del clúster. Para evitar estar listando los núcleos que vamos a utilizar, crearemos una archivo en dónde le vamos a indicar a MPI los nodos con los cuales va a estalecer la comunicación dinámicamente. Es muy recomendable contar con este archivo, ya que de otra manera hay que indicarle explícitamente los núcleos de los nodos que vamos a utilizar.&lt;/p&gt;
+&lt;p&gt;Creamos el archivo llamado &lt;code&gt;#!bash machinefile&lt;/code&gt; de la siguiente manera&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;emacs machinefile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y escribimos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nodo1
+nodo2
+nodo3
+master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;pulsamos ctrl+s y ctrl+x.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Si añadimos más nodos de cómputo a nuestro clúster o queremos hacer una segmentación, debemos modificar nuestro &lt;code&gt;machinefile&lt;/code&gt; para agregar o remover nodos.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Compilamos el código&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpicc call-procs.c -o call-procs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y los ejecutamos&lt;/p&gt;
+&lt;p&gt;Con machinefile&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -machinefile machinefile -n 16 ./call-procs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sin machinefile&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -H master,master,master,master,nodo1,nodo1,nodo1,nodo1,nodo2,nodo2,nodo2,nodo2,nodo3,nodo3,nodo3,nodo3 ./call-procs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si todo marcha bien debemos tener una salida como esta&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Llamada al proceso 3 de 16 en master 
+Llamada al proceso 2 de 16 en master 
+Llamada al proceso 0 de 16 en master 
+Llamada al proceso 1 de 16 en master 
+Llamada al proceso 15 de 16 en nodo3 
+Llamada al proceso 12 de 16 en nodo3 
+Llamada al proceso 5 de 16 en nodo1 
+Llamada al proceso 6 de 16 en nodo1 
+Llamada al proceso 14 de 16 en nodo3 
+Llamada al proceso 8 de 16 en nodo2 
+Llamada al proceso 13 de 16 en nodo3 
+Llamada al proceso 7 de 16 en nodo1 
+Llamada al proceso 9 de 16 en nodo2 
+Llamada al proceso 4 de 16 en nodo1 
+Llamada al proceso 10 de 16 en nodo2 
+Llamada al proceso 11 de 16 en nodo2 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Recordemos que las llamadas son aleatorias.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;En algunas ocasiones, podrías no tener esta salida. En este caso deberás revisar que tu cable de red está bien conectado, tu raspberry está prendida o tu volumen está montado. Para verificar esto último podemos teclear&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /beta
+ls
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si el folder está vacío debemos teclear&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo mount master:/beta /beta
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y volvemos a ejecutar el código.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;calculando-pi-en-paralelo&#34;&gt;Calculando Pi en paralelo&lt;/h3&gt;
+&lt;p&gt;Ahora calcularemos Pi de forma paralela. Para esto, haremos una integración numérica. La idea detrás de este algoritmo la podemos encontrar en esta &lt;a href=&#34;http://cercs-ed.gatech.edu/node/14&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;página&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Procedemos entonces a ejecutar el código. Primero lo compilamos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpicc pi_mpi.c -o pi_mpi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y lo ejecutamos&lt;/p&gt;
+&lt;p&gt;Con machinefile&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -machinefile machinefile -n 16 ./pi_mpi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sin machinefile&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -H master,master,master,master,nodo1,nodo1,nodo1,nodo1,nodo2,nodo2,nodo2,nodo2,nodo3,nodo3,nodo3,nodo3 ./pi_mpi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;En este caso no solicitará el número de rectángulos&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;#######################################################
+Master node name: master 
+
+Enter the number of intervals:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El valor queda al criterio del usuario. A continuación, te mostramos a modo de ilustración, los resultados que se obtienen para 300000 rectángulos cuando se calcula Pi con diferentes números de procesadores, los cuales los designaremos con &amp;ldquo;n=??&amp;rdquo; y &lt;code&gt;#!bash time&lt;/code&gt; antes de la ejecución para medir el tiempo.&lt;/p&gt;
+&lt;p&gt;n=1&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 1 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 1 
+
+    Pi Calculado = 3.141592653590713268840772798285
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000920152842809329741
+
+    real	8m54.547s
+    user	8m47.000s
+    sys	0m0.160s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;n=2&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 2 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 2 
+
+    Pi Calculado = 3.141592653590711492483933398034
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000918376485969929490
+
+    real	4m36.129s
+    user	8m58.883s
+    sys	0m0.211s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;n=4&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 4 ./pi_mpi
+
+    #######################################################
+    Master node name: nodo3 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 4 
+
+    Pi Calculado = 3.141592653590712824751562948222
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000919708753599479678
+
+    real	2m19.781s
+    user	9m10.213s
+    sys	0m0.228s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;n=8&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 8 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 8 
+
+    Pi Calculado = 3.141592653590715045197612198535
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000921929199648729991
+
+    real	1m26.563s
+    user	4m44.188s
+    sys	0m12.459s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;n=16&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 16 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 16 
+
+    Pi Calculado = 3.141592653590720818357340249349
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000927702359376780805
+
+    real	0m59.547s
+    user	2m41.094s
+    sys	0m30.697s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Como podemos darnos cuenta, el tiempo de ejecución, baja a medida que aumentamos el número de procesadores.&lt;/p&gt;
+&lt;div class=&#34;alert alert-success&#34;&gt;
+  &lt;div&gt;
+    Ahora que tenemos nuestro clúster funcionando, desarrollaremos códigos parelelos. Pero como lo hemos mencionado en la &lt;a href=&#34;https://ftapia.dev/introduccion/#en-que-se-utiliza-el-computo-de-alto-rendimiento&#34;&gt;introducción&lt;/a&gt;, podemos utilizar nuestro clúster para diversas tareas.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

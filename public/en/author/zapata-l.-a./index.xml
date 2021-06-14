@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zapata, L. A. | ftapia.dev</title>
+    <link>https://ftapia.dev/en/author/zapata-l.-a./</link>
+      <atom:link href="https://ftapia.dev/en/author/zapata-l.-a./index.xml" rel="self" type="application/rss+xml" />
+    <description>Zapata, L. A.</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© ftapia 2021</copyright>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Zapata, L. A.</title>
+      <link>https://ftapia.dev/en/author/zapata-l.-a./</link>
+    </image>
+    
+    <item>
+      <title>The First Radio Spectrum of a Rapidly Rotating A-type Star</title>
+      <link>https://ftapia.dev/en/publication/white-2021/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/en/publication/white-2021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

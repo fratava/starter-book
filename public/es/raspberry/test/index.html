@@ -1,0 +1,1471 @@
+<!DOCTYPE html><html lang="es-mx" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.0.0-beta.3 for Hugo" />
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Francisco Tapia Vázquez" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Probando nuestro clúster Aplicaciones en paralelo Llamada de procesos Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:" />
+
+  
+  <link rel="alternate" hreflang="es-mx" href="https://ftapia.dev/es/raspberry/test/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#248aaa" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.50ec9bf1afbee2efdf956d9d0aeb211a.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163502824-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-163502824-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/es/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://ftapia.dev/es/raspberry/test/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ftapia_va" />
+    <meta property="twitter:creator" content="@ftapia_va" />
+  
+  <meta property="og:site_name" content="ftapia.dev" />
+  <meta property="og:url" content="https://ftapia.dev/es/raspberry/test/" />
+  <meta property="og:title" content="Test | ftapia.dev" />
+  <meta property="og:description" content="Probando nuestro clúster Aplicaciones en paralelo Llamada de procesos Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:" /><meta property="og:image" content="https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="es-mx" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-12-31T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-03-13T20:46:57-06:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Test | ftapia.dev</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a22e2af24ef4a980d775acb569de4697" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c6403c0d403f95373aa0f3e7d04c7f57.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Cerrar"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Buscar...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/es/">ftapia.dev</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/es/">ftapia.dev</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#inicio"><span>Inicio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#habilidades"><span>Habilidades</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#estancias"><span>Estancias</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#proyectos"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#publicaciones"><span>Articulos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#platicas"><span>Pláticas</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#divulgacion"><span>Divulgación</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#docencia"><span>Docencia</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#gallery"><span>Galería</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#contacto"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://twitter.com/ftapia_va" data-toggle="tooltip" data-placement="bottom" title="Sígueme en Twitter" target="_blank" rel="noopener" aria-label="Sígueme en Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Mostrar preferencias">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Raspberry Pi 4 Clúster
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Buscar...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/es/raspberry/">Raspberry Pi 4 Clúster</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/es/raspberry/configuracion/"><i class="fas fa-server pr-1"></i>Configuración</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/es/raspberry/configuracion/inicial/">Configuración inicial</a></li>
+
+
+
+  <li class=""><a href="/es/raspberry/configuracion/nodos/">Configuranción de los nodos</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  <li class="active"><a href="/es/raspberry/test/">Test</a></li>
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">En esta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#aplicaciones-en-paralelo">Aplicaciones en paralelo</a>
+      <ul>
+        <li><a href="#llamada-de-procesos">Llamada de procesos</a></li>
+        <li><a href="#calculando-pi-en-paralelo">Calculando Pi en paralelo</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/es/">
+      
+        Inicio
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/es/raspberry/">
+      
+        Raspberry Pi 4 Clúster
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Test
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>Test</h1>
+
+          <div class="article-style">
+            <h1 id="probando-nuestro-clúster">Probando nuestro clúster</h1>
+<h2 id="aplicaciones-en-paralelo">Aplicaciones en paralelo</h2>
+<h3 id="llamada-de-procesos">Llamada de procesos</h3>
+<p>Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:</p>
+<pre><code class="language-bash">su - alpha
+cd /beta/
+git clone https://gitlab.com/fratava/cluster-pi.git
+cd cluster-pi
+</code></pre>
+<p>Para la primera prueba, vamos a comprobar que hay intercomunicación entre los nodos del clúster. Para evitar estar listando los núcleos que vamos a utilizar, crearemos una archivo en dónde le vamos a indicar a MPI los nodos con los cuales va a estalecer la comunicación dinámicamente. Es muy recomendable contar con este archivo, ya que de otra manera hay que indicarle explícitamente los núcleos de los nodos que vamos a utilizar.</p>
+<p>Creamos el archivo llamado <code>#!bash machinefile</code> de la siguiente manera</p>
+<pre><code class="language-bash">emacs machinefile
+</code></pre>
+<p>y escribimos</p>
+<pre><code class="language-bash">nodo1
+nodo2
+nodo3
+master
+</code></pre>
+<p>pulsamos ctrl+s y ctrl+x.</p>
+<div class="alert alert-info">
+  <div>
+    Si añadimos más nodos de cómputo a nuestro clúster o queremos hacer una segmentación, debemos modificar nuestro <code>machinefile</code> para agregar o remover nodos.
+  </div>
+</div>
+<p>Compilamos el código</p>
+<pre><code class="language-bash">mpicc call-procs.c -o call-procs
+</code></pre>
+<p>y los ejecutamos</p>
+<p>Con machinefile</p>
+<pre><code class="language-bash">mpiexec -machinefile machinefile -n 16 ./call-procs
+</code></pre>
+<p>Sin machinefile</p>
+<pre><code class="language-bash">mpiexec -H master,master,master,master,nodo1,nodo1,nodo1,nodo1,nodo2,nodo2,nodo2,nodo2,nodo3,nodo3,nodo3,nodo3 ./call-procs
+</code></pre>
+<p>Si todo marcha bien debemos tener una salida como esta</p>
+<pre><code class="language-bash">Llamada al proceso 3 de 16 en master 
+Llamada al proceso 2 de 16 en master 
+Llamada al proceso 0 de 16 en master 
+Llamada al proceso 1 de 16 en master 
+Llamada al proceso 15 de 16 en nodo3 
+Llamada al proceso 12 de 16 en nodo3 
+Llamada al proceso 5 de 16 en nodo1 
+Llamada al proceso 6 de 16 en nodo1 
+Llamada al proceso 14 de 16 en nodo3 
+Llamada al proceso 8 de 16 en nodo2 
+Llamada al proceso 13 de 16 en nodo3 
+Llamada al proceso 7 de 16 en nodo1 
+Llamada al proceso 9 de 16 en nodo2 
+Llamada al proceso 4 de 16 en nodo1 
+Llamada al proceso 10 de 16 en nodo2 
+Llamada al proceso 11 de 16 en nodo2 
+</code></pre>
+<p>Recordemos que las llamadas son aleatorias.</p>
+<div class="alert alert-info">
+  <div>
+    <p>En algunas ocasiones, podrías no tener esta salida. En este caso deberás revisar que tu cable de red está bien conectado, tu raspberry está prendida o tu volumen está montado. Para verificar esto último podemos teclear</p>
+<pre><code class="language-bash">cd /beta
+ls
+</code></pre>
+<p>Si el folder está vacío debemos teclear</p>
+<pre><code class="language-bash">sudo mount master:/beta /beta
+</code></pre>
+<p>y volvemos a ejecutar el código.</p>
+  </div>
+</div>
+<h3 id="calculando-pi-en-paralelo">Calculando Pi en paralelo</h3>
+<p>Ahora calcularemos Pi de forma paralela. Para esto, haremos una integración numérica. La idea detrás de este algoritmo la podemos encontrar en esta <a href="http://cercs-ed.gatech.edu/node/14" target="_blank" rel="noopener">página</a>.</p>
+<p>Procedemos entonces a ejecutar el código. Primero lo compilamos</p>
+<pre><code class="language-bash">mpicc pi_mpi.c -o pi_mpi
+</code></pre>
+<p>y lo ejecutamos</p>
+<p>Con machinefile</p>
+<pre><code class="language-bash">mpiexec -machinefile machinefile -n 16 ./pi_mpi
+</code></pre>
+<p>Sin machinefile</p>
+<pre><code class="language-bash">mpiexec -H master,master,master,master,nodo1,nodo1,nodo1,nodo1,nodo2,nodo2,nodo2,nodo2,nodo3,nodo3,nodo3,nodo3 ./pi_mpi
+</code></pre>
+<p>En este caso no solicitará el número de rectángulos</p>
+<pre><code class="language-shell">#######################################################
+Master node name: master 
+
+Enter the number of intervals:
+</code></pre>
+<p>El valor queda al criterio del usuario. A continuación, te mostramos a modo de ilustración, los resultados que se obtienen para 300000 rectángulos cuando se calcula Pi con diferentes números de procesadores, los cuales los designaremos con &ldquo;n=??&rdquo; y <code>#!bash time</code> antes de la ejecución para medir el tiempo.</p>
+<p>n=1</p>
+<pre><code class="language-shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 1 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 1 
+
+    Pi Calculado = 3.141592653590713268840772798285
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000920152842809329741
+
+    real	8m54.547s
+    user	8m47.000s
+    sys	0m0.160s
+</code></pre>
+<p>n=2</p>
+<pre><code class="language-shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 2 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 2 
+
+    Pi Calculado = 3.141592653590711492483933398034
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000918376485969929490
+
+    real	4m36.129s
+    user	8m58.883s
+    sys	0m0.211s
+</code></pre>
+<p>n=4</p>
+<pre><code class="language-shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 4 ./pi_mpi
+
+    #######################################################
+    Master node name: nodo3 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 4 
+
+    Pi Calculado = 3.141592653590712824751562948222
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000919708753599479678
+
+    real	2m19.781s
+    user	9m10.213s
+    sys	0m0.228s
+</code></pre>
+<p>n=8</p>
+<pre><code class="language-shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 8 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 8 
+
+    Pi Calculado = 3.141592653590715045197612198535
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000921929199648729991
+
+    real	1m26.563s
+    user	4m44.188s
+    sys	0m12.459s
+</code></pre>
+<p>n=16</p>
+<pre><code class="language-shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n 16 ./pi_mpi
+
+    #######################################################
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    300000
+
+
+    *** Number of processes: 16 
+
+    Pi Calculado = 3.141592653590720818357340249349
+                Pi = 3.141592653589793115997963468544
+    Error relativo = 0.000000000000927702359376780805
+
+    real	0m59.547s
+    user	2m41.094s
+    sys	0m30.697s
+</code></pre>
+<p>Como podemos darnos cuenta, el tiempo de ejecución, baja a medida que aumentamos el número de procesadores.</p>
+<div class="alert alert-success">
+  <div>
+    Ahora que tenemos nuestro clúster funcionando, desarrollaremos códigos parelelos. Pero como lo hemos mencionado en la <a href="/introduccion/#en-que-se-utiliza-el-computo-de-alto-rendimiento">introducción</a>, podemos utilizar nuestro clúster para diversas tareas.
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Última actualización el Mar 13, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+    <p class="powered-by">
+      © ftapia 2021
+    </p>
+  
+  </footer>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    <script src="/js/_vendor/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/es/js/wowchemy.min.0c769fe2b068245323b9d6a1f594bda7.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

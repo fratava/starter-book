@@ -1,0 +1,1356 @@
+<!DOCTYPE html><html lang="es-mx" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.0.0-beta.3 for Hugo" />
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Francisco Tapia Vázquez" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Personal page" />
+
+  
+  <link rel="alternate" hreflang="es-mx" href="https://ftapia.dev/es/docker/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#248aaa" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.50ec9bf1afbee2efdf956d9d0aeb211a.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163502824-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-163502824-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+    <link rel="alternate" href="/es/docker/index.xml" type="application/rss+xml" title="ftapia.dev" />
+  
+
+  
+    <link rel="manifest" href="/es/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://ftapia.dev/es/docker/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ftapia_va" />
+    <meta property="twitter:creator" content="@ftapia_va" />
+  
+  <meta property="og:site_name" content="ftapia.dev" />
+  <meta property="og:url" content="https://ftapia.dev/es/docker/" />
+  <meta property="og:title" content="¿Qué es Docker? | ftapia.dev" />
+  <meta property="og:description" content="Personal page" /><meta property="og:image" content="https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="es-mx" />
+  
+    
+      <meta property="og:updated_time" content="2020-12-31T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <title>¿Qué es Docker? | ftapia.dev</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="b909cf83a84b4bb0fabe6d19f628eb7c" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c6403c0d403f95373aa0f3e7d04c7f57.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Cerrar"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Buscar...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/es/">ftapia.dev</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/es/">ftapia.dev</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#inicio"><span>Inicio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#habilidades"><span>Habilidades</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#estancias"><span>Estancias</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#proyectos"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#publicaciones"><span>Articulos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#platicas"><span>Pláticas</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#divulgacion"><span>Divulgación</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#docencia"><span>Docencia</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#gallery"><span>Galería</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#contacto"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://twitter.com/ftapia_va" data-toggle="tooltip" data-placement="bottom" title="Sígueme en Twitter" target="_blank" rel="noopener" aria-label="Sígueme en Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Mostrar preferencias">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          ¿Qué es Docker?
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Buscar...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class="active"><a href="/es/docker/">¿Qué es Docker?</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/es/docker/instalacion/"><i class="fas fa-book pr-1"></i>Instalación</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/es/docker/instalacion/windows/">Instalando Docker en Windows</a></li>
+
+
+
+  <li class=""><a href="/es/docker/instalacion/macos/">Instalando Docker en MacOS</a></li>
+
+
+
+  <li class=""><a href="/es/docker/instalacion/linux/">Instalando Docker en Linux</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">En esta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-es-un-contenedor">¿Qué es un contenedor?</a></li>
+    <li><a href="#por-qué-contenedores">¿Por qué contenedores?</a></li>
+    <li><a href="#docker">Docker</a></li>
+    <li><a href="#por-qué-no-utilizar-una-máquina-virtual">¿Por qué no utilizar una máquina virtual?</a>
+      <ul>
+        <li><a href="#qué-es-una-máquina-virtual">¿Qué es una máquina virtual?</a></li>
+        <li><a href="#docker-vs-vm">Docker vs VM</a></li>
+        <li><a href="#soporte-del-sistema-operativo">Soporte del sistema operativo</a></li>
+        <li><a href="#seguridad">Seguridad</a></li>
+        <li><a href="#portabilidad">Portabilidad</a></li>
+        <li><a href="#desempeño">Desempeño</a></li>
+        <li><a href="#resumen">Resumen</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+
+  <li class="breadcrumb-item">
+    <a href="/es/">
+      
+        Inicio
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        ¿Qué es Docker?
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>¿Qué es Docker?</h1>
+
+          <div class="article-style">
+            <p>Para entender lo que significa Docker, es necesario dar un breve repaso a los contenedores.</p>
+<h2 id="qué-es-un-contenedor">¿Qué es un contenedor?</h2>
+<p>Un contenedor o Container, es un sandbox donde es posible ejecutar servicios y procesos en un entorno protegido. Cada contenedor se ejecuta en un Host de Contenedor, que puede ser una máquina de Windows, MacOs o Linux. Los principales beneficios de los contenedores, si se comparan con las máquinas virtuales clásicas, son los siguientes:</p>
+<ul>
+<li>La implementación es mucho más rápida.</li>
+<li>La administración es mínima.</li>
+<li>No es necesario aplicar parches y la huella es baja.</li>
+</ul>
+<h2 id="por-qué-contenedores">¿Por qué contenedores?</h2>
+<p>Los contenedores no son para todos y los escenarios no son muchos, en detalles:</p>
+<ul>
+<li>Sitios web</li>
+<li>Servicios</li>
+<li>Procesos</li>
+<li>Aplicaciones</li>
+</ul>
+<p>Como servidor web, se puede utilizar el motor más importante, como IIS con .Net, Apache y Ngnix también; Como aplicación, podemos encontrar SQL Server para Windows o Linux y el motor de base de datos más importante.</p>
+<p>En el ámbito científico, un contenedor nos proporciona una plataforma para crear escenarios avanzados que se pueden replicar fácilmente. En este sentido, un contenedor nos permite escalar códigos y adaptarlos a distintos tipos de infraestructura. Un punto importante para los desarrolladores de código, es que se pueden utilizar contenedores independientes para resolver los problemas de compatibilidad. Pensemos en el siguiente ejemplo.</p>
+<div class="alert alert-note">
+  <div>
+    Hemos desarrollado un código que resuelve numéricamente un sistema de ecuaciones. Nuestro código lo hemos desarrollado sobre un versión específica de fortran. Inicialmente los hemos compilado y probado en nuestra computadora y funciona correctamente. Llega el momento en que queremos compartir nuestro desarrollo con la comunidad científica, pero debemos enfrentarnos al reto de que no todo el mundo cuenta con el mismo compilador o peor aún, no todo el mundo está familiarizado con el sistema operativo. Esto hace muy dificil e incluso imposible, poder colaborar con los demás miembros de la comunidad. Entonces, nos interesaría encontrar una manera de portar el código, independientemente de la arquitectura del sistema o el sistema operativo de una manera fácil.
+  </div>
+</div>
+<h2 id="docker">Docker</h2>
+<p>Cuando hablamos de contenedores, no podemos evitar hablar de Docker, quizás la plataforma de contenedores más conocida. Docker es una herramienta que está diseñada para beneficiar tanto a los desarrolladores como a los administradores de sistemas. Para los desarrolladores, significa que pueden centrarse en escribir código sin preocuparse por el sistema en el que finalmente se ejecutará. También les permite obtener una ventaja al usar uno de los miles de programas que ya están diseñados para ejecutarse en un contenedor Docker como parte de su aplicación. Para el personal de operaciones, Docker ofrece flexibilidad y reduce potencialmente la cantidad de sistemas necesarios debido a su tamaño reducido y menores gastos generales.</p>
+<h2 id="por-qué-no-utilizar-una-máquina-virtual">¿Por qué no utilizar una máquina virtual?</h2>
+<h3 id="qué-es-una-máquina-virtual">¿Qué es una máquina virtual?</h3>
+<p>Una máquina virtual es un sistema que actúa exactamente como una computadora.</p>
+<p>En términos simples, hace posible ejecutar lo que parece estar en muchas computadoras separadas en hardware, es decir, una computadora. Cada máquina virtual requiere su sistema operativo subyacente y luego se virtualiza el hardware.</p>
+<h3 id="docker-vs-vm">Docker vs VM</h3>
+<p>Las diferencias significativas son la compatibilidad con el sistema operativo, la seguridad, la portabilidad y el rendimiento.</p>
+<h3 id="soporte-del-sistema-operativo">Soporte del sistema operativo</h3>
+<p>El soporte del sistema operativo de la máquina virtual y el contenedor Docker es muy diferente. En la imagen de arriba, puede ver que cada máquina virtual tiene su sistema operativo invitado por encima del sistema operativo host, lo que hace que las máquinas virtuales sean pesadas. Mientras que, por otro lado, los contenedores Docker comparten el sistema operativo host, y es por eso que son livianos.</p>
+<p>Compartir el sistema operativo host entre los contenedores los hace muy ligeros y les ayuda a iniciarse en solo unos segundos. Por lo tanto, la sobrecarga para administrar el sistema de contenedores es muy baja en comparación con la de las máquinas virtuales.</p>
+<p>Los contenedores de la ventana acoplable son adecuados para situaciones en las que desea ejecutar varias aplicaciones en un solo kernel de sistema operativo. Pero si tiene aplicaciones o servidores que deben ejecutarse en diferentes tipos de sistemas operativos, entonces se requieren máquinas virtuales.</p>
+<h3 id="seguridad">Seguridad</h3>
+<p>La máquina virtual no comparte el sistema operativo y existe un fuerte aislamiento en el kernel del host. Por lo tanto, son más seguros en comparación con los contenedores. Un contenedor tiene muchos riesgos de seguridad y vulnerabilidades, ya que los contenedores tienen un núcleo de host compartido.</p>
+<p>Además, dado que los recursos de la ventana acoplable se comparten y no tienen un espacio de nombres, un atacante puede explotar todos los contenedores de un clúster si obtiene acceso incluso a un contenedor. En una máquina virtual, no obtiene acceso directo a los recursos y el hipervisor está ahí para restringir el uso de recursos en una VM.</p>
+<h3 id="portabilidad">Portabilidad</h3>
+<p>Los contenedores Docker son fácilmente portables porque no tienen sistemas operativos separados. Un contenedor se puede portar a un sistema operativo diferente y puede iniciarse inmediatamente. Por otro lado, las máquinas virtuales tienen sistemas operativos separados, por lo que portar una máquina virtual es difícil en comparación con los contenedores, y también lleva mucho tiempo portar una máquina virtual debido a su tamaño.</p>
+<p>Para propósitos de desarrollo donde las aplicaciones deben desarrollarse y probarse en diferentes plataformas, los contenedores Docker son la opción ideal.</p>
+<h3 id="desempeño">Desempeño</h3>
+<p>Comparar las máquinas virtuales y los contenedores Docker no sería justo porque ambos se utilizan para diferentes propósitos. Pero la arquitectura ligera de Docker es característica que consume menos recursos lo convierte en una mejor opción que una máquina virtual. Como resultado, los contenedores pueden iniciarse muy rápido en comparación con el de las máquinas virtuales, y el uso de recursos varía según la carga o el tráfico en ellos.</p>
+<p>A diferencia del caso de las máquinas virtuales, no es necesario asignar recursos de forma permanente a los contenedores. Escalar y duplicar los contenedores también es una tarea fácil en comparación con la de las máquinas virtuales, ya que no es necesario instalar un sistema operativo en ellas.</p>
+<h3 id="resumen">Resumen</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Máquina virtual</th>
+<th style="text-align:center">Contenedor Docker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Aislamiento de procesos a nivel de hardware</td>
+<td style="text-align:center">Aislamiento de procesos a nivel de SO</td>
+</tr>
+<tr>
+<td style="text-align:center">Cada máquina virtual tiene un sistema operativo independiente</td>
+<td style="text-align:center">Cada contenedor puede compartir SO</td>
+</tr>
+<tr>
+<td style="text-align:center">Arranca en minutos</td>
+<td style="text-align:center">Arranca en segundos</td>
+</tr>
+<tr>
+<td style="text-align:center">Las máquinas virtuales son de pocos GB</td>
+<td style="text-align:center">Los contenedores son livianos (KB / MB)</td>
+</tr>
+<tr>
+<td style="text-align:center">Las máquinas virtuales listas para usar son difíciles de encontrar</td>
+<td style="text-align:center">Los contenedores Docker prediseñados están fácilmente disponibles</td>
+</tr>
+<tr>
+<td style="text-align:center">Las máquinas virtuales pueden moverse a un nuevo host fácilmente</td>
+<td style="text-align:center">Los contenedores se destruyen y recrean en lugar de moverse</td>
+</tr>
+<tr>
+<td style="text-align:center">La creación de VM lleva relativamente más tiempo</td>
+<td style="text-align:center">Los contenedores se pueden crear en segundos</td>
+</tr>
+<tr>
+<td style="text-align:center">Más uso de recursos</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Última actualización el Mar 11, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+    <p class="powered-by">
+      © ftapia 2021
+    </p>
+  
+  </footer>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    <script src="/js/_vendor/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/es/js/wowchemy.min.0c769fe2b068245323b9d6a1f594bda7.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

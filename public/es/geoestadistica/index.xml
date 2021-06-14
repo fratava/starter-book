@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geoestadística | ftapia.dev</title>
+    <link>https://ftapia.dev/es/geoestadistica/</link>
+      <atom:link href="https://ftapia.dev/es/geoestadistica/index.xml" rel="self" type="application/rss+xml" />
+    <description>Geoestadística</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-mx</language><copyright>© ftapia 2021</copyright>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Geoestadística</title>
+      <link>https://ftapia.dev/es/geoestadistica/</link>
+    </image>
+    
+    <item>
+      <title>Evaluación inicial</title>
+      <link>https://ftapia.dev/es/geoestadistica/evaluacion-inicial/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/es/geoestadistica/evaluacion-inicial/</guid>
+      <description>&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://drive.google.com/file/d/1gHBQAbpW9ysxYT7qrWiCdXDVjBwAOgcN/preview&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;respuestas-al-ejercicio&#34;&gt;Respuestas al ejercicio&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ejercicio: Dentro de una bolsa se encuentran 20 monedas, 8 de ellas son de $5, el resto son de distintas denominaciones.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;pregunta-1&#34;&gt;Pregunta 1&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Calcula la probabilidad de sacar una moneda de $5 de la bolsa&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ P($5)=\frac{8}{20}=\frac{2}{5}=0.4 $$&lt;/p&gt;
+&lt;h3 id=&#34;pregunta-2&#34;&gt;Pregunta 2&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Calcula la probabilidad de conseguir al menos una moneda de $5 al sacar dos monedas de la bolsa.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;forma-1&#34;&gt;Forma 1&lt;/h4&gt;
+&lt;p&gt;P(al menos una moneda $5)=P($5 y otra denominación)+P(otra denominación y $5)+P($5 y $5)&lt;/p&gt;
+&lt;p&gt;$$ P(x\geq1)=\frac{8}{20}.\frac{12}{19}+\frac{12}{20}.\frac{8}{19}+\frac{8}{20}.\frac{7}{19}=\frac{24}{95}+\frac{24}{95}+\frac{14}{95}=\frac{62}{95}=0.65 $$&lt;/p&gt;
+&lt;h4 id=&#34;forma-2&#34;&gt;Forma 2&lt;/h4&gt;
+&lt;p&gt;P(al menos una moneda 5) = 1 - P(no salga ninguna moneda de $5)&lt;/p&gt;
+&lt;p&gt;$$ P(x\geq1)=1-P(x=0)=1-\frac{12}{20}.\frac{11}{19}=1-\frac{33}{95}=\frac{62}{95}=0.65 $$&lt;/p&gt;
+&lt;h3 id=&#34;pregunta-3&#34;&gt;Pregunta 3&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Calcula la probabilidad de conseguir al menos una moneda de $5 al sacar tres monedas de la bolsa.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ P(x\geq1)=1-P(x=0)=1-\frac{12}{20}.\frac{11}{19}.\frac{10}{18}=1-\frac{11}{57}=\frac{46}{57}=0.8 $$&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | ftapia.dev</title>
+    <link>https://ftapia.dev/en/publication_types/1/</link>
+      <atom:link href="https://ftapia.dev/en/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© ftapia 2021</copyright><lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ftapia.dev/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>1</title>
+      <link>https://ftapia.dev/en/publication_types/1/</link>
+    </image>
+    
+    <item>
+      <title>MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres</title>
+      <link>https://ftapia.dev/en/publication/aas237/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://ftapia.dev/en/publication/aas237/</guid>
+      <description>&lt;p&gt;The dominant emission mechanisms at millimeter/submillimeter remain largely unknown for most spectral types other than Solar analogues. This is due in part to the lack of data to inform stellar atmosphere models. In this work, we present a new methodology to fit the observed and synthetic spectrum of main-sequence stars through semiempirical models&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. We use the Levenberg-Marquardt algorithm as a Nonlinear method, PakalMPI&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; as the semiempirical model and the observations that are part of an ongoing observational campaign entitled Measuring the Emission of Stellar Atmospheres at Submillimeter/ Millimeter wavelengths&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Our results show that we can use semiempirical models as an input model to reproduce and constrain the observed spectrum of main-sequence stars&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. In addition to a better understanding of stellar processes, these models are also essential for determining the stellar contribution to unresolved circumstellar disks at submillimeter/millimeter wavelengths&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Today I&amp;#39;m going to present a project that &lt;a href=&#34;https://twitter.com/Jacob_White26?ref_src=twsrc%5Etfw&#34;&gt;@Jacob_White26&lt;/a&gt;  and I have been working on at the &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt; meeting. The talk is titled &amp;quot;MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres&amp;quot; 1/n&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348624995606540288?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;This work has an observational and theoretical basis. MESAS is an ongoing observational campaign that seeks to obtain a broad spectral sub-mm/cm coverage of a range of spectral types to build a more complete catalog of stellar emission. 2/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348625944605581313?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Nowadays, the spectrum of stars in this range remains poorly constrained due to a lack of data for most spectral types. This situation is due in part to the technical limitations of these wavelengths.  3/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348627696373428229?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The development of more sensitive detectors has made it possible to observe for the first time, stars of main-sequence at sub-mm / mm wavelengths. The Stars with no known circumstellar material to provide valuable information about the physical conditions of the atmosphere. 4/n&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348628931390402563?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;This information is useful to characterize the emission and use it as a template for several studies in many areas such as: stellar atmospheres, debris disks, space weather, stellar evolution, and long term stellar variability studies. 5/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348629614877413377?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;As an example, we have the case of Sirius A an A1Vm star. Due to its proximity (2.64 pc), it was a good starting point to start studying the emission of A stars. The results can be found in White et al. (2019) &lt;a href=&#34;https://t.co/WPWzt6y31t&#34;&gt;https://t.co/WPWzt6y31t&lt;/a&gt; .  6/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt; &lt;a href=&#34;https://t.co/8PqaUaCf5s&#34;&gt;pic.twitter.com/8PqaUaCf5s&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348632119086620675?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;For the theoretical part, we have Kinich-Pakal (KP). KP is a new methodology developed by &lt;a href=&#34;https://twitter.com/victor_delaluz?ref_src=twsrc%5Etfw&#34;&gt;@victor_delaluz&lt;/a&gt; and me, to fit the observed and synthetic spectrum of solar-like stars from the centimeter to infrared wavelengths through semiempirical models. 7/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348632812019179524?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;KP uses the Levenberg-Marquardt algorithm to minimize the differences between synthetic and observed spectrum by running PakalMPI (De la Luz et al., 2010) &lt;a href=&#34;https://t.co/dIKB1QU21j&#34;&gt;https://t.co/dIKB1QU21j&lt;/a&gt; to hydrostatically equilibrate the atmosphere and to compute their synthetic spectrum. 8/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348633231311183880?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;KP is capable of finding the physical conditions such as pressure, density, and temperature in function of the altitude. As an example, we have the model of Alpha Centauri A (Tapia-Vázquez &amp;amp; De la Luz, 2020) &lt;a href=&#34;https://t.co/swRBqlKAFG&#34;&gt;https://t.co/swRBqlKAFG&lt;/a&gt; . 9/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348634566555275266?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Alpha Centauri A and B were the first stellar system resolved in the submillimeter wavelength by ALMA (Liseau et al. 2015). Thanks to these observations and the sun-like properties of alpha Centauri, we could calibrate the model. 10/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348635841032294401?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;As a result, we obtain a semi-empirical model that allows us to reproduce the observed spectrum more closely. This model shows similarities between Alpha Centauri A and our Sun, such as a low temperature, a flattening of the temperature in the high chromosphere. 11/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt; &lt;a href=&#34;https://t.co/swXi2l6434&#34;&gt;pic.twitter.com/swXi2l6434&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348639447240290316?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;But, in a broad stellar context, both MESAS and KINICH-PAKAL works as a compliment. MESAS provides an observational framework that constrains the stellar emission, and KP uses this information to model the atmosphere. 12/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348640710506008578?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Using both, we have been able to characterize the emission in stars of spectral type F from the radio to the infrared wavelengths such as Gamma Vir A/B (F0V) and Gamma Lep (F6V) (White et al. 2020) &lt;a href=&#34;https://t.co/oB5ELqvXzQ&#34;&gt;https://t.co/oB5ELqvXzQ&lt;/a&gt; . 13/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt; &lt;a href=&#34;https://t.co/vBFPhDA0pp&#34;&gt;pic.twitter.com/vBFPhDA0pp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348642544759013379?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;As future work, we are going to expand the use of this framework with the help of more observations that will come primarily from the &lt;a href=&#34;https://twitter.com/hashtag/VLA?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#VLA&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/almaobs?ref_src=twsrc%5Etfw&#34;&gt;@almaobs&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/hashtag/Noema?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Noema&lt;/a&gt;, and the &lt;a href=&#34;https://twitter.com/gtmlmt_oficial?ref_src=twsrc%5Etfw&#34;&gt;@gtmlmt_oficial&lt;/a&gt;. 14/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348643740693442560?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The complete keynote can be found at &lt;a href=&#34;https://t.co/R8sfncEuua&#34;&gt;https://t.co/R8sfncEuua&lt;/a&gt; :) Thanks to &lt;a href=&#34;https://twitter.com/Jacob_White26?ref_src=twsrc%5Etfw&#34;&gt;@Jacob_White26&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/victor_delaluz?ref_src=twsrc%5Etfw&#34;&gt;@victor_delaluz&lt;/a&gt;, and Luis Zapata for the comments and the help! 15/n &lt;a href=&#34;https://twitter.com/hashtag/AAS237?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#AAS237&lt;/a&gt;&lt;/p&gt;&amp;mdash; Francisco Tapia 📡 (@ftapia_va) &lt;a href=&#34;https://twitter.com/ftapia_va/status/1348647799299186690?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Tapia-Vázquez, F., &amp;amp; De la Luz, V. 2020, ApJS, 246, 5 &lt;a href=&#34;https://doi.org/10.3847/1538-4365/ab5f0a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;De la Luz, V., Lara, A., Mendoza-Torres, J. E., et al. 2010, ApJS, 188, 437 &lt;a href=&#34;https://doi.org/10.1088/0067-0049/188/2/437&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;White, J.A., Aufdenberg, J., Boley, A.C., 2018, ApJ,859(2), p.102. &lt;a href=&#34;https://doi.org/10.3847/1538-4357/aac103&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;White, J. A., Tapia-Vázquez, F., Hughes, A. G., et al. 2020, ApJ, 894, 76 &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab8467&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;White, J. A., Aufdenberg, J., Boley, A. C., et al. 2019, ApJ, 875, 55 &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab0e7f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doi&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
